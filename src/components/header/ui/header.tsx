@@ -21,15 +21,6 @@ const Header: FC = () => {
           <HeaderNavBar />
         </div>
         <HeaderConnect />
-
-        {/* {isScreenMd ? (
-          <div className={styles.nav}>
-            <AddressBlock />
-            <HeaderNavBar />
-          </div>
-        ) : (
-          <HeaderConnect data={headerConnectData} />
-        )} */}
       </div>
     </header>
   );

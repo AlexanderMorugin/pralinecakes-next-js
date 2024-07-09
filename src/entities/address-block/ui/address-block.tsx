@@ -24,7 +24,7 @@ const AddressBlock: FC<IAddressBlock> = ({ footer = false, className }) => {
       }
     >
       <span>{ADDRESS}</span>
-      <span>{PHONE_NUMBER}</span>
+      <span className={styles.span}>{PHONE_NUMBER}</span>
       <span>{EMAIL}</span>
       <span>{WORK_HOURS}</span>
     </address>

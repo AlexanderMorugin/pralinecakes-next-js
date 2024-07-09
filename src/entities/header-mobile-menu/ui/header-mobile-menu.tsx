@@ -13,31 +13,31 @@ import { HeaderMenuButton } from '@/entities';
 const HeaderMobileMenu: FC = () => {
   const [menuActive, setMenuActive] = useState(false);
 
-    // свайп бокового меню
-    useEffect(() => {
-      let startTouchX = 0;
-      let endTouchX = 0;
-      let startTouchY = 0;
-      let endTouchY = 0;
-  
-      document.addEventListener('touchstart', (e) => {
-        startTouchX = e.changedTouches[0].pageX;
-        startTouchY = e.changedTouches[0].pageY;
-      });
-  
-      document.addEventListener('touchend', (e) => {
-        endTouchX = e.changedTouches[0].pageX;
-        endTouchY = e.changedTouches[0].pageY;
-  
-        // убирание меню свайпом справа налево
-        if (
-          startTouchX < 440 &&
-          Math.abs(endTouchY - startTouchY) < 40 &&
-          endTouchX < startTouchX
-        )
-          setMenuActive(false);
-      });
-    }, []);
+  // свайп бокового меню
+  useEffect(() => {
+    let startTouchX = 0;
+    let endTouchX = 0;
+    let startTouchY = 0;
+    let endTouchY = 0;
+
+    document.addEventListener('touchstart', (e) => {
+      startTouchX = e.changedTouches[0].pageX;
+      startTouchY = e.changedTouches[0].pageY;
+    });
+
+    document.addEventListener('touchend', (e) => {
+      endTouchX = e.changedTouches[0].pageX;
+      endTouchY = e.changedTouches[0].pageY;
+
+      // убирание меню свайпом справа налево
+      if (
+        startTouchX < 440 &&
+        Math.abs(endTouchY - startTouchY) < 40 &&
+        endTouchX < startTouchX
+      )
+        setMenuActive(false);
+    });
+  }, []);
 
   return (
     <>

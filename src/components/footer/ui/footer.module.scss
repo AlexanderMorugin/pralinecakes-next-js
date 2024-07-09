@@ -1,0 +1,74 @@
+@use '@/shared/styles/mixins' as media;
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background: var(--dark-thirdary);
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 'logoBox information catalog address';
+    gap: 20px;
+    width: 100%;
+    max-width: var(--width-xl);
+    padding-top: var(--padding-vertical-desktop);
+    padding-bottom: var(--padding-vertical-desktop);
+    padding-left: var(--padding-horizontal-desktop);
+    padding-right: var(--padding-horizontal-desktop);
+
+    @include media.respond-to('middle') {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+        'information catalog'
+        'address address'
+        'logoBox logoBox';
+      gap: 10px;
+      padding-top: var(--padding-vertical-mobile);
+      padding-bottom: var(--padding-vertical-mobile);
+      padding-left: var(--padding-horizontal-mobile);
+      padding-right: var(--padding-horizontal-mobile);
+    }
+  }
+
+  &__logoBox {
+    grid-area: logoBox;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font: var(--font-xs-regular);
+    color: var(--light-secondary);
+
+    @include media.respond-to('middle') {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  }
+
+  &__logoText {
+    opacity: 0.8;
+
+    @include media.respond-to('middle') {
+      opacity: 0.6;
+    }
+  }
+
+  &__logoLink {
+    color: #fff;
+  }
+
+  &__information {
+    grid-area: information;
+  }
+
+  &__catalog {
+    grid-area: catalog;
+  }
+
+  &__address {
+    grid-area: address;
+  }
+}

@@ -1,0 +1,28 @@
+.footerNav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  &__title {
+    font: var(--font-xs-medium);
+    color: var(--light-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    padding-left: 45px;
+    opacity: 0.6;
+  }
+
+  &__link {
+    display: flex;
+    gap: 15px;
+    font: var(--font-xs-regular);
+    color: var(--light-secondary);
+    text-decoration: none;
+    padding: 10px;
+    transition: 0.3s;
+
+    &:hover {
+      color: var(--accent-primary);
+    }
+  }
+}
