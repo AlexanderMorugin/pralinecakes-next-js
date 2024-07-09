@@ -1,0 +1,27 @@
+@use '@/shared/styles/mixins' as media;
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--brown-thirdary);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: var(--width-xl);
+  padding-top: var(--padding-vertical-desktop);
+  padding-bottom: 10px;
+  padding-left: var(--padding-horizontal-desktop);
+  padding-right: var(--padding-horizontal-desktop);
+
+  @include media.respond-to('middle') {
+    padding-top: var(--padding-vertical-mobile);
+    padding-left: var(--padding-horizontal-mobile);
+    padding-right: var(--padding-horizontal-mobile);
+  }
+}
