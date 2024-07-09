@@ -25,3 +25,14 @@
     padding-right: var(--padding-horizontal-mobile);
   }
 }
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+
+  @include media.respond-to('middle') {
+    display: none;
+  }
+}

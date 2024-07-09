@@ -1,0 +1,34 @@
+@use '@/shared/styles/mixins' as media;
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  text-decoration: none;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font: var(--font-l-bold);
+  color: var(--light-secondary);
+  transition: 0.3s;
+
+  @include media.respond-to('large') {
+    font: var(--font-m-bold);
+  }
+}
+
+.footer {
+  font: var(--font-s-bold);
+}
+
+.span {
+  font: var(--font-xs-medium);
+}
+
+.spanFooter {
+  font: var(--font-xs-regular);
+}

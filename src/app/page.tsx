@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import styles from './page.module.css';
+import Routes from '@/shared/constants/routes';
 
 export const metadata: Metadata = {
   title: 'Кондитерская Пралине Москва',
@@ -14,14 +15,23 @@ export const metadata: Metadata = {
 function Home() {
   return (
     <main className={styles.home}>
-      <Link href='/about' className={styles.link}>
+      <Link href={Routes.ABOUT}>
         О нас
       </Link>
-      <Link href='/contacts' className={styles.link2}>
+      <Link href={Routes.CONTACTS}>
         Контакты
       </Link>
-      <Link href='/delivery' className={styles.link3}>
+      <Link href={Routes.DELIVERY}>
         Доставка
+      </Link>
+      <Link href={Routes.COOPERATION}>
+        Сотрудничество
+      </Link>
+      <Link href={Routes.PRODUCTS}>
+        Продукция
+      </Link>
+      <Link href={Routes.CATEGORIES}>
+        Категории
       </Link>
     </main>
 

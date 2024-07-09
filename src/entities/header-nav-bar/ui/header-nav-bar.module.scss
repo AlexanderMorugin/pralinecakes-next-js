@@ -1,0 +1,25 @@
+.headerNavBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  font: var(--font-s-medium);
+  color: var(--light-primary);
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: 0.3s;
+
+  &:hover {
+    background: var(--light-secondary);
+    color: var(--brown-thirdary);
+  }
+}

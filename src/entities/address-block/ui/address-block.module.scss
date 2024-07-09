@@ -1,0 +1,31 @@
+@use '@/shared/styles/mixins' as media;
+
+.addressBlock {
+  display: flex;
+  gap: 20px;
+  font: var(--font-xs-regular);
+  color: var(--light-primary);
+
+  @include media.respond-to('large') {
+    gap: 10px;
+    font: var(--font-xxs-regular);
+  }
+
+  @include media.respond-to('middle') {
+    align-items: center;
+  }
+}
+
+.footer {
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  color: var(--light-secondary);
+  opacity: 0.8;
+
+  @include media.respond-to('middle') {
+    align-items: center;
+    font: var(--font-xs-regular);
+    opacity: 0.6;
+  }
+}

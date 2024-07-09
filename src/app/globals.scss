@@ -104,10 +104,11 @@
   --orange-primary: #f1e0a1;
 
   --brown-primary: #eae6df;
-  --brown-thirdary: #cca28e;
+  // --brown-thirdary: #cca28e;
+  --brown-thirdary: #c1876b;
 
   --border-primary: #e2c9b9;
-  --border-secondary: rgb(184, 128, 101);
+  --border-secondary: #b88065;
 
   --bg-primary: #f7f7f7;
   --bg-secondary: #fff;
@@ -157,25 +158,34 @@ body {
   @include media.respond-to('middle') {
     background: var(--bg-secondary);
   }
-}
 
-a {
-  text-decoration: none;
-}
+  button {
+    background: transparent;
+    outline: none;
+    border-style: none;
+    padding: 0;
+    color: inherit;
+    font-family: inherit;
+  }
 
-h1,
-h2,
-h3,
-h4 {
-  margin: 0;
-}
+  a {
+    text-decoration: none;
+  }
 
-p {
-  margin: 0;
-}
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin: 0;
+  }
 
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  p {
+    margin: 0;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
 }

@@ -1,0 +1,59 @@
+@use '@/shared/styles/mixins' as media;
+
+.headerMenuButton {
+  display: none;
+  position: relative;
+  width: 24px;
+  height: 16px;
+  cursor: pointer;
+
+  @include media.respond-to('middle') {
+    display: block;
+  }
+
+  &__span {
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: var(--light-secondary);
+    transition: all 0.3s ease 0s;
+
+    &_active {
+      display: none;
+    }
+  }
+}
+
+.headerMenuButton:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background: var(--light-secondary);
+  transition: all 0.3s ease 0s;
+}
+
+.headerMenuButton:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background: var(--light-secondary);
+  transition: all 0.3s ease 0s;
+}
+
+.headerMenuButton_active:before {
+  transform: rotate(45deg);
+  top: 7px;
+}
+
+.headerMenuButton_active:after {
+  transform: rotate(-45deg);
+  bottom: 7px;
+}

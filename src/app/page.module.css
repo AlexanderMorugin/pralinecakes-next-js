@@ -2,20 +2,7 @@
   border: 1px solid red;
 }
 
-.link {
-  font: var(--font-xl-regular);
-  color: var(--accent-secondary);
-}
 
-.link2 {
-  font: var(--font-xl-medium);
-  color: var(--accent-secondary);
-}
-
-.link3 {
-  font: var(--font-xl-bold);
-  color: var(--accent-secondary);
-}
 
 /* .main {
   display: flex;

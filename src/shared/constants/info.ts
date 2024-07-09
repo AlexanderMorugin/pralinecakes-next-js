@@ -1,0 +1,10 @@
+export const COMPANY_NAME = 'Кондитерская Пралине';
+export const ADDRESS = 'Москва, Рублевское шоссе, 52а';
+export const PHONE_NUMBER = '+7 977 138-82-64';
+export const PHONE_NUMBER_SECOND = '+7 495 729-50-51';
+export const EMAIL = 'info@pralinecakes.ru';
+export const WORK_HOURS = 'с 10:00 до 19:00';
+export const WHATSAPP_LINK = `//wa.me/${79771388264}`;
+export const TELEGRAM_LINK = `//t.me/${79771388264}`;
+export const PHONE_LINK = `tel:${PHONE_NUMBER}`;
+export const PHONE_SECOND_LINK = `tel:${PHONE_NUMBER_SECOND}`;
