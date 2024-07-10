@@ -5,6 +5,14 @@
   flex-direction: column;
   gap: 20px;
   width: 100%;
+  padding-left: var(--padding-horizontal-desktop);
+  padding-right: var(--padding-horizontal-desktop);
+  padding-bottom: var(--padding-vertical-desktop);
+
+  @include media.respond-to('middle') {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
   &__grid {
     display: grid;

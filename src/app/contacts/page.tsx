@@ -1,15 +1,14 @@
 import Link from 'next/link';
-import type { Metadata } from "next";
+import type { Metadata } from 'next';
 
-import { MainWrapper } from '@/components';
-import { Breadcrumbs, ContactsWidget, PageHeading } from '@/widgets';
+import { MainWrapper, PageWrapper } from '@/components';
+import { Breadcrumbs, Carta, ContactsWidget, PageHeading } from '@/widgets';
 import { PAGE_CONTACTS_TITLE, PAGE_MAIN } from '@/shared/constants/pages';
 import Routes from '@/shared/constants/routes';
 
-
 export const metadata: Metadata = {
-  title: "Contacts",
-  description: "Contacts Contacts Contacts",
+  title: 'Contacts',
+  description: 'Contacts Contacts Contacts',
 };
 
 const breadcrumbs = [
@@ -19,11 +18,13 @@ const breadcrumbs = [
 
 export default function Contacts() {
   return (
-    <MainWrapper>
+    <PageWrapper>
       <Breadcrumbs links={breadcrumbs} />
-
-      <PageHeading title={PAGE_CONTACTS_TITLE} />
-      <ContactsWidget />
-    </MainWrapper>
+      <MainWrapper>
+        <PageHeading title={PAGE_CONTACTS_TITLE} />
+        <ContactsWidget />
+      </MainWrapper>
+      <Carta />
+    </PageWrapper>
   );
 }

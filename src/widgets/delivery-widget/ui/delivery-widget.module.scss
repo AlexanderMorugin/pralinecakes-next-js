@@ -1,0 +1,138 @@
+@use '@/shared/styles/mixins' as media;
+
+.deliveryWidget {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  width: 100%;
+  max-width: var(--width-xl);
+  margin: 0 auto;
+  padding-left: var(--padding-horizontal-desktop);
+  padding-right: var(--padding-horizontal-desktop);
+  padding-bottom: var(--padding-vertical-desktop);
+
+  @include media.respond-to('middle') {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-left: var(--padding-horizontal-mobile);
+    padding-right: var(--padding-horizontal-mobile);
+  }
+
+  &__block {
+    position: relative;
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    border-radius: 30px;
+    border: 1px solid var(--border-primary);
+    padding: 20px;
+    overflow: hidden;
+
+    &_theme_one {
+      background: #ebf8f9;
+    }
+
+    &_theme_two {
+      background: #fff3e8;
+    }
+
+    &_theme_three {
+      background: #f7f3ff;
+    }
+
+    &_theme_four {
+      background: #e8fbed;
+    }
+
+    @include media.respond-to('middle') {
+      grid-template-columns: 1fr;
+      border-radius: 20px;
+      padding: 0;
+    }
+  }
+
+  &__circle {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font: var(--font-xxl-bold);
+    color: #fff;
+    z-index: var(--z-index-two);
+
+    @include media.respond-to('middle') {
+      display: none;
+    }
+
+    &_theme_one {
+      background: #c5aaff;
+    }
+
+    &_theme_two {
+      background: #a3eca1;
+    }
+
+    &_theme_three {
+      background: #93f8ff;
+    }
+
+    &_theme_four {
+      background: #ffd3aa;
+    }
+  }
+
+  &__article {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__squareOne {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    transform: rotate(60deg);
+  }
+
+  &__squareTwo {
+    position: absolute;
+    top: 35px;
+    right: 80px;
+  }
+
+  &__squareThree {
+    position: absolute;
+    bottom: 35px;
+    left: 80px;
+  }
+
+  &__squareFour {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    transform: scale(1.5);
+  }
+
+  &__title {
+    font: var(--font-l-bold);
+    color: var(--border-secondary);
+
+    @include media.respond-to('middle') {
+      color: var(--light-primary);
+      background: rgba(184, 128, 101, 0.6);
+      padding: 15px 20px;
+    }
+  }
+
+  &__text {
+    @include media.respond-to('middle') {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 15px;
+    }
+  }
+}
