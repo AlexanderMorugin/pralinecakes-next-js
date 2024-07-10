@@ -1,0 +1,33 @@
+@use '@/shared/styles/mixins' as media;
+
+.articleWrapper {
+  width: 100%;
+  max-width: var(--width-xl);
+  margin: 0 auto;
+
+  @include media.respond-to('middle') {
+    padding-left: var(--padding-horizontal-mobile);
+    padding-right: var(--padding-horizontal-mobile);
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 15px;
+    background: var(--bg-secondary);
+    width: 100%;
+    max-width: (--width-xl);
+    height: 100%;
+    margin: 0 auto;
+    padding-top: var(--padding-vertical-mobile);
+    padding-bottom: var(--padding-vertical-mobile);
+    padding-left: var(--padding-horizontal-desktop);
+    padding-right: var(--padding-horizontal-desktop);
+
+    @include media.respond-to('middle') {
+      padding-left: var(--padding-horizontal-mobile);
+      padding-right: var(--padding-horizontal-mobile);
+    }
+  }
+}

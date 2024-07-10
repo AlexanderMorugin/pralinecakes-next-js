@@ -1,0 +1,14 @@
+@use '@/shared//styles/mixins' as media;
+
+.mainWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: var(--bg-primary);
+
+  @include media.respond-to('middle') {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+}
