@@ -1,0 +1,67 @@
+@use '@/shared/styles/mixins' as media;
+
+.productHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.8) 10%,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0) 80%,
+    rgba(255, 255, 255, 0.8) 90%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  z-index: var(--z-index-two);
+
+  &__titleBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: fit-content;
+
+    @include media.respond-to('middle') {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    font: var(--font-xl-bold);
+    padding-left: 20px;
+
+    @include media.respond-to('middle') {
+      font: var(--font-s-bold);
+      padding-left: 10px;
+    }
+  }
+
+  &__category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--link-secondary);
+    border-radius: 3px;
+    font: var(--font-xs-regular);
+    color: var(--light-secondary);
+    padding-left: 8px;
+    padding-right: 8px;
+    transition: 0.3s;
+
+    &:hover {
+      background: var(--accent-secondary);
+    }
+
+    @include media.respond-to('middle') {
+      margin-right: 10px;
+    }
+  }
+
+  &__linkTextArrow {
+    @include media.respond-to('middle') {
+      display: none;
+    }
+  }
+}

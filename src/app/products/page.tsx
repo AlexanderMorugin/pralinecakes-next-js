@@ -1,16 +1,29 @@
-import Link from 'next/link';
-import type { Metadata } from "next";
+import type { Metadata } from 'next';
+
+import { MainWrapper, PageWrapper } from '@/components';
+import { Breadcrumbs, CakeBlock, PageHeading, PastryBlock } from '@/widgets';
+import { PAGE_MAIN, PAGE_PRODUCTS_TITLE } from '@/shared/constants/pages';
+import Routes from '@/shared/constants/routes';
 
 export const metadata: Metadata = {
-  title: "Delivery",
-  description: "Delivery Delivery Delivery",
+  title: 'Delivery',
+  description: 'Delivery Delivery Delivery',
 };
+
+const breadcrumbs = [
+  { heading: PAGE_MAIN, route: Routes.HOME },
+  { heading: PAGE_PRODUCTS_TITLE, route: '' },
+];
 
 export default function Products() {
   return (
-    <>
-      <h1>Products</h1>
-      <Link href='/'>На главную</Link>
-    </>
+    <PageWrapper>
+      <Breadcrumbs links={breadcrumbs} />
+      <MainWrapper>
+        <PageHeading title={PAGE_PRODUCTS_TITLE} />
+        <PastryBlock />
+        <CakeBlock />
+      </MainWrapper>
+    </PageWrapper>
   );
 }

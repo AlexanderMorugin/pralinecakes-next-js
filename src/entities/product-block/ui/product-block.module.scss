@@ -1,0 +1,24 @@
+@use '@/shared/styles/mixins' as media;
+
+.productBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 20px;
+    width: 100%;
+
+    @include media.respond-to('large') {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include media.respond-to('middle') {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+  }
+}

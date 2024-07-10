@@ -1,0 +1,39 @@
+.linkTextArrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font: var(--font-xs-regular);
+  color: var(--link-secondary);
+  padding-right: 20px;
+  transition: 0.25s;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &__arrow {
+    animation: arrow 1.5s linear infinite;
+  }
+}
+
+@keyframes arrow {
+  0% {
+    transform: translateX(0) rotate(180deg);
+  }
+
+  25% {
+    transform: translateX(3px) rotate(180deg);
+  }
+
+  50% {
+    transform: translateX(0) rotate(180deg);
+  }
+
+  75% {
+    transform: translateX(-3px) rotate(180deg);
+  }
+
+  100% {
+    transform: translateX(0) rotate(180deg);
+  }
+}

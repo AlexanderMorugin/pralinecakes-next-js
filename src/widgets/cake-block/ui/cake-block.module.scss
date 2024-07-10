@@ -1,0 +1,18 @@
+@use '@/shared/styles/mixins' as media;
+
+.cakeBlock {
+  width: 100%;
+  max-width: var(--width-xl);
+  margin: 0 auto;
+  padding-left: var(--padding-horizontal-desktop);
+  padding-right: var(--padding-horizontal-desktop);
+  padding-top: 30px;
+  padding-bottom: var(--padding-vertical-desktop);
+
+  @include media.respond-to('middle') {
+    padding-left: var(--padding-horizontal-mobile);
+    padding-right: var(--padding-horizontal-mobile);
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}

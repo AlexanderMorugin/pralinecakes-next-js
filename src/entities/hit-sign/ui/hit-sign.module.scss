@@ -1,0 +1,10 @@
+.hitSign {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: var(--accent-secondary);
+  border-radius: 5px;
+  font: var(--font-xs-bold);
+  color: var(--light-primary);
+  padding: 3px 6px;
+}

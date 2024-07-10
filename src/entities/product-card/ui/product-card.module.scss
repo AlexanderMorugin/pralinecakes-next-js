@@ -1,0 +1,97 @@
+@use '@/shared/styles/mixins' as media;
+
+.productCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 320px;
+  min-height: 100%;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-primary);
+  border-radius: 15px;
+  padding-bottom: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s;
+  user-select: none;
+
+  @include media.respond-to('middle') {
+    gap: 10px;
+    max-width: 230px;
+  }
+
+  &:hover {
+    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    -moz-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+
+  &__image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+
+    @include media.respond-to('middle') {
+      height: 140px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    padding: 0 20px 10px 20px;
+
+    @include media.respond-to('middle') {
+      gap: 0;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  &__title {
+    font: var(--font-s-bold);
+    color: var(--border-secondary);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: hidden;
+  }
+
+  &__description {
+    font: var(--font-s-regular);
+    color: var(--text-thirdary);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: hidden;
+
+    @include media.respond-to('middle') {
+      font: var(--font-xs-regular);
+    }
+  }
+
+  &__price {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    font: var(--font-s-bold);
+    color: var(--accent-primary);
+    text-align: right;
+
+    @include media.respond-to('middle') {
+      font: var(--font-xs-bold);
+    }
+  }
+
+  &__span {
+    font: var(--font-xxs-regular);
+    color: var(--text-thirdary);
+    padding-right: 6px;
+  }
+}
