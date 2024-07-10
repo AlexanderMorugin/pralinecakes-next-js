@@ -1,0 +1,54 @@
+@use '@/shared/styles/mixins' as media;
+
+.contactsWidget {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    border-radius: 10px;
+    border: 1px solid var(--border-primary);
+    overflow: hidden;
+
+    @include media.respond-to('middle') {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__name {
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+    background: var(--bg-primary);
+    font: var(--font-xs-medium);
+    color: var(--border-secondary);
+    letter-spacing: 0.8px;
+    padding: 5px 20px;
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 40px;
+    font: var(--font-s-regular);
+    color: var(--text-primary);
+    padding: 5px 20px;
+
+    &_link {
+      cursor: pointer;
+    }
+
+    @include media.respond-to('middle') {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__color {
+    color: var(--text-primary);
+  }
+}

@@ -11,7 +11,11 @@ const HeaderConnect: FC = () => {
     <ul className={styles.headerConnect}>
       {connectData.map((item, index) => (
         <li key={index}>
-          <Link href={item.link} className={styles.headerConnect__link}>
+          <a
+            href={item.link}
+            rel='noopener noreferrer'
+            className={styles.headerConnect__link}
+          >
             <Image
               src={item.icon}
               alt={item.title}
@@ -19,7 +23,7 @@ const HeaderConnect: FC = () => {
               height={32}
               className={styles.headerConnect__icon}
             />
-          </Link>
+          </a>
         </li>
       ))}
     </ul>

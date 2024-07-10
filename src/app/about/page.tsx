@@ -18,13 +18,15 @@ const breadcrumbs = [
 
 export default function About() {
   return (
-    <>
-      <MainWrapper>
-        <Breadcrumbs links={breadcrumbs} />
-        <HeadingImage image={AboutImage as any} title={PAGE_ABOUT_TITLE} isPage={true}/>
-        <PageHeading title={PAGE_ABOUT_TITLE} isPage={true} />
-        <AboutWidget />
-      </MainWrapper>
-    </>
+    <MainWrapper>
+      <Breadcrumbs links={breadcrumbs} />
+      <HeadingImage
+        image={AboutImage as any}
+        title={PAGE_ABOUT_TITLE}
+        isPage={true}
+      />
+      <PageHeading title={PAGE_ABOUT_TITLE} isPage={true} />
+      <AboutWidget />
+    </MainWrapper>
   );
 }
