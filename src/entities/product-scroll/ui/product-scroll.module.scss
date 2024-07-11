@@ -1,0 +1,16 @@
+@use '@/shared/styles/mixins' as media;
+
+.productScroll {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  padding-top: 20px;
+
+  @include media.respond-to('middle') {
+    display: flex;
+  }
+
+  &__productCard {
+    width: 200px;
+  }
+}

@@ -1,0 +1,23 @@
+@use '@/shared/styles/mixins' as media;
+
+.scroll {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 20px;
+  overflow: auto hidden;
+  cursor: grab;
+  list-style: none;
+
+  @include media.respond-to('middle') {
+    gap: 15px;
+  }
+
+  &::-webkit-scrollbar {
+    height: 3px;
+    background: var(--grey-primary);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--text-secondary);
+  }
+}

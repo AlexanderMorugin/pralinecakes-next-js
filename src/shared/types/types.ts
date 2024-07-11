@@ -1,8 +1,10 @@
+import { StaticImageData } from 'next/image';
+
 // категория
 export interface CategoryProps {
   name: string;
   route: string;
-  image: string;
+  image: StaticImageData;
   category?: string;
 }
 
@@ -10,9 +12,9 @@ export interface CategoryProps {
 export interface ProductProps {
   id: number;
   route: string;
-  image_small: string;
-  image_normal: string;
-  image_large: string;
+  image_small: StaticImageData;
+  image_normal: StaticImageData;
+  image_large: StaticImageData;
   title: string;
   description: string;
   condition?: string;
