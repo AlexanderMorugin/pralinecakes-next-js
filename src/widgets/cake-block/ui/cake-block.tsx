@@ -1,7 +1,6 @@
 import type { FC } from 'react';
 
 import useShuffleArray from '@/shared/hooks/use-shuffle-array';
-import Routes from '@/shared/constants/routes';
 import { ProductBlock, ProductScroll } from '@/entities';
 import { cakesData } from '@/mock/cakes-data';
 
@@ -14,18 +13,19 @@ const CakeBlock: FC = () => {
     <section className={styles.cakeBlock}>
       <ProductBlock
         dataCakes={fourItemsData}
-        routeCakes={Routes.CAKES}
+        // routeCakes={Routes.CAKES}
         isLink={true}
         isCake={true}
-        isPastry={false}
+        // isPastry={false}
+        className={styles.cakeBlock__visible}
       />
 
       <ProductScroll
         dataCakes={eightItemsData}
-        routeCakes={Routes.CAKES}
+        // routeCakes={Routes.CAKES}
         isLink={true}
         isCake={true}
-        isPastry={false}
+        // isPastry={false}
       />
     </section>
   );

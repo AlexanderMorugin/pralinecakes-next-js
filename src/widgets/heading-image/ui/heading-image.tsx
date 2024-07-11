@@ -9,16 +9,13 @@ interface IHeadingImage {
   isPage?: boolean;
 }
 
-const HeadingImage: FC<IHeadingImage> = ({
-  image,
-  title,
-  isPage = false,
-}) => {
+const HeadingImage: FC<IHeadingImage> = ({ image, title, isPage = false }) => {
   return (
     <section className={styles.headingImage}>
       <Image
         src={image}
         alt={title}
+        priority
         className={
           isPage
             ? `${styles.headingImage__image} ${styles.headingImage__image_isPage}`

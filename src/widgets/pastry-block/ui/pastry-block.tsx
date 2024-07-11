@@ -1,6 +1,6 @@
 import type { FC } from 'react';
 
-import Routes from '@/shared/constants/routes';
+// import Routes from '@/shared/constants/routes';
 import { ProductBlock, ProductScroll } from '@/entities';
 import useShuffleArray from '@/shared/hooks/use-shuffle-array';
 import { pastryData } from '@/mock/pastry-data';
@@ -14,18 +14,19 @@ const PastryBlock: FC = () => {
     <section className={styles.pastryBlock}>
       <ProductBlock
         dataPastry={fourItemsData}
-        routePastry={Routes.PASTRY}
+        // routePastry={Routes.PASTRY}
         isLink={true}
         isPastry={true}
-        isCake={false}
+        // isCake={false}
+        className={styles.pastryBlock__visible}
       />
 
       <ProductScroll
         dataPastry={eightItemsData}
-        routePastry={Routes.PASTRY}
+        // routePastry={Routes.PASTRY}
         isLink={true}
         isPastry={true}
-        isCake={false}
+        // isCake={false}
       />
     </section>
   );

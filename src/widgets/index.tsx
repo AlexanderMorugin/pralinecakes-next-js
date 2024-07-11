@@ -1,4 +1,6 @@
 import AboutWidget from './about-widget';
+import AllCakes from './all-cakes';
+import AllPastry from './all-pastry';
 import Breadcrumbs from './breadcrumbs';
 import CakeBlock from './cake-block';
 import Carta from './carta';
@@ -20,4 +22,6 @@ export {
   DeliveryWidget,
   PastryBlock,
   CakeBlock,
+  AllCakes,
+  AllPastry,
 };

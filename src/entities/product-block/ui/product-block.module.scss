@@ -4,10 +4,11 @@
   display: flex;
   flex-direction: column;
   gap: 5px;
+  // visibility: hidden;
 
-  @include media.respond-to('middle') {
-    display: none;
-  }
+  // @include media.respond-to('middle') {
+  //   display: none;
+  // }
 
   &__container {
     display: grid;
@@ -16,9 +17,9 @@
     gap: 20px;
     width: 100%;
 
-    // @include media.respond-to('middle') {
-    //   grid-template-columns: repeat(2, 1fr);
-    //   gap: 10px;
-    // }
+    @include media.respond-to('middle') {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
   }
 }

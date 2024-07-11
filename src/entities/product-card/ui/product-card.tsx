@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 
 import { HitSign } from '@/entities';
 
@@ -9,7 +9,7 @@ import styles from './product-card.module.scss';
 export interface IProductCard {
   className?: string;
   route: string;
-  image_small: string;
+  image_small: StaticImageData;
   title: string;
   description: string;
   price: number;
@@ -32,6 +32,7 @@ const ProductCard: FC<IProductCard> = ({
       <Image
         src={image_small}
         alt={title}
+        priority
         className={styles.productCard__image}
       />
       <article className={styles.productCard__info}>

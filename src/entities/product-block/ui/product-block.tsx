@@ -10,36 +10,40 @@ import {
 } from '@/shared/constants/pages';
 
 import styles from './product-block.module.scss';
+import Routes from '@/shared/constants/routes';
 
 interface IProductBlock {
   dataPastry?: ProductProps[];
   dataCakes?: ProductProps[];
-  routePastry?: string;
-  routeCakes?: string;
+  // routePastry?: string;
+  // routeCakes?: string;
   isLink?: boolean;
-  isCake: boolean;
-  isPastry: boolean;
+  isCake?: boolean;
+  isPastry?: boolean;
+  className?: string;
 }
 
 const ProductBlock: FC<IProductBlock> = ({
   dataPastry,
   dataCakes,
-  routePastry,
-  routeCakes,
+  // routePastry,
+  // routeCakes,
   isLink,
-  isCake,
-  isPastry,
+  isCake = false,
+  isPastry = false,
+  className
 }) => {
   return (
-    <div className={styles.productBlock}>
+    <div className={`${className} ${styles.productBlock}`}>
       {isCake && (
         <ProductHeading
           title={PAGE_CAKES_TITLE}
           subtitle={PAGE_CAKES_LINK}
-          route={routeCakes || '#'}
+          // route={routeCakes || '#'}
+          route={Routes.CAKES}
           isLink={isLink}
-          isCake={isCake}
-          isPastry={isPastry}
+          // isCake={isCake}
+          // isPastry={isPastry}
         />
       )}
 
@@ -47,9 +51,10 @@ const ProductBlock: FC<IProductBlock> = ({
         <ProductHeading
           title={PAGE_PASTRY_TITLE}
           subtitle={PAGE_PASTRY_LINK}
-          route={routePastry || '#'}
+          // route={routePastry || '#'}
+          route={Routes.PASTRY}
           isLink={isLink}
-          isCake={isCake}
+          // isCake={isCake}
           isPastry={isPastry}
         />
       )}

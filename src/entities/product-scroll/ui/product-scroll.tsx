@@ -17,37 +17,42 @@ import { ProductProps } from '@/shared/types/types';
 import { LinkButton, ProductCard, ProductHeading } from '@/entities';
 import { PAGE_CAKES_LINK, PAGE_CAKES_TITLE, PAGE_PASTRY_LINK, PAGE_PASTRY_TITLE } from '@/shared/constants/pages';
 import { Scroll } from '@/components';
+import Routes from '@/shared/constants/routes';
 
 
 interface IProductScroll {
   dataPastry?: ProductProps[];
   dataCakes?: ProductProps[];
-  routePastry?: string;
-  routeCakes?: string;
-  isLink?: boolean;
-  isCake: boolean;
-  isPastry: boolean;
+  // routePastry?: string;
+  // routeCakes?: string;
+  isLink: boolean;
+  isCake?: boolean;
+  isPastry?: boolean;
 }
 
 const ProductScroll: FC<IProductScroll> = ({
   dataPastry,
   dataCakes,
-  routePastry,
-  routeCakes,
+  // routePastry,
+  // routeCakes,
   isLink,
-  isCake,
-  isPastry,
+  isCake = false,
+  isPastry = false,
 }) => {
+
+  // console.log(dataCakes)
+
   return (
     <div className={styles.productScroll}>
       {isCake && (
         <ProductHeading
           title={PAGE_CAKES_TITLE}
           subtitle={PAGE_CAKES_LINK}
-          route={routeCakes || '#'}
+          // route={routeCakes || '#'}
+          route={Routes.CAKES}
           isLink={isLink}
-          isCake={isCake}
-          isPastry={isPastry}
+          // isCake={isCake}
+          // isPastry={isPastry}
         />
       )}
 
@@ -55,9 +60,10 @@ const ProductScroll: FC<IProductScroll> = ({
         <ProductHeading
           title={PAGE_PASTRY_TITLE}
           subtitle={PAGE_PASTRY_LINK}
-          route={routePastry || '#'}
+          // route={routePastry || '#'}
+          route={Routes.PASTRY}
           isLink={isLink}
-          isCake={isCake}
+          // isCake={isCake}
           isPastry={isPastry}
         />
       )}
@@ -77,7 +83,11 @@ const ProductScroll: FC<IProductScroll> = ({
               />
             </li>
           ))}
-          <LinkButton route={routeCakes || '#'} text={PAGE_CAKES_LINK} />
+          <LinkButton 
+          // route={routeCakes || '#'} 
+          
+          route={Routes.CAKES}
+          text={PAGE_CAKES_LINK} />
         </Scroll>
       )}
 
@@ -96,7 +106,10 @@ const ProductScroll: FC<IProductScroll> = ({
               />
             </li>
           ))}
-          <LinkButton route={routePastry || '#'} text={PAGE_PASTRY_LINK} />
+          <LinkButton 
+          // route={routePastry || '#'} 
+          route={Routes.PASTRY}
+          text={PAGE_PASTRY_LINK} />
         </Scroll>
       )}
     </div>

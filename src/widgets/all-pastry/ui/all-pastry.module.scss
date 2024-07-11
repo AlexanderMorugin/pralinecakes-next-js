@@ -1,24 +1,33 @@
-@use '@/shared/styles/mixins' as media;
+@use '../../../shared/styles/mixins' as media;
 
-.cakeBlock {
+.allCakes {
   width: 100%;
   max-width: var(--width-xl);
   margin: 0 auto;
   padding-left: var(--padding-horizontal-desktop);
   padding-right: var(--padding-horizontal-desktop);
-  padding-top: 30px;
   padding-bottom: var(--padding-vertical-desktop);
 
   @include media.respond-to('middle') {
     padding-left: var(--padding-horizontal-mobile);
     padding-right: var(--padding-horizontal-mobile);
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-bottom: var(--padding-vertical-mobile);
   }
 
-  &__visible {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 20px;
+    width: 100%;
+
+    @include media.respond-to('large') {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
     @include media.respond-to('middle') {
-      display: none;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
     }
   }
 }

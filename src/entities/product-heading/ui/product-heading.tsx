@@ -11,8 +11,8 @@ interface IProductHeading {
   subtitle: string;
   route: string;
   isLink?: boolean;
-  isCake: boolean;
-  isPastry: boolean;
+  // isCake: boolean;
+  isPastry?: boolean;
 }
 
 const ProductHeading: FC<IProductHeading> = ({
@@ -20,15 +20,15 @@ const ProductHeading: FC<IProductHeading> = ({
   subtitle,
   route,
   isLink = false,
-  isCake,
-  isPastry,
+  // isCake,
+  isPastry = false,
 }) => {
   return (
     isLink && (
       <article className={styles.productHeading}>
         <div className={styles.productHeading__titleBox}>
           <h3 className={styles.productHeading__title}>{title}</h3>
-          {isPastry && !isCake && (
+          {isPastry && (
             <Link
               href={Routes.CATEGORIES}
               className={styles.productHeading__category}

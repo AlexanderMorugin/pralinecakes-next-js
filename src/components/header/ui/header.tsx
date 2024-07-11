@@ -3,7 +3,7 @@ import type { FC } from 'react';
 import {
   AddressBlock,
   HeaderConnect,
-  HeaderMobileMenu,
+  // HeaderMobileMenu,
   HeaderNavBar,
   Logo,
 } from '@/entities';
@@ -14,7 +14,7 @@ const Header: FC = () => {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        <HeaderMobileMenu />
+        {/* <HeaderMobileMenu /> */}
         <Logo />
         <div className={styles.nav}>
           <AddressBlock />
