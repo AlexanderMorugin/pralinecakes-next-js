@@ -10,6 +10,7 @@ import DeliveryWidget from './delivery-widget';
 import HeadingImage from './heading-image';
 import PageHeading from './page-heading';
 import PastryBlock from './pastry-block';
+import ProductWidget from './product-widget';
 
 export {
   AboutWidget,
@@ -24,4 +25,5 @@ export {
   CakeBlock,
   AllCakes,
   AllPastry,
+  ProductWidget,
 };
