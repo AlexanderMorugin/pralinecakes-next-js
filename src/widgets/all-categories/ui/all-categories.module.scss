@@ -1,0 +1,39 @@
+@use '@/shared/styles/mixins' as media;
+
+.allCategories {
+  width: 100%;
+  max-width: var(--width-xl);
+  margin: 0 auto;
+  padding-left: var(--padding-horizontal-desktop);
+  padding-right: var(--padding-horizontal-desktop);
+  padding-bottom: var(--padding-vertical-desktop);
+
+  @include media.respond-to('middle') {
+    padding-left: var(--padding-horizontal-mobile);
+    padding-right: var(--padding-horizontal-mobile);
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 100%;
+
+    @include media.respond-to('large') {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include media.respond-to('middle') {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__button {
+    width: 100%;
+    height: 200px;
+
+    @include media.respond-to('middle') {
+      height: 150px;
+    }
+  }
+}

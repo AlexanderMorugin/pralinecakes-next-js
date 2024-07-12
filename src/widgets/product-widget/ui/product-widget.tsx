@@ -2,7 +2,16 @@ import type { FC } from 'react';
 import Image from 'next/image';
 
 import { ProductProps } from '@/shared/types/types';
-import { CategoryBlock, PageHeading, ProductDefrost, ProductDescribe, ProductExpiration, ProductNutritions, ProductPrice, ProductPrices } from '@/entities';
+import {
+  CategoryBlock,
+  PageHeading,
+  ProductDefrost,
+  ProductDescribe,
+  ProductExpiration,
+  ProductNutritions,
+  ProductPrice,
+  ProductPrices,
+} from '@/entities';
 import { ArticleWrapper } from '@/components';
 import { CAKE_PACK, PASTRY_PACK } from '@/shared/constants/pages';
 

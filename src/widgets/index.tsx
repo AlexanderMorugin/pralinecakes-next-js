@@ -1,9 +1,11 @@
 import AboutWidget from './about-widget';
 import AllCakes from './all-cakes';
+import AllCategories from './all-categories';
 import AllPastry from './all-pastry';
 import Breadcrumbs from './breadcrumbs';
 import CakeBlock from './cake-block';
 import Carta from './carta';
+import Category from './category';
 import ContactsWidget from './contacts-widget';
 import CooperationWidget from './cooperation-widget';
 import DeliveryWidget from './delivery-widget';
@@ -24,4 +26,6 @@ export {
   AllCakes,
   AllPastry,
   ProductWidget,
+  AllCategories,
+  Category,
 };
