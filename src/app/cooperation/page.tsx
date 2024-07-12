@@ -7,13 +7,13 @@ import {
   CooperationWidget,
   HeadingImage,
 } from '@/widgets';
-import { PAGE_COOPERATION_TITLE, PAGE_MAIN } from '@/shared/constants/pages';
+import { META_COOPERATION_DESCRIPTION, META_COOPERATION_TITLE, PAGE_COOPERATION_TITLE, PAGE_MAIN } from '@/shared/constants/pages';
 import Routes from '@/shared/constants/routes';
 import { PageHeading } from '@/entities';
 
 export const metadata: Metadata = {
-  title: 'Contacts',
-  description: 'Contacts Contacts Contacts',
+  title: META_COOPERATION_TITLE,
+  description: META_COOPERATION_DESCRIPTION,
 };
 
 const breadcrumbs = [

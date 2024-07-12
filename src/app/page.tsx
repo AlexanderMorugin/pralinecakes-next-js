@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import MainImage from '@/assets/images/main/img-main.jpg';
 import { MainWrapper } from '@/components';
 import { PageHeading } from '@/entities';
-import { PAGE_MAIN_TITLE } from '@/shared/constants/pages';
+import { META_MAIN_DESCRIPTION, META_MAIN_TITLE, PAGE_MAIN_TITLE } from '@/shared/constants/pages';
 import {
   AboutUsBlock,
   CakeBlock,
@@ -14,8 +14,8 @@ import {
 } from '@/widgets';
 
 export const metadata: Metadata = {
-  title: 'Кондитерская Пралине Москва',
-  description: 'Кондитерская Пралине Москва',
+  title: META_MAIN_TITLE,
+  description: META_MAIN_DESCRIPTION,
 };
 
 function Home() {

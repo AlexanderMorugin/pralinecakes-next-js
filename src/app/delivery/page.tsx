@@ -7,13 +7,13 @@ import {
   DeliveryWidget,
   HeadingImage,
 } from '@/widgets';
-import { PAGE_DELIVERY_TITLE, PAGE_MAIN } from '@/shared/constants/pages';
+import { META_DELIVERY_DESCRIPTION, META_DELIVERY_TITLE, PAGE_DELIVERY_TITLE, PAGE_MAIN } from '@/shared/constants/pages';
 import Routes from '@/shared/constants/routes';
 import { PageHeading } from '@/entities';
 
 export const metadata: Metadata = {
-  title: 'Delivery',
-  description: 'Delivery Delivery Delivery',
+  title: META_DELIVERY_TITLE,
+  description: META_DELIVERY_DESCRIPTION,
 };
 
 const breadcrumbs = [

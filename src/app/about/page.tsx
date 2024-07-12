@@ -3,13 +3,18 @@ import type { Metadata } from 'next';
 import AboutImage from '@/assets/images/about/img-about.jpg';
 import { AboutWidget, Breadcrumbs, HeadingImage } from '@/widgets';
 import { MainWrapper } from '@/components';
-import { PAGE_ABOUT_TITLE, PAGE_MAIN } from '@/shared/constants/pages';
+import {
+  META_ABOUT_DESCRIPTION,
+  META_ABOUT_TITLE,
+  PAGE_ABOUT_TITLE,
+  PAGE_MAIN,
+} from '@/shared/constants/pages';
 import Routes from '@/shared/constants/routes';
 import { PageHeading } from '@/entities';
 
 export const metadata: Metadata = {
-  title: 'About',
-  description: 'About About About',
+  title: META_ABOUT_TITLE,
+  description: META_ABOUT_DESCRIPTION,
 };
 
 const breadcrumbs = [

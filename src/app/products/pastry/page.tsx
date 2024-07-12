@@ -3,7 +3,8 @@ import type { Metadata } from 'next';
 import { MainWrapper, PageWrapper } from '@/components';
 import { AllPastry, Breadcrumbs } from '@/widgets';
 import {
-  PAGE_CAKES_TITLE,
+  META_PASTRY_DESCRIPTION,
+  META_PASTRY_TITLE,
   PAGE_MAIN,
   PAGE_PASTRY_TITLE,
   PAGE_PRODUCTS_TITLE,
@@ -12,8 +13,8 @@ import Routes from '@/shared/constants/routes';
 import { PageHeading } from '@/entities';
 
 export const metadata: Metadata = {
-  title: 'Delivery',
-  description: 'Delivery Delivery Delivery',
+  title: META_PASTRY_TITLE,
+  description: META_PASTRY_DESCRIPTION,
 };
 
 const breadcrumbs = [

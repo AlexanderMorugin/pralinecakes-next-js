@@ -1,10 +1,11 @@
-import type { FC } from 'react';
 import type { Metadata } from 'next';
 
 import { MainWrapper, PageWrapper } from '@/components';
 import { AllCategories, Breadcrumbs } from '@/widgets';
 import { PageHeading } from '@/entities';
 import {
+  META_CATEGORIES_DESCRIPTION,
+  META_CATEGORIES_TITLE,
   PAGE_CATEGORIES_TITLE,
   PAGE_MAIN,
   PAGE_PRODUCTS_TITLE,
@@ -12,8 +13,8 @@ import {
 import Routes from '@/shared/constants/routes';
 
 export const metadata: Metadata = {
-  title: 'Contacts',
-  description: 'Contacts Contacts Contacts',
+  title: META_CATEGORIES_TITLE,
+  description: META_CATEGORIES_DESCRIPTION,
 };
 
 const breadcrumbs = [
