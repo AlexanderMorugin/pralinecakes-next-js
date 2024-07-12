@@ -1,0 +1,39 @@
+@use '../../../shared/styles/mixins' as media;
+
+.categoryBlock {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: linear-gradient(
+    var(--bg-primary),
+    var(--brown-primary),
+    var(--bg-primary)
+  );
+  border-radius: 15px;
+  border: 1px solid var(--grey-primary);
+  margin-top: 25px;
+  padding: 5px 20px 0 20px;
+
+  @include media.respond-to('middle') {
+    border-radius: 0;
+    border: none;
+    margin-top: 20px;
+    padding: 5px 10px 0 10px;
+  }
+
+  &__titleBox {
+    position: relative;
+    width: fit-content;
+  }
+
+  &__title {
+    font: var(--font-s-medium);
+    color: var(--text-thirdary);
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+
+  &__linkButton {
+    max-width: 200px;
+  }
+}

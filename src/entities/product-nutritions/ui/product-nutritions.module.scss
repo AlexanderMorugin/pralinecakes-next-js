@@ -1,0 +1,30 @@
+.productNutritions {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border-primary);
+
+  &__title {
+    font: var(--font-xs-medium);
+    color: var(--brown-thirdary);
+    letter-spacing: 0.8px;
+  }
+
+  &__nutritions {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  &__nutrition {
+    display: flex;
+    flex-direction: column;
+    font: var(--font-xs-regular);
+    color: var(--text-thirdary);
+  }
+
+  &__span {
+    font: var(--font-xxs-regular);
+    color: var(--text-secondary);
+  }
+}

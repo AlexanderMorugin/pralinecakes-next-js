@@ -1,0 +1,33 @@
+.productPrices {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  &__title {
+    font: var(--font-xs-medium);
+    color: var(--brown-thirdary);
+    letter-spacing: 0.8px;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    font: var(--font-xxs-regular);
+    color: var(--text-secondary);
+  }
+
+  &__text {
+    font: var(--font-xs-medium);
+    color: var(--text-thirdary);
+  }
+
+  &__price {
+    font: var(--font-xs-bold);
+    color: var(--accent-primary);
+  }
+}

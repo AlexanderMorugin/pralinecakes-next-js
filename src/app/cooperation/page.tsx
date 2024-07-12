@@ -6,10 +6,10 @@ import {
   Breadcrumbs,
   CooperationWidget,
   HeadingImage,
-  PageHeading,
 } from '@/widgets';
 import { PAGE_COOPERATION_TITLE, PAGE_MAIN } from '@/shared/constants/pages';
 import Routes from '@/shared/constants/routes';
+import { PageHeading } from '@/entities';
 
 export const metadata: Metadata = {
   title: 'Contacts',

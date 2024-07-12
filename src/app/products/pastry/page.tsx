@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 import { MainWrapper, PageWrapper } from '@/components';
-import { AllPastry, Breadcrumbs, PageHeading } from '@/widgets';
+import { AllPastry, Breadcrumbs } from '@/widgets';
 import {
   PAGE_CAKES_TITLE,
   PAGE_MAIN,
@@ -9,6 +9,7 @@ import {
   PAGE_PRODUCTS_TITLE,
 } from '@/shared/constants/pages';
 import Routes from '@/shared/constants/routes';
+import { PageHeading } from '@/entities';
 
 export const metadata: Metadata = {
   title: 'Delivery',

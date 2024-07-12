@@ -1,0 +1,20 @@
+.productPrice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__weight {
+    font: var(--font-xs-medium);
+    color: var(--text-thirdary);
+  }
+
+  &__span {
+    font: var(--font-xxs-medium);
+    color: var(--text-secondary);
+  }
+
+  &__price {
+    font: var(--font-xs-bold);
+    color: var(--accent-primary);
+  }
+}

@@ -1,0 +1,42 @@
+.name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  background: rgba(77, 34, 14, 0.4);
+  font: var(--font-s-bold);
+  color: var(--light-primary);
+  padding: 10px 20px;
+  z-index: var(--z-index-two);
+  transition: 0.5s;
+}
+
+.categoryButton {
+  position: relative;
+  display: flex;
+  width: 260px;
+  height: 160px;
+  border-radius: 15px;
+  border: 1px solid var(--border-primary);
+  overflow: hidden;
+  transition: 0.3s;
+  user-select: none;
+
+  &:hover {
+    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    -moz-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+
+  &:hover .name {
+    background: rgba(77, 34, 14, 0.6);
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
