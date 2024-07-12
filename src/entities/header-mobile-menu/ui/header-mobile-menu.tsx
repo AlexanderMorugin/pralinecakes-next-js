@@ -8,7 +8,8 @@ import { navBarData } from '@/mock/nav-bar-data';
 
 import styles from './header-mobile-menu.module.scss';
 import { ADDRESS, COMPANY_NAME, PHONE_NUMBER } from '@/shared/constants/info';
-import { HeaderMenuButton } from '@/entities';
+import HeaderMenuButton from '@/entities/header-menu-button';
+// import { HeaderMenuButton } from '@/entities';
 
 const HeaderMobileMenu: FC = () => {
   const [menuActive, setMenuActive] = useState(false);

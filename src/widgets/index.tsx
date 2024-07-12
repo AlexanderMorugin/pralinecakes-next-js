@@ -1,3 +1,4 @@
+import AboutUsBlock from './about-us-block';
 import AboutWidget from './about-widget';
 import AllCakes from './all-cakes';
 import AllCategories from './all-categories';
@@ -7,7 +8,9 @@ import CakeBlock from './cake-block';
 import Carta from './carta';
 import Category from './category';
 import ContactsWidget from './contacts-widget';
+import CooperationBlock from './cooperation-block';
 import CooperationWidget from './cooperation-widget';
+import DeliveryBlock from './delivery-block';
 import DeliveryWidget from './delivery-widget';
 import HeadingImage from './heading-image';
 import PastryBlock from './pastry-block';
@@ -28,4 +31,7 @@ export {
   ProductWidget,
   AllCategories,
   Category,
+  AboutUsBlock,
+  CooperationBlock,
+  DeliveryBlock,
 };

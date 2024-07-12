@@ -1,0 +1,55 @@
+@use '@/shared/styles/mixins' as media;
+
+.cooperationBlock {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    var(--green-primary) 80%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  width: 100%;
+  margin-top: 20px;
+  z-index: var(--z-index-two);
+
+  @include media.respond-to('middle') {
+    margin-top: 20px;
+  }
+
+  &__text {
+    position: relative;
+    max-width: var(--width-xl);
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px;
+
+    @include media.respond-to('middle') {
+      font: var(--font-xs-regular);
+    }
+  }
+
+  &__marksFirst {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    font-size: 70px;
+    color: rgba(252, 82, 48, 0.6);
+  }
+
+  &__marksLast {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    font-size: 70px;
+    color: rgba(252, 82, 48, 0.6);
+  }
+
+  &__link {
+    color: var(--link-primary);
+    border-bottom: 1px dashed var(--link-primary);
+    transition: 0.25s;
+
+    &:hover {
+      color: var(--link-secondary);
+    }
+  }
+}
