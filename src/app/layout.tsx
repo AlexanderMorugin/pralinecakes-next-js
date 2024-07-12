@@ -1,8 +1,18 @@
+import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import './globals.scss';
+
 import { Footer, Header } from '@/components';
 
+import './globals.scss';
+import YandexMetrika from '@/components/yandex-metrika/yandex-metrika';
+
 const inter = Inter({ subsets: ['latin'] });
+
+export const metadata: Metadata = {
+  other: {
+    ['yandex-verification']: '870da4657dc940ee',
+  },
+};
 
 export default function RootLayout({
   children,
@@ -15,6 +25,7 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
+        <YandexMetrika enabled={true} />
       </body>
     </html>
   );
