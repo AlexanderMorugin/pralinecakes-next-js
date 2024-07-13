@@ -185,6 +185,9 @@ export const pastryData = [
     image_small: KiwiBasketS,
     image_normal: KiwiBasketM,
     image_large: KiwiBasketL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-kiwi-basket-m.96311492.jpeg',
+    url: 'https://pralinecakes.ru/products/pastry/korzinka_s_kiwi/',
     title: 'Корзиночка с киви',
     description:
       'Песочная корзиночка, покрытая черным шоколадом с заварным кремом и начинкой из киви, персика, клубники',
@@ -211,6 +214,9 @@ export const pastryData = [
     image_small: StrawberryBasketS,
     image_normal: StrawberryBasketM,
     image_large: StrawberryBasketL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-strawberry-basket-m.92570787.jpeg',
+    url: 'https://pralinecakes.ru/products/pastry/korzinka_s_klubnikoy/',
     title: 'Корзиночка с клубникой',
     description:
       'Песочная корзиночка, покрытая черным шоколадом в сочетании с заварным кремом и начинкой из клубники',
@@ -237,6 +243,9 @@ export const pastryData = [
     image_small: CherryBasketS,
     image_normal: CherryBasketM,
     image_large: CherryBasketL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-cherry-basket-m.41a9f644.jpeg',
+    url: 'https://pralinecakes.ru/products/pastry/korzinka_s_vishney/',
     title: 'Корзиночка с вишней',
     description:
       'Песочная корзиночка, покрытая черным шоколадом в сочетании с заварным кремом и начинкой из вишни',
@@ -263,6 +272,9 @@ export const pastryData = [
     image_small: RaspberryBasketS,
     image_normal: RaspberryBasketM,
     image_large: RaspberryBasketL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-raspberry-basket-m.99fabc24.jpeg',
+    url: 'https://pralinecakes.ru/products/pastry/korzinka_s_malinoy/',
     title: 'Корзиночка с малиной',
     description:
       'Песочная корзиночка, покрытая черным шоколадом в сочетании с заварным кремом и начинкой из малины',
@@ -289,6 +301,9 @@ export const pastryData = [
     image_small: WildBerriesBasketS,
     image_normal: WildBerriesBasketM,
     image_large: WildBerriesBasketL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-wild-berry-basket-m.eafaaba7.jpeg',
+    url: 'https://pralinecakes.ru/products/pastry/tartaletka_s_yagodami/',
     title: 'Тарталетка с лесными ягодами',
     description: 'Песочное тесто с заварным кремом и свежими ягодами',
     // condition: null,
@@ -314,6 +329,9 @@ export const pastryData = [
     image_small: StrudelYablochniyS,
     image_normal: StrudelYablochniyM,
     image_large: StrudelYablochniyL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-apple-strudel-m.1e916898.jpeg',
+    url: 'https://pralinecakes.ru/products/pastry/strudel-yablochniy/',
     title: 'Штрудель яблочный',
     description:
       'Штрудель из тонкого теста с начинкой из яблок, изюма и грецких орехов',
@@ -340,6 +358,9 @@ export const pastryData = [
     image_small: StrudelMakoviyS,
     image_normal: StrudelMakoviyM,
     image_large: StrudelMakoviyL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-makoviy-strudel-m.95b2a039.jpeg',
+    url: 'https://pralinecakes.ru/products/pastry/strudel-makoviy/',
     title: 'Штрудель маковый',
     description:
       'Штрудель из тонкого теста с начинкой из мака и грецкого ореха',
@@ -366,6 +387,9 @@ export const pastryData = [
     image_small: StrudelVishneviyS,
     image_normal: StrudelVishneviyM,
     image_large: StrudelVishneviyL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-cherry-strudel-m.707a20d8.jpeg',
+    url: 'https://pralinecakes.ru/products/pastry/strudel-vishneviy/',
     title: 'Штрудель вишневый',
     description:
       'Аппетитное сочетание вишни и грецких орехов в рулете из тончайшего теста',
@@ -392,6 +416,9 @@ export const pastryData = [
     image_small: EklerS,
     image_normal: EklerM,
     image_large: EklerL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-eclery-m.3f1bdeba.jpeg',
+    url: 'https://pralinecakes.ru/products/pastry/ekler/',
     title: 'Эклер',
     description: 'Шоколадный, фисташковый или ванильный',
     // condition: null,
@@ -402,11 +429,8 @@ export const pastryData = [
     carbohydrates: 52.5,
     calories: 380,
     quantity: 10,
-    // quantity_b: null,
     weight: 50,
-    // weight_b: null,
     price: 70,
-    // price_b: null,
     rating: 10,
     type: [TYPE_CHOCOLATE, TYPE_NUT, TYPE_CREAM],
     category: [chocolate, nut, cream],
@@ -417,6 +441,9 @@ export const pastryData = [
     image_small: CakePopS,
     image_normal: CakePopM,
     image_large: CakePopL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-cake-pops-m.229a35a7.jpeg',
+    url: 'https://pralinecakes.ru/products/pastry/cake-pops/',
     title: 'Кейк попс',
     description:
       'Небольшие пирожные представляющие собой лакомства на палочке. Состоят из шоколадного бисквита, темного шоколада, молочных сливок и абрикосового джема. Украшаются тонким слоем глазури замешанным вместе с маслом какао.',
@@ -429,11 +456,8 @@ export const pastryData = [
     carbohydrates: 46.7,
     calories: 369,
     quantity: 30,
-    // quantity_b: null,
     weight: 35,
-    // weight_b: null,
     price: 86,
-    // price_b: null,
     rating: 10,
     type: [TYPE_CHOCOLATE, TYPE_BISQUIT],
     category: [chocolate, bisquit],
@@ -444,6 +468,9 @@ export const pastryData = [
     image_small: CheesecakeBlueberryS,
     image_normal: CheesecakeBlueberryM,
     image_large: CheesecakeBlueberryL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-cheesecake-blue-m.7294de1b.jpeg',
+    url: 'https://pralinecakes.ru/products/pastry/cheesecake-blueberry/',
     title: 'Чизкейк с голубикой',
     description: 'Легкое сырное суфле со свежей голубикой на тонком бисквите',
     // condition: null,
@@ -454,11 +481,8 @@ export const pastryData = [
     carbohydrates: 29.5,
     calories: 175,
     quantity: 16,
-    // quantity_b: null,
     weight: 120,
-    // weight_b: null,
     price: 105,
-    // price_b: null,
     rating: 10,
     type: [TYPE_BERRY, TYPE_YOGURT, TYPE_SUFLE, TYPE_CHEESE],
     category: [berry, yogurt, sufle, cheese],
@@ -469,6 +493,9 @@ export const pastryData = [
     image_small: FantasiaS,
     image_normal: FantasiaM,
     image_large: FantasiaL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-fantasia-m.b0512059.jpeg',
+    url: 'https://pralinecakes.ru/products/pastry/fantasia/',
     title: 'Фантазия',
     description: 'Легкий мусс со вкусом малины, манго и маракуйи',
     // condition: null,
@@ -479,11 +506,8 @@ export const pastryData = [
     carbohydrates: 49.5,
     calories: 433,
     quantity: 16,
-    // quantity_b: null,
     weight: 100,
-    // weight_b: null,
     price: 100,
-    // price_b: null,
     rating: 5,
     type: [TYPE_BERRY, TYPE_FRUIT, TYPE_SUFLE],
     category: [berry, fruit, sufle],
@@ -494,6 +518,9 @@ export const pastryData = [
     image_small: PtichieMolokoS,
     image_normal: PtichieMolokoM,
     image_large: PtichieMolokoL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-ptichie-moloko-m.2c4de900.jpeg',
+    url: 'https://pralinecakes.ru/products/pastry/ptichie-moloko/',
     title: 'Птичье молоко',
     description:
       'Воздушное белоснежное суфле, приготовленное из сгущенного молока, сахара, сливочного масла, агар-агара (растительного желатина) и лимонной кислоты. Располагается десерт на нежном бисквите и сверху глазирован темным бельгийским горьким шоколадом.',
@@ -506,11 +533,8 @@ export const pastryData = [
     carbohydrates: 56.6,
     calories: 473,
     quantity: 16,
-    // quantity_b: null,
     weight: 70,
-    // weight_b: null,
     price: 83,
-    // price_b: null,
     rating: 6,
     type: [TYPE_CHOCOLATE, TYPE_SUFLE],
     category: [chocolate, sufle],
@@ -521,6 +545,9 @@ export const pastryData = [
     image_small: MilfeyDjanduaS,
     image_normal: MilfeyDjanduaM,
     image_large: MilfeyDjanduaL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-djanduya-m.6760435e.jpeg',
+    url: 'https://pralinecakes.ru/products/pastry/milfey-djandua/',
     title: 'Милфей джандуйя',
     description: 'Медовые коржи с ореховым кремом джандуйя',
     // condition: null,
@@ -531,11 +558,8 @@ export const pastryData = [
     carbohydrates: 36.6,
     calories: 404,
     quantity: 15,
-    // quantity_b: null,
     weight: 70,
-    // weight_b: null,
     price: 88,
-    // price_b: null,
     rating: 4,
     type: [TYPE_HONEY, TYPE_NUT, TYPE_CREAM],
     category: [honey, nut, cream],
@@ -546,6 +570,9 @@ export const pastryData = [
     image_small: MindalnoeS,
     image_normal: MindalnoeM,
     image_large: MindalnoeL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-mindalnoe-m.5d43a258.jpeg',
+    url: 'https://pralinecakes.ru/products/pastry/mindalnoe/',
     title: 'Миндальное',
     description:
       'Необычное сочетание миндаля с черносливом и грецким орехом совместно с нежным сливочным кремом придает незабываемый вкус',
@@ -557,11 +584,8 @@ export const pastryData = [
     carbohydrates: 36.4,
     calories: 408,
     quantity: 25,
-    // quantity_b: null,
     weight: 45,
-    // weight_b: null,
     price: 57,
-    // price_b: null,
     rating: 10,
     type: [TYPE_NUT, TYPE_CREAM],
     category: [nut, cream],
@@ -572,6 +596,9 @@ export const pastryData = [
     image_small: KartoshkaS,
     image_normal: KartoshkaM,
     image_large: KartoshkaL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-kartoshka-m.30790b41.jpeg',
+    url: 'https://pralinecakes.ru/products/pastry/kartoshka/',
     title: 'Картошка',
     description:
       'Известное пирожное приготовленное на бисквитной основе с коньяком, грецкими орехами, сливочным маслом и какао',
@@ -598,6 +625,9 @@ export const pastryData = [
     image_small: KaramelnoeS,
     image_normal: KaramelnoeM,
     image_large: KaramelnoeL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-caramel-m.9c1db839.jpeg',
+    url: 'https://pralinecakes.ru/products/pastry/karamelnoe/',
     title: 'Карамельное',
     description:
       'Шоколадный бисквит и карамельный мусс придадут нотку настроения в чаепитие',
@@ -609,11 +639,8 @@ export const pastryData = [
     carbohydrates: 52,
     calories: 331,
     quantity: 15,
-    // quantity_b: null,
     weight: 110,
-    // weight_b: null,
     price: 96,
-    // price_b: null,
     rating: 5,
     type: [TYPE_SUFLE],
     category: [sufle],
@@ -624,6 +651,9 @@ export const pastryData = [
     image_small: BavarskoeS,
     image_normal: BavarskoeM,
     image_large: BavarskoeL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-bavarskoe-m.6f3efd4f.jpeg',
+    url: 'https://pralinecakes.ru/products/pastry/bavarskoe/',
     title: 'Баварское',
     description:
       'Воздушный мусс из сливок и ванили, со свежей малиной во фруктовом желе',
@@ -650,6 +680,9 @@ export const pastryData = [
     image_small: MaraquyaS,
     image_normal: MaraquyaM,
     image_large: MaraquyaL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-maraquya-m.9f58fdda.jpeg',
+    url: 'https://pralinecakes.ru/products/pastry/maraquya/',
     title: 'Маракуйя',
     description:
       'Сливочно-фисташковый бисквит с легким муссом из свежей маракуйи и манго, покрытый желе из маракуйи',
@@ -676,6 +709,9 @@ export const pastryData = [
     image_small: TriShokoladaS,
     image_normal: TriShokoladaM,
     image_large: TriShokoladaL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-tri-shokolada-m.c2f4a479.jpeg',
+    url: 'https://pralinecakes.ru/products/pastry/tri-shokolada/',
     title: 'Три шоколада',
     description:
       'Элегантное трио белого, молочного и черного шоколада в сочетании нежнейшего шоколадного бисквита',
@@ -702,6 +738,9 @@ export const pastryData = [
     image_small: YogurtovoeS,
     image_normal: YogurtovoeM,
     image_large: YogurtovoeL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-yogurtovoe-m.2570e952.jpeg',
+    url: 'https://pralinecakes.ru/products/pastry/yogurtovoe/',
     title: 'Йогуртовое',
     description:
       'Легкий йогуртовый мусс со сливками, кусочками свежих персиков и ежевики, с сыром Маскарпоне на воздушном бисквите',
@@ -728,6 +767,9 @@ export const pastryData = [
     image_small: MuraveinikS,
     image_normal: MuraveinikM,
     image_large: MuraveinikL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-muraveinik-m.39a37407.jpeg',
+    url: 'https://pralinecakes.ru/products/pastry/muraveinik/',
     title: 'Муравейник',
     description: 'Песочное тесто с кремом из вареного сгущенного молока',
     // condition: null,
@@ -738,11 +780,8 @@ export const pastryData = [
     carbohydrates: 44.3,
     calories: 432,
     quantity: 16,
-    // quantity_b: null,
     weight: 100,
-    // weight_b: null,
     price: 64,
-    // price_b: null,
     rating: 6,
     type: [TYPE_SAND, TYPE_CREAM],
     category: [sand, cream],
@@ -753,6 +792,9 @@ export const pastryData = [
     image_small: CheesecakeS,
     image_normal: CheesecakeM,
     image_large: CheesecakeL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-cheesecake-m.c50a2ad5.jpeg',
+    url: 'https://pralinecakes.ru/products/pastry/cheesecake/',
     title: 'Чизкейк',
     description:
       'Испеченный из нежного творожного сыра, на тонком слое бисквита',
@@ -779,6 +821,9 @@ export const pastryData = [
     image_small: CheesecakeChokoS,
     image_normal: CheesecakeChokoM,
     image_large: CheesecakeChokoL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-cheesecake-choko-m.bef9e5d9.jpeg',
+    url: 'https://pralinecakes.ru/products/pastry/cheesecake-chokolate/',
     title: 'Чизкейк шоколадный',
     description:
       'Сырный торт испеченный из двух слоев, классического и шоколадного, на воздушном шоколадном бисквите',
@@ -790,11 +835,8 @@ export const pastryData = [
     carbohydrates: 44.5,
     calories: 390,
     quantity: 20,
-    // quantity_b: null,
     weight: 125,
-    // weight_b: null,
     price: 104,
-    // price_b: null,
     rating: 7,
     type: [TYPE_CHEESE, TYPE_CHOCOLATE],
     category: [cheese, chocolate],
@@ -805,6 +847,9 @@ export const pastryData = [
     image_small: CheesecakeLimeS,
     image_normal: CheesecakeLimeM,
     image_large: CheesecakeLimeL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-cheesecake-lime-m.cfac5f97.jpeg',
+    url: 'https://pralinecakes.ru/products/pastry/cheesecake-lime/',
     title: 'Чизкейк лайм',
     description:
       'Пирожное из холодного мусса на ложе из песочного теста. Основа приготовлена из "Маскарпоне", творожного сыра, густых сливок, лайма, сахарной пудры и желатина. Корж отпекается с мёдом и сливочным маслом. Сверху десерт украшен кондитерским гелем с добавлением цитрусового сока.',
@@ -817,11 +862,8 @@ export const pastryData = [
     carbohydrates: 30.2,
     calories: 305,
     quantity: 20,
-    // quantity_b: null,
     weight: 120,
-    // weight_b: null,
     price: 99,
-    // price_b: null,
     rating: 6,
     type: [TYPE_CHEESE, TYPE_FRUIT],
     category: [cheese, fruit],
@@ -832,6 +874,9 @@ export const pastryData = [
     image_small: CheesecakeStrawberryS,
     image_normal: CheesecakeStrawberryM,
     image_large: CheesecakeStrawberryL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-cheesecake-klubnika-m.d97ed657.jpeg',
+    url: 'https://pralinecakes.ru/products/pastry/cheesecake-strawberry/',
     title: 'Чизкейк клубничный',
     description:
       'Чизкейк холодного способа приготовления состоит из сливочного сыра, клубники, сливок, йогурта. Украшен сливочным кремом',
@@ -843,11 +888,8 @@ export const pastryData = [
     carbohydrates: 24.7,
     calories: 217,
     quantity: 16,
-    // quantity_b: null,
     weight: 100,
-    // weight_b: null,
     price: 90,
-    // price_b: null,
     rating: 6,
     type: [TYPE_CHEESE, TYPE_YOGURT, TYPE_BERRY],
     category: [cheese, yogurt, berry],
@@ -858,6 +900,9 @@ export const pastryData = [
     image_small: ShokoladnoeSufleS,
     image_normal: ShokoladnoeSufleM,
     image_large: ShokoladnoeSufleL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-cheesecake-yogurt-choko-m.263065a3.jpeg',
+    url: 'https://pralinecakes.ru/products/pastry/shokoladnoe-sufle/',
     title: 'Шоколадное суфле',
     description:
       'Чизкейк холодного способа приготовления состоит из сливочного сыра, шоколада, сливок, йогурта. Сверху украшен макарони',
@@ -869,11 +914,8 @@ export const pastryData = [
     carbohydrates: 31.4,
     calories: 321,
     quantity: 16,
-    // quantity_b: null,
     weight: 100,
-    // weight_b: null,
     price: 94,
-    // price_b: null,
     rating: 6,
     type: [TYPE_CHEESE, TYPE_YOGURT, TYPE_CHOCOLATE],
     category: [cheese, yogurt, chocolate],
@@ -884,6 +926,9 @@ export const pastryData = [
     image_small: MorkovnoeS,
     image_normal: MorkovnoeM,
     image_large: MorkovnoeL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-morkovnoe-m.413a754b.jpeg',
+    url: 'https://pralinecakes.ru/products/pastry/morkovnoe/',
     title: 'Морковное',
     description:
       'Лёгкое, ароматное, удивляющее богатством разных текстур пирожное приготовлено из двух бисквитных коржей, отпеченных из пшеничной муки, моркови, куриных яиц, масла, сахара, соды, грецких орехов, изюма и корицы. Слои сдабриваются морковной начинкой и соединяются белоснежным сливочным кремом из творожного сыра и сахарной пудры. Сверху десерт украшен оранжевым кондитерским гелем.',
@@ -911,6 +956,9 @@ export const pastryData = [
     image_small: ApplePieS,
     image_normal: ApplePieM,
     image_large: ApplePieL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-yablochnoe-m.b2c5c233.jpeg',
+    url: 'https://pralinecakes.ru/products/pastry/apple-pie/',
     title: 'Яблочный пирог',
     description:
       'Нежный бисквит на основе фундука, с начинкой из запеченных яблок, украшенный орехами',
@@ -922,11 +970,8 @@ export const pastryData = [
     carbohydrates: 54.4,
     calories: 382,
     quantity: 15,
-    // quantity_b: null,
     weight: 130,
-    // weight_b: null,
     price: 110,
-    // price_b: null,
     rating: 8,
     type: [TYPE_BISQUIT, TYPE_NUT, TYPE_FRUIT],
     category: [bisquit, nut, fruit],
@@ -937,6 +982,9 @@ export const pastryData = [
     image_small: LemonS,
     image_normal: LemonM,
     image_large: LemonL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-limonnoe-m.c48c7856.jpeg',
+    url: 'https://pralinecakes.ru/products/pastry/lemon/',
     title: 'Лимонное',
     description:
       'Бисквитный торт, с кремом из маскарпоне и творожного сыра , в сочетании с ярким вкусом лимонного сока',
@@ -948,11 +996,8 @@ export const pastryData = [
     carbohydrates: 31.3,
     calories: 329,
     quantity: 20,
-    // quantity_b: null,
     weight: 110,
-    // weight_b: null,
     price: 98,
-    // price_b: null,
     rating: 6,
     type: [TYPE_BISQUIT, TYPE_CHEESE, TYPE_FRUIT, TYPE_CREAM],
     category: [bisquit, cheese, fruit, cream],
@@ -963,6 +1008,9 @@ export const pastryData = [
     image_small: NutPieS,
     image_normal: NutPieM,
     image_large: NutPieL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-orehovoe-m.ff84f561.jpeg',
+    url: 'https://pralinecakes.ru/products/pastry/nut-pie/',
     title: 'Ореховый пирог',
     description:
       'Нежное песочное тесто с грецкими орехами, черным шоколадом, кленовым сиропом и коньяком',
@@ -989,6 +1037,9 @@ export const pastryData = [
     image_small: PragaS,
     image_normal: PragaM,
     image_large: PragaL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-praga-m.ca22d406.jpeg',
+    url: 'https://pralinecakes.ru/products/pastry/praga/',
     title: 'Прага',
     description:
       'Широко известное пирожное со времён СССР. Приготовлено из шоколадных бисквитных коржей в меру пропитанных сахарным сиропом и кремом, состоящего из сгущенного молока без растительных жиров и какао. Сверху десерт покрыт прослойкой из абрикосового джема и темного шоколада.',
@@ -1016,6 +1067,9 @@ export const pastryData = [
     image_small: TrufelnoeS,
     image_normal: TrufelnoeM,
     image_large: TrufelnoeL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-trufelnoe-m.e005af23.jpeg',
+    url: 'https://pralinecakes.ru/products/pastry/trufelnoe/',
     title: 'Трюфельное',
     description:
       'Сливочный мусс на основе темного шоколада, дополненный шоколадным бисквитом',
@@ -1042,6 +1096,9 @@ export const pastryData = [
     image_small: KrasniyBarhatS,
     image_normal: KrasniyBarhatM,
     image_large: KrasniyBarhatL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-barhat-m.47903985.jpeg',
+    url: 'https://pralinecakes.ru/products/pastry/krasniy-barhat/',
     title: 'Красный бархат',
     description:
       'Пирожное из трёх слоев нежного мягкого бисквита из пшеничной муки, сахара, какао, кефира и соды, пропитанных малиной. Коржи соединены белоснежным сливочным кремом на основе творожного сыра. Сверху десерт покрыт зеркальным кондитерским гелем красного цвета.',
@@ -1069,6 +1126,9 @@ export const pastryData = [
     image_small: MakovoeS,
     image_normal: MakovoeM,
     image_large: MakovoeL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-makovoe-m.98ea6ca9.jpeg',
+    url: 'https://pralinecakes.ru/products/pastry/makovoe/',
     title: 'Маковое',
     description:
       'Пирожное из бисквита, отпечённого из пшеничной муки, масла и маковых зёрнышек. Коржи хорошо пропитаны сливочным кремом с добавлением яичных желтков и сахара. Сверху десерт покрыт темной зеркальной шоколадной глазурью и украшен капельками белого шоколада. Отмечено, что насыщенный вкус и аромат мака прекрасно сочетается с шоколадными нотками.',
@@ -1096,6 +1156,9 @@ export const pastryData = [
     image_small: MakovoChernichnoeS,
     image_normal: MakovoChernichnoeM,
     image_large: MakovoChernichnoeL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-makovoe-chernika-m.9b6e7f1e.jpeg',
+    url: 'https://pralinecakes.ru/products/pastry/makovo-chernichnoe/',
     title: 'Маково-черничное',
     description:
       'Пирожное приготовлено из сливочного бисквита с добавлением арахисовой массы с зёрнышками мака. Сверху десерт покрыт нежным черничным желе.',
@@ -1108,11 +1171,8 @@ export const pastryData = [
     carbohydrates: 34.7,
     calories: 434,
     quantity: 14,
-    // quantity_b: null,
     weight: 100,
-    // weight_b: null,
     price: 87,
-    // price_b: null,
     rating: 3,
     type: [TYPE_BISQUIT, TYPE_POPPY, TYPE_BERRY],
     category: [bisquit, poppy, berry],
@@ -1123,6 +1183,9 @@ export const pastryData = [
     image_small: KievskoeS,
     image_normal: KievskoeM,
     image_large: KievskoeL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-kievskoe-m.15fbb52c.jpeg',
+    url: 'https://pralinecakes.ru/products/pastry/kievskoe/',
     title: 'Киевское',
     description:
       'Пирожное состоящее из нескольких коржей, которые отпекаются из яичных белков и муки трех категорий, пшеницы, миндаля и фундука. Слои соединены сливочным кремом со сгущенным молоком, дроблеными грецкими и лесными орехами. Сверху десерт украшен ореховой крошкой, безе и сахарной пудрой.',
@@ -1150,6 +1213,9 @@ export const pastryData = [
     image_small: KaramelnoOrehovoeS,
     image_normal: KaramelnoOrehovoeM,
     image_large: KaramelnoOrehovoeL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-karamelno-orehovoe-m.8ba68a30.jpeg',
+    url: 'https://pralinecakes.ru/products/pastry/karamelno-orehovoe/',
     title: 'Карамельно-Ореховое',
     description:
       'Бисквит с добавлением мелко резанных конфет Сникерс, крем из сгущенного молока и сливок. Украшен тремя шоколадными пуговками',
@@ -1176,6 +1242,9 @@ export const pastryData = [
     image_small: KokosovoeS,
     image_normal: KokosovoeM,
     image_large: KokosovoeL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-kokosovoe-m.d468541d.jpeg',
+    url: 'https://pralinecakes.ru/products/pastry/kokosovoe/',
     title: 'Кокосовое',
     description:
       'Пирожное выполнено из ванильного крема, в состав которого входят кокос, яичные желтки, сахар, молоко, густые сливки, сметана и желатин. Мусс выложен на бисквитный корж, отпечённый из кокосовых стружек, белков, пшеничной и арахисовой муки, с добавлением сахарной пудры. Сверху десерт покрыт зеркальным кондитерским гелем и орешками миндаля.',
@@ -1188,11 +1257,8 @@ export const pastryData = [
     carbohydrates: 36.9,
     calories: 331,
     quantity: 20,
-    // quantity_b: null,
     weight: 90,
-    // weight_b: null,
     price: 94,
-    // price_b: null,
     rating: 8,
     type: [TYPE_NUT, TYPE_CREAM],
     category: [nut, cream],
@@ -1203,6 +1269,9 @@ export const pastryData = [
     image_small: NapoleonS,
     image_normal: NapoleonM,
     image_large: NapoleonL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-napoleon-m.c916590e.jpeg',
+    url: 'https://pralinecakes.ru/products/pastry/napoleon/',
     title: 'Наполеон',
     description:
       'Пирожное из слоёного бездрожжевого теста, с нежным заварным кремом на основе яичных желтков, сыра "Маскарпоне", сливочного масла, густых сливок и ванильного сахара. Сверху десерт обсыпан хрустящей крошкой и украшен сахарной пудрой.',
@@ -1230,6 +1299,9 @@ export const pastryData = [
     image_small: MedMolokoS,
     image_normal: MedMolokoM,
     image_large: MedMolokoL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-med-moloko-m.85433eb1.jpeg',
+    url: 'https://pralinecakes.ru/products/pastry/med-moloko/',
     title: 'Мед и молоко',
     description:
       'Пирожное приготовлено из бисквита с добавлением сливочного масла, яиц, какао, сахара и молока. Коржи пропитаны мёдом и соединены белоснежным кремом на основе творожного сыра, густых сливок и сахарной пудры. Сверху десерт покрыт зеркальной глазурью кондитерского геля.',
@@ -1242,11 +1314,8 @@ export const pastryData = [
     carbohydrates: 54.4,
     calories: 382,
     quantity: 20,
-    // quantity_b: null,
     weight: 100,
-    // weight_b: null,
     price: 96,
-    // price_b: null,
     rating: 5,
     type: [TYPE_HONEY, TYPE_CREAM, TYPE_BISQUIT],
     category: [honey, cream, bisquit],
@@ -1257,6 +1326,9 @@ export const pastryData = [
     image_small: ChernichnoeS,
     image_normal: ChernichnoeM,
     image_large: ChernichnoeL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-chernichnoe-m.463d4360.jpeg',
+    url: 'https://pralinecakes.ru/products/pastry/chernichnoe/',
     title: 'Черничное',
     description:
       'Пирожное из черничного мусса на песочном ложе. Основа готовится из свежемороженных ягод, белого шоколада, густых сливок, сахара и желатина. Корж отпекается из пшеничной и миндальной муки, с добавлением мёда и сливочного масла. Сверху десерт украшен нейтральным кондитерским гелем.',
@@ -1269,11 +1341,8 @@ export const pastryData = [
     carbohydrates: 30.2,
     calories: 282,
     quantity: 20,
-    // quantity_b: null,
     weight: 120,
-    // weight_b: null,
     price: 103,
-    // price_b: null,
     rating: 7,
     type: [TYPE_SUFLE, TYPE_BERRY, TYPE_CHEESE],
     category: [sufle, berry, cheese],
@@ -1284,6 +1353,9 @@ export const pastryData = [
     image_small: MedovoPesochnoeS,
     image_normal: MedovoPesochnoeM,
     image_large: MedovoPesochnoeL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-medovoe-m.c2435d1e.jpeg',
+    url: 'https://pralinecakes.ru/products/pastry/medovo-pesochnoe/',
     title: 'Медово-песочное',
     description:
       'Медовый торт из нежных песочных коржей, пропитанных медом и легким ванильным кремом «Патисьер»',
@@ -1310,6 +1382,9 @@ export const pastryData = [
     image_small: BananovoeS,
     image_normal: BananovoeM,
     image_large: BananovoeL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-bananovoe-m.85ed8dd3.jpeg',
+    url: 'https://pralinecakes.ru/products/pastry/bananovoe/',
     title: 'Банановое',
     description: 'Бисквитный торт из свежих бананов, сметаны и молочных сливок',
     // condition: null,
@@ -1320,11 +1395,8 @@ export const pastryData = [
     carbohydrates: 34.6,
     calories: 331,
     quantity: 20,
-    // quantity_b: null,
     weight: 100,
-    // weight_b: null,
     price: 93,
-    // price_b: null,
     rating: 4,
     type: [TYPE_BISQUIT, TYPE_FRUIT, TYPE_CREAM],
     category: [bisquit, fruit, cream],
@@ -1335,6 +1407,9 @@ export const pastryData = [
     image_small: EsterhaziS,
     image_normal: EsterhaziM,
     image_large: EsterhaziL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-estaerhazi-m.7ee537b5.jpeg',
+    url: 'https://pralinecakes.ru/products/pastry/esterhazi/',
     title: 'Эстерхази',
     description: 'Воздушные коржи с нежным ореховым кремом Пралине',
     // condition: null,
@@ -1360,6 +1435,9 @@ export const pastryData = [
     image_small: TiramisuS,
     image_normal: TiramisuM,
     image_large: TiramisuL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-tiramisu-m.e9c7ee7a.jpeg',
+    url: 'https://pralinecakes.ru/products/pastry/tiramisu/',
     title: 'Тирамису',
     description:
       'Нежный итальянский торт из легкого ванильного крема с кофе и печеньем «Савоярди»',
@@ -1386,6 +1464,9 @@ export const pastryData = [
     image_small: VozdushnoOrehovoeS,
     image_normal: VozdushnoOrehovoeM,
     image_large: VozdushnoOrehovoeL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-vozdushno-m.83cbbf1b.jpeg',
+    url: 'https://pralinecakes.ru/products/pastry/vozdushno-orehovoe/',
     title: 'Воздушно-ореховое',
     description:
       'Слоенное тесто на основе сгущенного молока, пропитан кремом из сливочного сыра',
@@ -1397,11 +1478,8 @@ export const pastryData = [
     carbohydrates: 41.1,
     calories: 364,
     quantity: 20,
-    // quantity_b: null,
     weight: 90,
-    // weight_b: null,
     price: 97,
-    // price_b: null,
     rating: 7,
     type: [TYPE_BISQUIT, TYPE_CREAM, TYPE_CHEESE, TYPE_NUT],
     category: [bisquit, cream, cheese, nut],
@@ -1412,6 +1490,9 @@ export const pastryData = [
     image_small: SmetannikS,
     image_normal: SmetannikM,
     image_large: SmetannikL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-smetannik-m.1a8b0367.jpeg',
+    url: 'https://pralinecakes.ru/products/pastry/smetannik/',
     title: 'Сметанник',
     description:
       'Классический рецепт бисквитного слоеного торта, где сметана добавляется в коржи и крем. Коржи на сметанной основе хорошо пропитываются и торт получается очень сочным, с насыщенным молочным вкусом',
@@ -1423,11 +1504,8 @@ export const pastryData = [
     carbohydrates: 39.7,
     calories: 297,
     quantity: 20,
-    // quantity_b: null,
     weight: 100,
-    // weight_b: null,
     price: 95,
-    // price_b: null,
     rating: 7,
     type: [TYPE_BISQUIT, TYPE_CREAM, TYPE_NUT],
     category: [bisquit, cream, nut],
@@ -1438,6 +1516,9 @@ export const pastryData = [
     image_small: MakaruniS,
     image_normal: MakaruniM,
     image_large: MakaruniL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-macarons-m.e5953b0e.jpeg',
+    url: 'https://pralinecakes.ru/products/pastry/makaruni/',
     title: 'Макаруни',
     description:
       'Французское кондитерское изделие из яичных белков, миндальной муки и сахара, твердые половинки которого скреплены кремообразной прослойкой, которая имеет вкусы ванили, фисташки, шоколада, клубники, малины и черной смородины',
@@ -1448,11 +1529,8 @@ export const pastryData = [
     carbohydrates: 52.4,
     calories: 367,
     quantity: 25,
-    // quantity_b: null,
     weight: 20,
-    // weight_b: null,
     price: 52,
-    // price_b: null,
     rating: 10,
     type: [TYPE_CREAM, TYPE_NUT, TYPE_BERRY, TYPE_CHOCOLATE],
     category: [cream, nut, berry, chocolate],
