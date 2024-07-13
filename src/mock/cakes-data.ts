@@ -81,10 +81,14 @@ export const cakesData = [
     image_small: BavarskiyS,
     image_normal: BavarskiyM,
     image_large: BavarskiyL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/cake-bavarskiy-m-new.e4965072.jpeg',
+    url: 'https://pralinecakes.ru/products/cakes/bavarskiy-muss/',
     title: 'Баварский мусс',
     description:
-      'Нежнейший торт из воздушного сливочного мусса с добавлением ванили и малины во фруктовом желе',
-    // condition: null,
+      'Нежнейший торт из воздушного сливочного мусса с добавлением ванили и малины во фруктовом желе.',
+    condition:
+      'Продукт поставляется в замороженном виде, что является преимущественным условием хранения.',
     ingredients:
       'Сливки 33%, молоко, сахар, яйцо куриное, мука пшеничная, малина с/м, гель кондитерский нейтральный, желатин',
     protein: 2.9,
@@ -92,14 +96,9 @@ export const cakesData = [
     carbohydrates: 39,
     calories: 259,
     quantity: 1,
-    // quantity_b: null,
     weight: 600,
-    // weight_b: null,
     price: 740,
-    // price_b: null,
     rating: 4,
-    // type: [],
-    // category: ['cakes'],
   },
   {
     id: 1,
@@ -107,10 +106,14 @@ export const cakesData = [
     image_small: KievskiyS,
     image_normal: KievskiyM,
     image_large: KievskiyL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/cake-kievskiy-m-new.2d4bed77.jpeg',
+    url: 'https://pralinecakes.ru/products/cakes/kievskiy/',
     title: 'Киевский',
     description:
       'Известный легкий торт из нежных коржей, выпеченных из миндаля, фундука, грецких орехов со сгущенным молоком и сливками',
-    // condition: null,
+    condition:
+      'Продукт поставляется в замороженном виде, что является преимущественным условием хранения.',
     ingredients:
       'Сахар, сгущенное молоко, яйцо куриное, сливки молочные 33%, миндаль, грецкий орех, фундук, желатин',
     protein: 5.2,
@@ -118,14 +121,9 @@ export const cakesData = [
     carbohydrates: 42,
     calories: 443,
     quantity: 1,
-    // quantity_b: null,
     weight: 800,
-    // weight_b: null,
     price: 925,
-    // price_b: null,
     rating: 7,
-    // type: [],
-    // category: ['cakes'],
   },
   {
     id: 2,
@@ -133,10 +131,14 @@ export const cakesData = [
     image_small: PragaS,
     image_normal: PragaM,
     image_large: PragaL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/cake-praga-m-new.0ea8585f.jpeg',
+    url: 'https://pralinecakes.ru/products/cakes/praga/',
     title: 'Прага',
     description:
       'Классический рецепт, шоколадно-маслянный бисквит, сливочный крем с добавлением какао',
-    // condition: null,
+    condition:
+      'Продукт поставляется в замороженном виде, что является преимущественным условием хранения.',
     ingredients:
       'Мука пшеничная, сахар, масло сливочное, сгущенное молоко, джем абрикосовый, шоколад, сливки молочные 33%',
     protein: 4.9,
@@ -144,14 +146,9 @@ export const cakesData = [
     carbohydrates: 40.4,
     calories: 439,
     quantity: 1,
-    // quantity_b: null,
     weight: 1300,
-    // weight_b: null,
     price: 1040,
-    // price_b: null,
     rating: 6,
-    // type: [],
-    // category: ['cakes'],
   },
   {
     id: 3,
@@ -159,10 +156,14 @@ export const cakesData = [
     image_small: MedoviyS,
     image_normal: MedoviyM,
     image_large: MedoviyL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/cake-medoviy-m-new.26d2bdf5.jpeg',
+    url: 'https://pralinecakes.ru/products/cakes/medoviy/',
     title: 'Медовый',
     description:
       'Из нежных песочных коржей пропитанных медом и легким ванильным кремом',
-    // condition: null,
+    condition:
+      'Продукт поставляется в замороженном виде, что является преимущественным условием хранения.',
     ingredients:
       'Мука пшеничная, сахар, масло сливочное, молоко, яйцо куриное, мед, сода',
     protein: 5,
@@ -170,14 +171,9 @@ export const cakesData = [
     carbohydrates: 54.9,
     calories: 351,
     quantity: 1,
-    // quantity_b: null,
     weight: 1400,
-    // weight_b: null,
     price: 990,
-    // price_b: null,
     rating: 10,
-    // type: [],
-    // category: ['cakes'],
   },
   {
     id: 4,
@@ -185,10 +181,14 @@ export const cakesData = [
     image_small: TrufelniyS,
     image_normal: TrufelniyM,
     image_large: TrufelniyL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/cake-trufelniy-m-new.7c57b1da.jpeg',
+    url: 'https://pralinecakes.ru/products/cakes/trufelniy/',
     title: 'Трюфельный',
     description:
       'Сливочный мусс на основе темного шоколада, дополненный шоколадным бисквитом',
-    // condition: null,
+    condition:
+      'Продукт поставляется в замороженном виде, что является преимущественным условием хранения.',
     ingredients:
       'Шоколад темный, сливки молочные 33%, сахар, яйцо куриное, масло сливочное, какао, мука пшеничная, гель нейтральный, рис воздушный',
     protein: 3.8,
@@ -196,14 +196,9 @@ export const cakesData = [
     carbohydrates: 44.5,
     calories: 313,
     quantity: 1,
-    // quantity_b: null,
     weight: 900,
-    // weight_b: null,
     price: 1030,
-    // price_b: null,
     rating: 7,
-    // type: [],
-    // category: ['cakes'],
   },
   {
     id: 5,
@@ -211,9 +206,13 @@ export const cakesData = [
     image_small: PtichieS,
     image_normal: PtichieM,
     image_large: PtichieL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/cake-ptichie-moloko-m-new.27768748.jpeg',
+    url: 'https://pralinecakes.ru/products/cakes/ptichie-moloko/',
     title: 'Птичье молоко',
     description: 'Воздушное суфле, нежный корж под слоем горького шоколада',
-    // condition: null,
+    condition:
+      'Продукт поставляется в замороженном виде, что является преимущественным условием хранения.',
     ingredients:
       'Масло сливочное, сгущенное молоко, сахар, шоколад, мука пшеничная, яйцо куриное, масло растительное, агар-агар, лимонная кислота',
     protein: 8.3,
@@ -221,14 +220,9 @@ export const cakesData = [
     carbohydrates: 56.6,
     calories: 473,
     quantity: 1,
-    // quantity_b: null,
     weight: 800,
-    // weight_b: null,
     price: 830,
-    // price_b: null,
     rating: 4,
-    // type: [],
-    // category: ['cakes'],
   },
   {
     id: 6,
@@ -236,9 +230,13 @@ export const cakesData = [
     image_small: EsterhaziS,
     image_normal: EsterhaziM,
     image_large: EsterhaziL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/cake-esterhazi-m-new.e20f3ee4.jpeg',
+    url: 'https://pralinecakes.ru/products/cakes/esterhazi/',
     title: 'Эстерхази',
     description: 'Воздушные коржи с нежным ореховым кремом Пралине',
-    // condition: null,
+    condition:
+      'Продукт поставляется в замороженном виде, что является преимущественным условием хранения.',
     ingredients:
       'Фундук, арахис, миндаль, сахар, масло сливочное, яйцо куриное, масло растительное, шоколад белый, шоколад темный, паста пралине, джем абрикосовый',
     protein: 9.1,
@@ -246,14 +244,9 @@ export const cakesData = [
     carbohydrates: 33.2,
     calories: 492,
     quantity: 1,
-    // quantity_b: null,
     weight: 1250,
-    // weight_b: null,
     price: 1230,
-    // price_b: null,
     rating: 6,
-    // type: [],
-    // category: ['cakes'],
   },
   {
     id: 7,
@@ -261,10 +254,14 @@ export const cakesData = [
     image_small: CheesecakeS,
     image_normal: CheesecakeM,
     image_large: CheesecakeL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/cake-cheescake-m-new.83b1c76d.jpeg',
+    url: 'https://pralinecakes.ru/products/cakes/cheesecake/',
     title: 'Чизкейк',
     description:
       'Классический рецепт. Испечен из нежного творожного сыра, на тонком слое бисквита',
-    // condition: null,
+    condition:
+      'Продукт поставляется в замороженном виде, что является преимущественным условием хранения.',
     ingredients:
       'Сыр творожный, яйцо куриное, сахар, сметана 20%, мука пшеничная, сливки молочные 33%, гель кондитерский нейтральный',
     protein: 3.4,
@@ -272,14 +269,9 @@ export const cakesData = [
     carbohydrates: 34.7,
     calories: 331,
     quantity: 1,
-    // quantity_b: null,
     weight: 1400,
-    // weight_b: null,
     price: 1200,
-    // price_b: null,
     rating: 6,
-    // type: [],
-    // category: ['cakes'],
   },
   {
     id: 8,
@@ -287,10 +279,14 @@ export const cakesData = [
     image_small: TiramisuS,
     image_normal: TiramisuM,
     image_large: TiramisuL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/cake-tiramisu-m-new.bb58686b.jpeg',
+    url: 'https://pralinecakes.ru/products/cakes/tiramisu/',
     title: 'Тирамису',
     description:
       'Нежный итальянский торт из легкого ванильного крема с кофе и печеньем «Савоярди»',
-    // condition: null,
+    condition:
+      'Продукт поставляется в замороженном виде, что является преимущественным условием хранения.',
     ingredients:
       'Сыр маскарпоне, сливки молочные 33%, яйцо куриное, печенье савоярди, сахар, какао, кофе',
     protein: 3.6,
@@ -298,14 +294,9 @@ export const cakesData = [
     carbohydrates: 29.6,
     calories: 311,
     quantity: 1,
-    // quantity_b: null,
     weight: 1100,
-    // weight_b: null,
     price: 1080,
-    // price_b: null,
     rating: 6,
-    // type: [],
-    // category: ['cakes'],
   },
   {
     id: 9,
@@ -313,10 +304,14 @@ export const cakesData = [
     image_small: MorkovniyS,
     image_normal: MorkovniyM,
     image_large: MorkovniyL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/cake-morkovniy-m-new.91bb4f1a.jpeg',
+    url: 'https://pralinecakes.ru/products/cakes/morkovniy/',
     title: 'Морковный',
     description:
       'Торт с едва уловимым вкусом моркови, с добавлением грецкого ореха, изюма, творожного сыра и корицы',
-    // condition: null,
+    condition:
+      'Продукт поставляется в замороженном виде, что является преимущественным условием хранения.',
     ingredients:
       'Сыр сливочный, сливки молочные 33%, морковь, яйцо куриное, сахар масло сливочное, грецкий орех, изюм белый, мука, сода, корица, сахарная пудра',
     protein: 2.9,
@@ -324,14 +319,9 @@ export const cakesData = [
     carbohydrates: 53,
     calories: 373,
     quantity: 1,
-    // quantity_b: null,
     weight: 1400,
-    // weight_b: null,
     price: 1140,
-    // price_b: null,
     rating: 7,
-    // type: [],
-    // category: ['cakes'],
   },
   {
     id: 10,
@@ -339,10 +329,14 @@ export const cakesData = [
     image_small: NapoleonS,
     image_normal: NapoleonM,
     image_large: NapoleonL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/cake-napoleon-m-new.a706408d.jpeg',
+    url: 'https://pralinecakes.ru/products/cakes/napoleon/',
     title: 'Наполеон',
     description:
       'Изумительный слоенный торт из хрустящего слоеного теста и нежного сливочного крема',
-    // condition: null,
+    condition:
+      'Продукт поставляется в замороженном виде, что является преимущественным условием хранения.',
     ingredients:
       'Тесто слоенное, сливки молочные 33%, сыр маскарпоне, яйцо куриное, мука пшеничная, сахар',
     protein: 4.9,
@@ -350,14 +344,9 @@ export const cakesData = [
     carbohydrates: 47,
     calories: 455,
     quantity: 1,
-    // quantity_b: null,
     weight: 1000,
-    // weight_b: null,
     price: 1100,
-    // price_b: null,
     rating: 10,
-    // type: [],
-    // category: ['cakes'],
   },
   {
     id: 11,
@@ -365,9 +354,13 @@ export const cakesData = [
     image_small: ChernichniyS,
     image_normal: ChernichniyM,
     image_large: ChernichniyL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/cake-chernichniy-m-new.9a46e4a7.jpeg',
+    url: 'https://pralinecakes.ru/products/cakes/chernichniy/',
     title: 'Черничный',
     description: 'Черника, белый шоколад и сливки, на тонком медовом корже',
-    // condition: null,
+    condition:
+      'Продукт поставляется в замороженном виде, что является преимущественным условием хранения.',
     ingredients:
       'Сыр сливочный, черника с/м, сахарная пудра, сметана 20%, мука пшеничная, сливки молочные 33%, масло сливочное, миндальная мука, яйца куриные, желатин',
     protein: 6.5,
@@ -375,14 +368,9 @@ export const cakesData = [
     carbohydrates: 30.2,
     calories: 282,
     quantity: 1,
-    // quantity_b: null,
     weight: 1300,
-    // weight_b: null,
     price: 1170,
-    // price_b: null,
     rating: 9,
-    // type: [],
-    // category: ['cakes'],
   },
   {
     id: 12,
@@ -390,10 +378,14 @@ export const cakesData = [
     image_small: MakoviyS,
     image_normal: MakoviyM,
     image_large: MakoviyL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/cake-makoviy-m-new.3748d8fd.jpeg',
+    url: 'https://pralinecakes.ru/products/cakes/makoviy/',
     title: 'Маковый',
     description:
       'Легкий, необычный на вкус, с восхитительным сливочным кремом. Покрыт шоколадным гляссажем',
-    // condition: null,
+    condition:
+      'Продукт поставляется в замороженном виде, что является преимущественным условием хранения.',
     ingredients:
       'Сливки молочные 33%, мак, сахар, яйцо куриное, шоколад темный 53%, масло сливочное, мука пшеничная, гель кондитерский нейтральный',
     protein: 5.7,
@@ -401,14 +393,9 @@ export const cakesData = [
     carbohydrates: 36.6,
     calories: 404,
     quantity: 1,
-    // quantity_b: null,
     weight: 1400,
-    // weight_b: null,
     price: 1200,
-    // price_b: null,
     rating: 8,
-    // type: [],
-    // category: ['cakes'],
   },
   {
     id: 13,
@@ -416,10 +403,14 @@ export const cakesData = [
     image_small: FrenchAppleS,
     image_normal: FrenchAppleM,
     image_large: FrenchAppleL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/cake-yablochniy-m-new.0fc53ff3.jpeg',
+    url: 'https://pralinecakes.ru/products/cakes/french-apple-pie/',
     title: 'Французский яблочный пирог',
     description:
       'Нежный бисквит на основе фундука, с начинкой из запеченных яблок',
-    // condition: null,
+    condition:
+      'Продукт поставляется в замороженном виде, что является преимущественным условием хранения.',
     ingredients:
       'Фундучная мука, яблоко, сахар,масло сливочное, гель кондитерский нейтральный',
     protein: 3.2,
@@ -427,14 +418,9 @@ export const cakesData = [
     carbohydrates: 54.4,
     calories: 382,
     quantity: 1,
-    // quantity_b: null,
     weight: 1400,
-    // weight_b: null,
     price: 1245,
-    // price_b: null,
     rating: 9,
-    // type: [],
-    // category: ['cakes'],
   },
   {
     id: 14,
@@ -442,10 +428,14 @@ export const cakesData = [
     image_small: KaramelnoOrekhoviyS,
     image_normal: KaramelnoOrekhoviyM,
     image_large: KaramelnoOrekhoviyL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/cake-orekhoviy-m-new.88082a08.jpeg',
+    url: 'https://pralinecakes.ru/products/cakes/karamelno-orekhoviy/',
     title: 'Карамельно-Ореховый',
     description:
       'Бисквит с добавлением мелко резанных конфет Сникерс, крем из сгущенного молока и сливок',
-    // condition: null,
+    condition:
+      'Продукт поставляется в замороженном виде, что является преимущественным условием хранения.',
     ingredients:
       'Сгущенное молоко, вода, сахар, сливки молочные 33%, конфета сникерс, мед, масло сливочное, яйцо куриное, мука пшеничная, сода, какао порошок',
     protein: 7,
@@ -453,14 +443,9 @@ export const cakesData = [
     carbohydrates: 45.8,
     calories: 414,
     quantity: 1,
-    // quantity_b: null,
     weight: 800,
-    // weight_b: null,
     price: 880,
-    // price_b: null,
     rating: 7,
-    // type: [],
-    // category: ['cakes'],
   },
   {
     id: 15,
@@ -468,10 +453,14 @@ export const cakesData = [
     image_small: BarkhatS,
     image_normal: BarkhatM,
     image_large: BarkhatL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/cake-barkhat-m-new.7bd9c897.jpeg',
+    url: 'https://pralinecakes.ru/products/cakes/krasniy-barkhat/',
     title: 'Бархатный красный',
     description:
       'Торт представляет собой довольно необычный десерт, состоящий из воздушного и мягкого бисквита красного цвета. Оригинальность данному изделию придает и белоснежный сливочный крем',
-    // condition: null,
+    condition:
+      'Продукт поставляется в замороженном виде, что является преимущественным условием хранения.',
     ingredients:
       'Сыр сливочный, сахар, мука, сливки молочные 33%, масло растительное, сахар, яйцо куриное, малина с/м, кефир, гель нейтральный, какао, соль, разрыхлитель',
     protein: 4.4,
@@ -479,14 +468,9 @@ export const cakesData = [
     carbohydrates: 28.5,
     calories: 297,
     quantity: 1,
-    // quantity_b: null,
     weight: 1200,
-    // weight_b: null,
     price: 1100,
-    // price_b: null,
     rating: 10,
-    // type: [],
-    // category: ['cakes'],
   },
   {
     id: 16,
@@ -494,10 +478,14 @@ export const cakesData = [
     image_small: MedMolokoS,
     image_normal: MedMolokoM,
     image_large: MedMolokoL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/cake-med-moloko-m-new.a2ccaed4.jpeg',
+    url: 'https://pralinecakes.ru/products/cakes/med-moloko/',
     title: 'Мед и молоко',
     description:
       'Медовые коржи и прослойка из сливочного сыра, сливок и молока',
-    // condition: null,
+    condition:
+      'Продукт поставляется в замороженном виде, что является преимущественным условием хранения.',
     ingredients:
       'Мед, масло сливочное, сахар, вода, яйцо куриное, мука пшеничная, сода, какао порошок, сыр сливочный, сахарная пудра, сливки',
     protein: 3.2,
@@ -505,14 +493,9 @@ export const cakesData = [
     carbohydrates: 54.4,
     calories: 382,
     quantity: 1,
-    // quantity_b: null,
     weight: 800,
-    // weight_b: null,
     price: 890,
-    // price_b: null,
     rating: 6,
-    // type: [],
-    // category: ['cakes'],
   },
   {
     id: 17,
@@ -520,10 +503,14 @@ export const cakesData = [
     image_small: TriChokoladaS,
     image_normal: TriChokoladaM,
     image_large: TriChokoladaL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/cake-tri-chokolada-m-new.736c8463.jpeg',
+    url: 'https://pralinecakes.ru/products/cakes/tri-chokolada/',
     title: 'Три шоколада',
     description:
       'Элегантное трио белого, молочного и черного шоколада в сочетании нежнейшего шоколадного бисквита',
-    // condition: null,
+    condition:
+      'Продукт поставляется в замороженном виде, что является преимущественным условием хранения.',
     ingredients:
       'Шоколад белый 34%, шоколад темный 53%, сахар, сливки молочные 33%, яйцо куриное, мука пшеничная, какао, желатин',
     protein: 3.1,
@@ -531,14 +518,9 @@ export const cakesData = [
     carbohydrates: 43.7,
     calories: 302,
     quantity: 1,
-    // quantity_b: null,
     weight: 700,
-    // weight_b: null,
     price: 1060,
-    // price_b: null,
     rating: 8,
-    // type: [],
-    // category: ['cakes'],
   },
   {
     id: 18,
@@ -546,10 +528,14 @@ export const cakesData = [
     image_small: SmetannikS,
     image_normal: SmetannikM,
     image_large: SmetannikL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/cake-smetannik-m-new.4e636bfe.jpeg',
+    url: 'https://pralinecakes.ru/products/cakes/smetannik/',
     title: 'Сметанник',
     description:
       'Классический рецепт бисквитного слоеного торта, где сметана добавляется в коржи и крем. Коржи на сметанной основе хорошо пропитываются и торт получается очень сочным, с насыщенным молочным вкусом',
-    // condition: null,
+    condition:
+      'Продукт поставляется в замороженном виде, что является преимущественным условием хранения.',
     ingredients:
       'Сметана 20%, мука пшеничная, сливки молочные 33%, масло сливочное, мед, сахар, яйцо куриное, грецкий орех, сода, ваниль',
     protein: 5.1,
@@ -557,14 +543,9 @@ export const cakesData = [
     carbohydrates: 39.7,
     calories: 297,
     quantity: 1,
-    // quantity_b: null,
     weight: 1200,
-    // weight_b: null,
     price: 1120,
-    // price_b: null,
     rating: 7,
-    // type: [],
-    // category: ['cakes'],
   },
   {
     id: 19,
@@ -572,10 +553,14 @@ export const cakesData = [
     image_small: CheesecakeLimeS,
     image_normal: CheesecakeLimeM,
     image_large: CheesecakeLimeL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/cake-lime-m-new.95e96c14.jpeg',
+    url: 'https://pralinecakes.ru/products/cakes/cheesecake-lime/',
     title: 'Чизкейк лайм',
     description:
       'Нежный десерт, который гарантированно понравится всем любителям чизкейков. Яркое, возбуждающее аппетитное вкусовое сочетание',
-    // condition: null,
+    condition:
+      'Продукт поставляется в замороженном виде, что является преимущественным условием хранения.',
     ingredients:
       'Сыр маскарпоне, сыр творожный, сливки молочные 33%, сахарная пудра, мука, мед, масло сливочное 82%, сметана 20%, лайм, желатин гранулированный, гель кондитерский нейтральный',
     protein: 7.5,
@@ -583,14 +568,9 @@ export const cakesData = [
     carbohydrates: 30.2,
     calories: 305,
     quantity: 1,
-    // quantity_b: null,
     weight: 1400,
-    // weight_b: null,
     price: 1200,
-    // price_b: null,
     rating: 5,
-    // type: [],
-    // category: ['cakes'],
   },
   {
     id: 20,
@@ -598,10 +578,14 @@ export const cakesData = [
     image_small: VozdushnoS,
     image_normal: VozdushnoM,
     image_large: VozdushnoL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/cake-vozdushno-m-new.f66f4747.jpeg',
+    url: 'https://pralinecakes.ru/products/cakes/vozdushno-orekhoviy/',
     title: 'Воздушно-ореховый',
     description:
       'Слоенное тесто на основе сгущенного молока, пропитан кремом из сливочного сыра. Упакован в цветную картонную коробку с окошком',
-    // condition: null,
+    condition:
+      'Продукт поставляется в замороженном виде, что является преимущественным условием хранения.',
     ingredients:
       'Мука пшеничная, сливки молочные 33%, сгущенное молоко, сахар, шоколад молочный, яйцо куриное, сыр творожный, фундук, сахарная пудра',
     protein: 5.1,
@@ -609,14 +593,9 @@ export const cakesData = [
     carbohydrates: 41.1,
     calories: 364,
     quantity: 1,
-    // quantity_b: null,
     weight: 1100,
-    // weight_b: null,
     price: 1110,
-    // price_b: null,
     rating: 8,
-    // type: [],
-    // category: ['cakes'],
   },
   {
     id: 21,
@@ -624,9 +603,13 @@ export const cakesData = [
     image_small: BananoviyS,
     image_normal: BananoviyM,
     image_large: BananoviyL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/cake-banana-m-new.b5b4d755.jpeg',
+    url: 'https://pralinecakes.ru/products/cakes/bananoviy/',
     title: 'Банановый',
     description: 'Бисквитный торт из свежих бананов, сметаны и молочных сливок',
-    // condition: null,
+    condition:
+      'Продукт поставляется в замороженном виде, что является преимущественным условием хранения.',
     ingredients:
       'Мука пшеничная, сметана 20%, яйцо куриное, сахар, сливки молочные 33%, бананы, сахарная пудра, гель кондитерский нейтральный, крахмал кукурузный, какао порошок, масло сливочное 82%, глазурь белая',
     protein: 6.4,
@@ -634,14 +617,9 @@ export const cakesData = [
     carbohydrates: 34.6,
     calories: 331,
     quantity: 1,
-    // quantity_b: null,
     weight: 1400,
-    // weight_b: null,
     price: 1170,
-    // price_b: null,
     rating: 4,
-    // type: [],
-    // category: ['cakes'],
   },
   {
     id: 22,
@@ -649,10 +627,14 @@ export const cakesData = [
     image_small: LimonniyS,
     image_normal: LimonniyM,
     image_large: LimonniyL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/cake-lemon-m-new.2662a0eb.jpeg',
+    url: 'https://pralinecakes.ru/products/cakes/limonniy/',
     title: 'Лимонный',
     description:
       'Бисквит с лимонной пропиткой и воздушным кремом. Легкий десерт с приятной кислинкой. Упакован в цветную картонную коробку с окошком',
-    // condition: null,
+    condition:
+      'Продукт поставляется в замороженном виде, что является преимущественным условием хранения.',
     ingredients:
       'Сыр маскарпоне, масло сливочное 82%, мука, сахар, лимон, яйцо куриное, кефир, йогурт, масло растительное, гель кондитерский нейтральный',
     protein: 6.6,
@@ -660,14 +642,9 @@ export const cakesData = [
     carbohydrates: 31.3,
     calories: 329,
     quantity: 1,
-    // quantity_b: null,
     weight: 1400,
-    // weight_b: null,
     price: 1100,
-    // price_b: null,
     rating: 5,
-    // type: [],
-    // category: ['cakes'],
   },
   {
     id: 23,
@@ -675,10 +652,14 @@ export const cakesData = [
     image_small: KokosoviyS,
     image_normal: KokosoviyM,
     image_large: KokosoviyL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/cake-cocos-m-new.adba1a27.jpeg',
+    url: 'https://pralinecakes.ru/products/cakes/kokosoviy/',
     title: 'Кокосовый',
     description:
       'Нежный сливочный десерт на прослойке из кокосового безе. Упакован в цветную картонную коробку с окошком',
-    // condition: null,
+    condition:
+      'Продукт поставляется в замороженном виде, что является преимущественным условием хранения.',
     ingredients:
       'Сливки молочные 33%, сахар, молоко 3,2%, стружка кокосовая, яйцо куриное, крем заварной патисьер, сахарная пудра, мука фундучная, сметана 20%, желатин, гель кондитерский зеркальный, миндаль, глазурь',
     protein: 5.8,
@@ -686,14 +667,9 @@ export const cakesData = [
     carbohydrates: 36.9,
     calories: 331,
     quantity: 1,
-    // quantity_b: null,
     weight: 1200,
-    // weight_b: null,
     price: 1080,
-    // price_b: null,
     rating: 7,
-    // type: [],
-    // category: ['cakes'],
   },
   {
     id: 24,
@@ -701,10 +677,14 @@ export const cakesData = [
     image_small: MindalChernoslivS,
     image_normal: MindalChernoslivM,
     image_large: MindalChernoslivL,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/cake-mindal-m-new.ac7792de.jpeg',
+    url: 'https://pralinecakes.ru/products/cakes/mindal-chernosliv/',
     title: 'Миндаль чернослив',
     description:
       'Необычное сочетание миндаля с черносливом и грецким орехом совместно с нежным сливочным кремом придает незабываемый вкус',
-    // condition: null,
+    condition:
+      'Продукт поставляется в замороженном виде, что является преимущественным условием хранения.',
     ingredients:
       'Сметана 20%, мука, сливки молочные 33%, масло сливочное, мед, сахар, яйцо куриное, грецкий орех, сода, ваниль',
     protein: 5.5,
@@ -712,13 +692,8 @@ export const cakesData = [
     carbohydrates: 36.4,
     calories: 408,
     quantity: 1,
-    // quantity_b: null,
     weight: 1200,
-    // weight_b: null,
     price: 1120,
-    // price_b: null,
     rating: 10,
-    // type: [],
-    // category: ['cakes'],
   },
 ];

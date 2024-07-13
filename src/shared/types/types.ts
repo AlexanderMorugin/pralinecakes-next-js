@@ -15,6 +15,8 @@ export interface ProductProps {
   image_small: StaticImageData;
   image_normal: StaticImageData;
   image_large: StaticImageData;
+  image_meta?: string;
+  url?: string;
   title: string;
   description: string;
   condition?: string;

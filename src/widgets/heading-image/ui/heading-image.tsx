@@ -20,6 +20,7 @@ const HeadingImage: FC<IHeadingImage> = ({
         src={image}
         alt={title}
         priority
+        // placeholder='blur'
         className={
             isPage
               ? `${styles.headingImage__image} ${styles.headingImage__image_isPage}`
