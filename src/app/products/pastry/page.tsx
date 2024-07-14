@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { MainWrapper, PageWrapper } from '@/components';
 import { AllPastry, Breadcrumbs } from '@/widgets';
 import {
+  META_MAIN_TITLE,
   META_PASTRY_DESCRIPTION,
   META_PASTRY_TITLE,
   PAGE_MAIN,
@@ -15,6 +16,18 @@ import { PageHeading } from '@/entities';
 export const metadata: Metadata = {
   title: META_PASTRY_TITLE,
   description: META_PASTRY_DESCRIPTION,
+  keywords: ['пирожные', 'замороженные', 'кондитерская'],
+  openGraph: {
+    title: META_PASTRY_TITLE,
+    description: META_PASTRY_DESCRIPTION,
+    images: [
+      {
+        url: 'https://pralinecakes.ru/_next/static/media/pastry-tri-shokolada-m.c2f4a479.jpeg',
+      },
+    ],
+    url: 'https://pralinecakes.ru/products/pastry/',
+    siteName: META_MAIN_TITLE,
+  },
 };
 
 const breadcrumbs = [

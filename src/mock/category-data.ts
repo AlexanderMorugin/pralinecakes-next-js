@@ -27,6 +27,20 @@ import {
   CATEGORY_STRUDEL,
   CATEGORY_SUFLE,
   CATEGORY_YOGURT,
+  DESCRIPTION_BERRY,
+  DESCRIPTION_BISQUIT,
+  DESCRIPTION_CHEESE,
+  DESCRIPTION_CHOCOLATE,
+  DESCRIPTION_CREAM,
+  DESCRIPTION_FRUIT,
+  DESCRIPTION_HONEY,
+  DESCRIPTION_NUT,
+  DESCRIPTION_POPPY,
+  DESCRIPTION_PUFF,
+  DESCRIPTION_SAND,
+  DESCRIPTION_STRUDEL,
+  DESCRIPTION_SUFLE,
+  DESCRIPTION_YOGURT,
   TYPE_BERRY,
   TYPE_BISQUIT,
   TYPE_CHEESE,
@@ -45,20 +59,131 @@ import {
 
 // массив категорий с названиями и роутами к ним
 export const categoryData = [
-  { name: CATEGORY_CHOCOLATE, route: TYPE_CHOCOLATE, image: ChocolateImage },
-  { name: CATEGORY_HONEY, route: TYPE_HONEY, image: HoneyImage },
-  { name: CATEGORY_STRUDEL, route: TYPE_STRUDEL, image: StrudelImage },
-  { name: CATEGORY_FRUIT, route: TYPE_FRUIT, image: FruitImage },
-  { name: CATEGORY_BERRY, route: TYPE_BERRY, image: BerryImage },
-  { name: CATEGORY_BISQUIT, route: TYPE_BISQUIT, image: BisquitImage },
-  { name: CATEGORY_SAND, route: TYPE_SAND, image: SandImage },
-  { name: CATEGORY_PUFF, route: TYPE_PUFF, image: PuffImage },
-  { name: CATEGORY_POPPY, route: TYPE_POPPY, image: PoppyImage },
-  { name: CATEGORY_NUT, route: TYPE_NUT, image: NutImage },
-  { name: CATEGORY_CREAM, route: TYPE_CREAM, image: CreamImage },
-  { name: CATEGORY_YOGURT, route: TYPE_YOGURT, image: YogurtImage },
-  { name: CATEGORY_SUFLE, route: TYPE_SUFLE, image: SufleImage },
-  { name: CATEGORY_CHEESE, route: TYPE_CHEESE, image: CheeseImage },
+  {
+    name: CATEGORY_CHOCOLATE,
+    description: DESCRIPTION_CHOCOLATE,
+    route: TYPE_CHOCOLATE,
+    image: ChocolateImage,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-praga-m.ca22d406.jpeg',
+    url: 'https://pralinecakes.ru/categories/chocolate/',
+  },
+  {
+    name: CATEGORY_HONEY,
+    description: DESCRIPTION_HONEY,
+    route: TYPE_HONEY,
+    image: HoneyImage,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-djanduya-m.6760435e.jpeg',
+    url: 'https://pralinecakes.ru/categories/honey/',
+  },
+  {
+    name: CATEGORY_STRUDEL,
+    description: DESCRIPTION_STRUDEL,
+    route: TYPE_STRUDEL,
+    image: StrudelImage,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-cherry-strudel-m.707a20d8.jpeg',
+    url: 'https://pralinecakes.ru/categories/strudel/',
+  },
+  {
+    name: CATEGORY_FRUIT,
+    description: DESCRIPTION_FRUIT,
+    route: TYPE_FRUIT,
+    image: FruitImage,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-kiwi-basket-m.96311492.jpeg',
+    url: 'https://pralinecakes.ru/categories/fruit/',
+  },
+  {
+    name: CATEGORY_BERRY,
+    description: DESCRIPTION_BERRY,
+    route: TYPE_BERRY,
+    image: BerryImage,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-raspberry-basket-m.99fabc24.jpeg',
+    url: 'https://pralinecakes.ru/categories/berry/',
+  },
+  {
+    name: CATEGORY_BISQUIT,
+    description: DESCRIPTION_BISQUIT,
+    route: TYPE_BISQUIT,
+    image: BisquitImage,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-smetannik-m.1a8b0367.jpeg',
+    url: 'https://pralinecakes.ru/categories/bisquit/',
+  },
+  {
+    name: CATEGORY_SAND,
+    description: DESCRIPTION_SAND,
+    route: TYPE_SAND,
+    image: SandImage,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-estaerhazi-m.7ee537b5.jpeg',
+    url: 'https://pralinecakes.ru/categories/sand/',
+  },
+  {
+    name: CATEGORY_PUFF,
+    description: DESCRIPTION_PUFF,
+    route: TYPE_PUFF,
+    image: PuffImage,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-napoleon-m.c916590e.jpeg',
+    url: 'https://pralinecakes.ru/categories/puff/',
+  },
+  {
+    name: CATEGORY_POPPY,
+    description: DESCRIPTION_POPPY,
+    route: TYPE_POPPY,
+    image: PoppyImage,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-makovoe-m.98ea6ca9.jpeg',
+    url: 'https://pralinecakes.ru/categories/poppy/',
+  },
+  {
+    name: CATEGORY_NUT,
+    description: DESCRIPTION_NUT,
+    route: TYPE_NUT,
+    image: NutImage,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-vozdushno-m.83cbbf1b.jpeg',
+    url: 'https://pralinecakes.ru/categories/nut/',
+  },
+  {
+    name: CATEGORY_CREAM,
+    description: DESCRIPTION_CREAM,
+    route: TYPE_CREAM,
+    image: CreamImage,
+    image_meta: 'https://pralinecakes.ru/products/pastry/krasniy-barhat/',
+    url: 'https://pralinecakes.ru/categories/cream/',
+  },
+  {
+    name: CATEGORY_YOGURT,
+    description: DESCRIPTION_YOGURT,
+    route: TYPE_YOGURT,
+    image: YogurtImage,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-cheesecake-blue-m.7294de1b.jpeg',
+    url: 'https://pralinecakes.ru/categories/yogurt/',
+  },
+  {
+    name: CATEGORY_SUFLE,
+    description: DESCRIPTION_SUFLE,
+    route: TYPE_SUFLE,
+    image: SufleImage,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-fantasia-m.b0512059.jpeg',
+    url: 'https://pralinecakes.ru/categories/sufle/',
+  },
+  {
+    name: CATEGORY_CHEESE,
+    description: DESCRIPTION_CHEESE,
+    route: TYPE_CHEESE,
+    image: CheeseImage,
+    image_meta:
+      'https://pralinecakes.ru/_next/static/media/pastry-cheesecake-m.c50a2ad5.jpeg',
+    url: 'https://pralinecakes.ru/categories/cheese/',
+  },
 ];
 
 // категории с названиями и роутами к ним
@@ -92,14 +217,26 @@ export const bisquit = {
   route: TYPE_BISQUIT,
   image: BisquitImage,
 };
-export const sand = { name: CATEGORY_SAND, route: TYPE_SAND, image: SandImage };
-export const puff = { name: CATEGORY_PUFF, route: TYPE_PUFF, image: PuffImage };
+export const sand = {
+  name: CATEGORY_SAND,
+  route: TYPE_SAND,
+  image: SandImage,
+};
+export const puff = {
+  name: CATEGORY_PUFF,
+  route: TYPE_PUFF,
+  image: PuffImage,
+};
 export const poppy = {
   name: CATEGORY_POPPY,
   route: TYPE_POPPY,
   image: PoppyImage,
 };
-export const nut = { name: CATEGORY_NUT, route: TYPE_NUT, image: NutImage };
+export const nut = {
+  name: CATEGORY_NUT,
+  route: TYPE_NUT,
+  image: NutImage,
+};
 export const cream = {
   name: CATEGORY_CREAM,
   route: TYPE_CREAM,

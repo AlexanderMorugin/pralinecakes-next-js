@@ -3,7 +3,11 @@ import type { Metadata } from 'next';
 import MainImage from '@/assets/images/main/img-main.jpg';
 import { MainWrapper } from '@/components';
 import { PageHeading } from '@/entities';
-import { META_MAIN_DESCRIPTION, META_MAIN_TITLE, PAGE_MAIN_TITLE } from '@/shared/constants/pages';
+import {
+  META_MAIN_DESCRIPTION,
+  META_MAIN_TITLE,
+  PAGE_MAIN_TITLE,
+} from '@/shared/constants/pages';
 import {
   AboutUsBlock,
   CakeBlock,
@@ -16,28 +20,18 @@ import {
 export const metadata: Metadata = {
   title: META_MAIN_TITLE,
   description: META_MAIN_DESCRIPTION,
-    // keywords: ['Next.js', 'React', 'JavaScript'],
-    // openGraph: {
-    //   title: 'Next.js',
-    //   description: 'The React Framework for the Web',
-    //   url: 'https://nextjs.org',
-    //   siteName: 'Next.js',
-    //   images: [
-    //     {
-    //       url: 'https://nextjs.org/og.png', // Must be an absolute URL
-    //       width: 800,
-    //       height: 600,
-    //     },
-    //     {
-    //       url: 'https://nextjs.org/og-alt.png', // Must be an absolute URL
-    //       width: 1800,
-    //       height: 1600,
-    //       alt: 'My custom alt',
-    //     },
-    //   ],
-    //   locale: 'en_US',
-    //   type: 'website',
-    // },
+  keywords: ['кондитерская', 'пралине'],
+  openGraph: {
+    title: META_MAIN_TITLE,
+    description: META_MAIN_DESCRIPTION,
+    images: [
+      {
+        url: 'https://pralinecakes.ru/_next/static/media/meta-main.c25722c4.jpg',
+      },
+    ],
+    url: 'https://pralinecakes.ru/',
+    siteName: META_MAIN_TITLE,
+  },
 };
 
 function Home() {

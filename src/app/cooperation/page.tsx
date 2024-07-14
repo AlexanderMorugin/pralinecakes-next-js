@@ -2,18 +2,32 @@ import type { Metadata } from 'next';
 
 import CooperationImage from '@/assets/images/cooperation/img-cooperation.jpg';
 import { MainWrapper } from '@/components';
+import { Breadcrumbs, CooperationWidget, HeadingImage } from '@/widgets';
 import {
-  Breadcrumbs,
-  CooperationWidget,
-  HeadingImage,
-} from '@/widgets';
-import { META_COOPERATION_DESCRIPTION, META_COOPERATION_TITLE, PAGE_COOPERATION_TITLE, PAGE_MAIN } from '@/shared/constants/pages';
+  META_COOPERATION_DESCRIPTION,
+  META_COOPERATION_TITLE,
+  META_MAIN_TITLE,
+  PAGE_COOPERATION_TITLE,
+  PAGE_MAIN,
+} from '@/shared/constants/pages';
 import Routes from '@/shared/constants/routes';
 import { PageHeading } from '@/entities';
 
 export const metadata: Metadata = {
   title: META_COOPERATION_TITLE,
   description: META_COOPERATION_DESCRIPTION,
+  keywords: ['сотрудничество', 'партнерство', 'дегустация'],
+  openGraph: {
+    title: META_COOPERATION_TITLE,
+    description: META_COOPERATION_DESCRIPTION,
+    images: [
+      {
+        url: 'https://pralinecakes.ru/_next/static/media/meta-cooperation.78ec3c5a.jpg',
+      },
+    ],
+    url: 'https://pralinecakes.ru/cooperation/',
+    siteName: META_MAIN_TITLE,
+  },
 };
 
 const breadcrumbs = [

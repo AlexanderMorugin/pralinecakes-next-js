@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { MainWrapper, PageWrapper } from '@/components';
 import { Breadcrumbs, CakeBlock, PastryBlock } from '@/widgets';
 import {
+  META_MAIN_TITLE,
   META_PRODUCTS_DESCRIPTION,
   META_PRODUCTS_TITLE,
   PAGE_MAIN,
@@ -14,6 +15,18 @@ import { PageHeading } from '@/entities';
 export const metadata: Metadata = {
   title: META_PRODUCTS_TITLE,
   description: META_PRODUCTS_DESCRIPTION,
+  keywords: ['продукция', 'пирожные', 'торты'],
+  openGraph: {
+    title: META_PRODUCTS_TITLE,
+    description: META_PRODUCTS_DESCRIPTION,
+    images: [
+      {
+        url: 'https://pralinecakes.ru/_next/static/media/meta-products.d08f49e3.jpg',
+      },
+    ],
+    url: 'https://pralinecakes.ru/products/',
+    siteName: META_MAIN_TITLE,
+  },
 };
 
 const breadcrumbs = [

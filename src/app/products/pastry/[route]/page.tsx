@@ -1,8 +1,7 @@
-import type { Metadata } from 'next';
-
 import { MainWrapper, PageWrapper } from '@/components';
 import { pastryData } from '@/mock/pastry-data';
 import {
+  META_MAIN_TITLE,
   PAGE_MAIN,
   PAGE_PASTRY_TITLE,
   PAGE_PRODUCTS_TITLE,
@@ -10,14 +9,32 @@ import {
 import Routes from '@/shared/constants/routes';
 import { Breadcrumbs, ProductWidget } from '@/widgets';
 
-export const metadata: Metadata = {
-  title: 'Delivery',
-  description: 'Delivery Delivery Delivery',
-};
-
 export function generateStaticParams() {
   const pastry = pastryData.map((pastry) => pastry);
   return pastry;
+}
+
+export function generateMetadata({ params }: { params: { route: string } }) {
+  const { route } = params;
+  const pastry = pastryData.filter((item) => item.route === route);
+  const pastryTitle = pastry.map((item) => item.title);
+  const pastryDescription = pastry.map((item) => item.description);
+  const pastryPrice = pastry.map((item) => item.price);
+  const pastryImage = pastry.map((item) => item.image_meta);
+  const pastryUrl = pastry.map((item) => item.url);
+
+  return {
+    title: `Пирожное ${pastryTitle} по цене от ${pastryPrice} руб приготовленное кондитерской Пралине.`,
+    description: `${pastryDescription} Продукция замороженная, по недорогим ценам.`,
+    keywords: ['пирожное', 'замороженное', 'кондитерская'],
+    openGraph: {
+      title: `Пирожное ${pastryTitle} по цене от ${pastryPrice} руб приготовленное кондитерской Пралине.`,
+      description: `${pastryDescription} Продукция замороженная, по недорогим ценам.`,
+      images: [{ url: `${pastryImage}` }],
+      url: `${pastryUrl}`,
+      site_name: META_MAIN_TITLE,
+    },
+  };
 }
 
 export default function PastryPage({ params }: { params: { route: string } }) {

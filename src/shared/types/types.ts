@@ -3,8 +3,11 @@ import { StaticImageData } from 'next/image';
 // категория
 export interface CategoryProps {
   name: string;
+  description?: string;
   route: string;
   image: StaticImageData;
+  image_meta?: string;
+  url?: string;
   category?: string;
 }
 

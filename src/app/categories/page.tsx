@@ -6,6 +6,7 @@ import { PageHeading } from '@/entities';
 import {
   META_CATEGORIES_DESCRIPTION,
   META_CATEGORIES_TITLE,
+  META_MAIN_TITLE,
   PAGE_CATEGORIES_TITLE,
   PAGE_MAIN,
   PAGE_PRODUCTS_TITLE,
@@ -15,6 +16,18 @@ import Routes from '@/shared/constants/routes';
 export const metadata: Metadata = {
   title: META_CATEGORIES_TITLE,
   description: META_CATEGORIES_DESCRIPTION,
+  keywords: ['категории', 'пирожные'],
+  openGraph: {
+    title: META_CATEGORIES_TITLE,
+    description: META_CATEGORIES_DESCRIPTION,
+    images: [
+      {
+        url: 'https://pralinecakes.ru/_next/static/media/meta-categories.afe5266c.jpg',
+      },
+    ],
+    url: 'https://pralinecakes.ru/categories/',
+    siteName: META_MAIN_TITLE,
+  },
 };
 
 const breadcrumbs = [

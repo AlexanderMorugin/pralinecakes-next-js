@@ -2,18 +2,32 @@ import type { Metadata } from 'next';
 
 import DeliveryImage from '@/assets/images/delivery/img-delivery.jpg';
 import { MainWrapper } from '@/components';
+import { Breadcrumbs, DeliveryWidget, HeadingImage } from '@/widgets';
 import {
-  Breadcrumbs,
-  DeliveryWidget,
-  HeadingImage,
-} from '@/widgets';
-import { META_DELIVERY_DESCRIPTION, META_DELIVERY_TITLE, PAGE_DELIVERY_TITLE, PAGE_MAIN } from '@/shared/constants/pages';
+  META_DELIVERY_DESCRIPTION,
+  META_DELIVERY_TITLE,
+  META_MAIN_TITLE,
+  PAGE_DELIVERY_TITLE,
+  PAGE_MAIN,
+} from '@/shared/constants/pages';
 import Routes from '@/shared/constants/routes';
 import { PageHeading } from '@/entities';
 
 export const metadata: Metadata = {
   title: META_DELIVERY_TITLE,
   description: META_DELIVERY_DESCRIPTION,
+  keywords: ['доставка', 'привезем', 'бесплатно'],
+  openGraph: {
+    title: META_DELIVERY_TITLE,
+    description: META_DELIVERY_DESCRIPTION,
+    images: [
+      {
+        url: 'https://pralinecakes.ru/_next/static/media/meta-delivery.8a2e0bf1.jpg',
+      },
+    ],
+    url: 'https://pralinecakes.ru/delivery/',
+    siteName: META_MAIN_TITLE,
+  },
 };
 
 const breadcrumbs = [
