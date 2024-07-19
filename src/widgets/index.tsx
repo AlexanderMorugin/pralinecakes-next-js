@@ -15,6 +15,7 @@ import DeliveryWidget from './delivery-widget';
 import HeadingImage from './heading-image';
 import NotFoundWidget from './not-found-widget';
 import PastryBlock from './pastry-block';
+import PriorityBlock from './priority-block';
 import ProductWidget from './product-widget';
 
 export {
@@ -36,4 +37,5 @@ export {
   CooperationBlock,
   DeliveryBlock,
   NotFoundWidget,
+  PriorityBlock,
 };
