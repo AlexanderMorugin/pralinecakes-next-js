@@ -27,12 +27,17 @@ export function generateMetadata({ params }: { params: { route: string } }) {
     title: `Торт ${cakeTitle} по цене ${cakePrice} руб от кондитерской Пралине.`,
     description: `${cakeDescription} Поставляется в замороженном виде, по оптовой цене.`,
     keywords: ['торт', 'замороженный', 'кондитерская'],
+    alternates: {
+      canonical: `${cakeUrl}`,
+    },
     openGraph: {
       title: `Торт ${cakeTitle} по цене ${cakePrice} руб от кондитерской Пралине.`,
       description: `${cakeDescription} Поставляется в замороженном виде, по оптовой цене.`,
       images: [{ url: `${cakeImage}` }],
       url: `${cakeUrl}`,
       site_name: META_MAIN_TITLE,
+      type: 'website',
+      locale: 'ru_RU',
     },
   };
 }

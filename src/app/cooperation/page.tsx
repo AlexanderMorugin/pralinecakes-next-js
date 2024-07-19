@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   title: META_COOPERATION_TITLE,
   description: META_COOPERATION_DESCRIPTION,
   keywords: ['сотрудничество', 'партнерство', 'дегустация'],
+  alternates: {
+    canonical: 'https://pralinecakes.ru/cooperation/',
+  },
   openGraph: {
     title: META_COOPERATION_TITLE,
     description: META_COOPERATION_DESCRIPTION,
@@ -27,6 +30,8 @@ export const metadata: Metadata = {
     ],
     url: 'https://pralinecakes.ru/cooperation/',
     siteName: META_MAIN_TITLE,
+    type: 'website',
+    locale: 'ru_RU',
   },
 };
 

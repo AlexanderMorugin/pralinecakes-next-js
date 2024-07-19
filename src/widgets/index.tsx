@@ -13,6 +13,7 @@ import CooperationWidget from './cooperation-widget';
 import DeliveryBlock from './delivery-block';
 import DeliveryWidget from './delivery-widget';
 import HeadingImage from './heading-image';
+import NotFoundWidget from './not-found-widget';
 import PastryBlock from './pastry-block';
 import ProductWidget from './product-widget';
 
@@ -34,4 +35,5 @@ export {
   AboutUsBlock,
   CooperationBlock,
   DeliveryBlock,
+  NotFoundWidget,
 };

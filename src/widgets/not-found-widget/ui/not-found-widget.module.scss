@@ -1,0 +1,34 @@
+@use '@/shared/styles/mixins' as media;
+
+.notFoundWidget {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  max-width: var(--width-xl);
+  margin: 0 auto;
+  padding-left: var(--padding-horizontal-desktop);
+  padding-right: var(--padding-horizontal-desktop);
+  padding-bottom: var(--padding-vertical-desktop);
+  z-index: var(--z-index-two);
+
+  @include media.respond-to('middle') {
+    padding-left: var(--padding-horizontal-mobile);
+    padding-right: var(--padding-horizontal-mobile);
+  }
+
+  &__title {
+    font: var(--font-xxl-bold);
+  }
+
+  &__link {
+    color: var(--link-primary);
+    transition: 0.25s;
+
+    &:hover {
+      color: var(--link-secondary);
+    }
+  }
+}

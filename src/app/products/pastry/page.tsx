@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   title: META_PASTRY_TITLE,
   description: META_PASTRY_DESCRIPTION,
   keywords: ['пирожные', 'замороженные', 'кондитерская'],
+  alternates: {
+    canonical: 'https://pralinecakes.ru/products/pastry/',
+  },
   openGraph: {
     title: META_PASTRY_TITLE,
     description: META_PASTRY_DESCRIPTION,
@@ -27,6 +30,8 @@ export const metadata: Metadata = {
     ],
     url: 'https://pralinecakes.ru/products/pastry/',
     siteName: META_MAIN_TITLE,
+    type: 'website',
+    locale: 'ru_RU',
   },
 };
 

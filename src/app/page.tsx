@@ -21,6 +21,9 @@ export const metadata: Metadata = {
   title: META_MAIN_TITLE,
   description: META_MAIN_DESCRIPTION,
   keywords: ['кондитерская', 'пралине'],
+  alternates: {
+    canonical: 'https://pralinecakes.ru/',
+  },
   openGraph: {
     title: META_MAIN_TITLE,
     description: META_MAIN_DESCRIPTION,
@@ -31,10 +34,12 @@ export const metadata: Metadata = {
     ],
     url: 'https://pralinecakes.ru/',
     siteName: META_MAIN_TITLE,
+    type: 'website',
+    locale: 'ru_RU',
   },
 };
 
-function Home() {
+export default function Home() {
   return (
     <MainWrapper>
       <HeadingImage image={MainImage as any} title={PAGE_MAIN_TITLE} />
@@ -47,5 +52,3 @@ function Home() {
     </MainWrapper>
   );
 }
-
-export default Home;

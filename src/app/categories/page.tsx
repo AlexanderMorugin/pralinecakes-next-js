@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   title: META_CATEGORIES_TITLE,
   description: META_CATEGORIES_DESCRIPTION,
   keywords: ['категории', 'пирожные'],
+  alternates: {
+    canonical: 'https://pralinecakes.ru/categories/',
+  },
   openGraph: {
     title: META_CATEGORIES_TITLE,
     description: META_CATEGORIES_DESCRIPTION,
@@ -27,6 +30,8 @@ export const metadata: Metadata = {
     ],
     url: 'https://pralinecakes.ru/categories/',
     siteName: META_MAIN_TITLE,
+    type: 'website',
+    locale: 'ru_RU',
   },
 };
 

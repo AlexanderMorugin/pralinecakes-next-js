@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   title: META_CONTACTS_TITLE,
   description: META_CONTACTS_DESCRIPTION,
   keywords: ['контакты', 'адрес', 'телефон'],
+  alternates: {
+    canonical: 'https://pralinecakes.ru/contacts/',
+  },
   openGraph: {
     title: META_CONTACTS_TITLE,
     description: META_CONTACTS_DESCRIPTION,
@@ -26,6 +29,8 @@ export const metadata: Metadata = {
     ],
     url: 'https://pralinecakes.ru/contacts/',
     siteName: META_MAIN_TITLE,
+    type: 'website',
+    locale: 'ru_RU',
   },
 };
 

@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   title: META_CAKES_TITLE,
   description: META_CAKES_DESCRIPTION,
   keywords: ['торт', 'замороженные', 'кондитерская'],
+  alternates: {
+    canonical: 'https://pralinecakes.ru/products/cakes/',
+  },
   openGraph: {
     title: META_CAKES_TITLE,
     description: META_CAKES_DESCRIPTION,
@@ -27,6 +30,8 @@ export const metadata: Metadata = {
     ],
     url: 'https://pralinecakes.ru/products/cakes/',
     siteName: META_MAIN_TITLE,
+    type: 'website',
+    locale: 'ru_RU',
   },
 };
 

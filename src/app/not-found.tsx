@@ -1,5 +1,13 @@
-function NotFound() {
-  return <h1>Страница не найдена</h1>;
-}
+import type { Metadata } from 'next';
 
-export default NotFound;
+import { NotFoundWidget } from '@/widgets';
+
+export const metadata: Metadata = {
+  title: '404 - Страница не найдена',
+  description:
+    'К сожалению, запрашиваемая Вами страница не найдена. Пожалуйста, перейдите в существующий раздел',
+};
+
+export default function NotFound() {
+  return <NotFoundWidget />;
+}

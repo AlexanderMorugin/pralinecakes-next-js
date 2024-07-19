@@ -28,10 +28,12 @@ const ContactsWidget: FC = () => {
         </div>
         <div className={styles.contactsWidget__grid}>
           <span className={styles.contactsWidget__name}>Телефоны:</span>
+
           <div className={styles.contactsWidget__text}>
             <a href={PHONE_LINK} className={styles.contactsWidget__color}>
               {PHONE_NUMBER}
             </a>
+            <div className={styles.contactsWidget__break}>;&nbsp;</div>
             <a
               href={PHONE_SECOND_LINK}
               className={styles.contactsWidget__color}

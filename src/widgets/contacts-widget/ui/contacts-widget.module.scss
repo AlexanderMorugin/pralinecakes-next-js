@@ -59,4 +59,10 @@
   &__color {
     color: var(--text-primary);
   }
+
+  &__break {
+    @include media.respond-to('middle') {
+      display: none;
+    }
+  }
 }

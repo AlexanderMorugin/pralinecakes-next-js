@@ -28,17 +28,26 @@ export function generateMetadata({ params }: { params: { route: string } }) {
     title: `Пирожные ${categoryName} от кондитерской Пралине.`,
     description: `${categoryDescription} с ценами, которые готовят в кондитерской Пралине для кафе, баров, пекарен, театров.`,
     keywords: ['пирожные', 'категории'],
+    alternates: {
+      canonical: `${categoryUrl}`,
+    },
     openGraph: {
       title: `Пирожные ${categoryName} от кондитерской Пралине.`,
       description: `${categoryDescription} с ценами, которые готовят в кондитерской Пралине для кафе, баров, пекарен, театров.`,
       images: [{ url: `${categoryImage}` }],
       url: `${categoryUrl}`,
       site_name: META_MAIN_TITLE,
+      type: 'website',
+      locale: 'ru_RU',
     },
   };
 }
 
-export default function CakePage({ params }: { params: { route: string } }) {
+export default function CategoryPage({
+  params,
+}: {
+  params: { route: string };
+}) {
   const { route } = params;
 
   const category = categoryData.filter((item) => item.route === route);

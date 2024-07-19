@@ -17,12 +17,21 @@ export const metadata: Metadata = {
   title: META_ABOUT_TITLE,
   description: META_ABOUT_DESCRIPTION,
   keywords: ['производим', 'профессиональных', 'кондитерская'],
+  alternates: {
+    canonical: 'https://pralinecakes.ru/about/',
+  },
   openGraph: {
     title: META_ABOUT_TITLE,
     description: META_ABOUT_DESCRIPTION,
-    images: [{ url: 'https://pralinecakes.ru/_next/static/media/meta-about.9fa134f6.jpg' }],
+    images: [
+      {
+        url: 'https://pralinecakes.ru/_next/static/media/meta-about.9fa134f6.jpg',
+      },
+    ],
     url: 'https://pralinecakes.ru/about/',
     siteName: META_MAIN_TITLE,
+    type: 'website',
+    locale: 'ru_RU',
   },
 };
 

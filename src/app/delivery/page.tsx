@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   title: META_DELIVERY_TITLE,
   description: META_DELIVERY_DESCRIPTION,
   keywords: ['доставка', 'привезем', 'бесплатно'],
+  alternates: {
+    canonical: 'https://pralinecakes.ru/delivery/',
+  },
   openGraph: {
     title: META_DELIVERY_TITLE,
     description: META_DELIVERY_DESCRIPTION,
@@ -27,6 +30,8 @@ export const metadata: Metadata = {
     ],
     url: 'https://pralinecakes.ru/delivery/',
     siteName: META_MAIN_TITLE,
+    type: 'website',
+    locale: 'ru_RU',
   },
 };
 
