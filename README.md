@@ -2,7 +2,7 @@
 
 Проект действующего сайта https://pralinecakes.ru/
 
-![Pralinecakes Demo](/pralinecakes.png)
+![Pralinecakes Demo](/1.png)
 
 ## О проекте ##
 
