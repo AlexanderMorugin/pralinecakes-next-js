@@ -37,6 +37,10 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'ru_RU',
   },
+  other: {
+    ['yandex-verification']: '870da4657dc940ee',
+    ['google-site-verification']: 'joYRyZNufXcpuH3O0Alwiiggy2bwx3lsWu5Br8vKlIw',
+  },
 };
 
 export default function Home() {

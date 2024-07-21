@@ -3,25 +3,35 @@ import type { FC } from 'react';
 import {
   AddressBlock,
   HeaderConnect,
-  // HeaderMobileMenu,
+  HeaderMobileMenu,
   HeaderNavBar,
   Logo,
 } from '@/entities';
+import { MediaRendering } from '@/components';
+import { SCREEN_M } from '@/shared/constants/screen';
 
 import styles from './header.module.scss';
-import HeaderMobileMenu from '@/entities/header-mobile-menu';
 
 const Header: FC = () => {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        <HeaderMobileMenu />
+        <MediaRendering minWidth={null} maxWidth={SCREEN_M}>
+          <HeaderMobileMenu />
+        </MediaRendering>
+
         <Logo />
-        <div className={styles.nav}>
-          <AddressBlock />
-          <HeaderNavBar />
-        </div>
-        <HeaderConnect />
+
+        <MediaRendering minWidth={SCREEN_M} maxWidth={null}>
+          <div className={styles.nav}>
+            <AddressBlock />
+            <HeaderNavBar />
+          </div>
+        </MediaRendering>
+
+        <MediaRendering minWidth={null} maxWidth={SCREEN_M}>
+          <HeaderConnect />
+        </MediaRendering>
       </div>
     </header>
   );

@@ -5,11 +5,10 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 import { navBarData } from '@/mock/nav-bar-data';
-
-import styles from './header-mobile-menu.module.scss';
 import { ADDRESS, COMPANY_NAME, PHONE_NUMBER } from '@/shared/constants/info';
 import HeaderMenuButton from '@/entities/header-menu-button';
-// import { HeaderMenuButton } from '@/entities';
+
+import styles from './header-mobile-menu.module.scss';
 
 const HeaderMobileMenu: FC = () => {
   const [menuActive, setMenuActive] = useState(false);

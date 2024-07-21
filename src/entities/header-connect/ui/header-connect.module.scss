@@ -1,13 +1,7 @@
-@use '@/shared/styles/mixins' as media;
-
 .headerConnect {
-  display: none;
+  display: flex;
   align-items: center;
   gap: 10px;
-
-  @include media.respond-to('middle') {
-    display: flex;
-  }
 
   &__link {
     display: flex;

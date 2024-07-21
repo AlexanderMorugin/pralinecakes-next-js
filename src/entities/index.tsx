@@ -3,8 +3,7 @@ import CategoryBlock from './category-block';
 import CategoryButton from './category-button';
 import FooterNav from './footer-nav';
 import HeaderConnect from './header-connect';
-// import HeaderMenuButton from './header-menu-button';
-// import HeaderMobileMenu from './header-mobile-menu';
+import HeaderMobileMenu from './header-mobile-menu';
 import HeaderNavBar from './header-nav-bar';
 import HitSign from './hit-sign';
 import LinkButton from './link-button';
@@ -27,8 +26,7 @@ export {
   Logo,
   AddressBlock,
   HeaderNavBar,
-  // HeaderMenuButton,
-  // HeaderMobileMenu,
+  HeaderMobileMenu,
   HeaderConnect,
   FooterNav,
   ProductBlock,

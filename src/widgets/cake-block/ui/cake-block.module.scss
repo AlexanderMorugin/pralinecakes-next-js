@@ -15,10 +15,4 @@
     padding-top: 0;
     padding-bottom: 0;
   }
-
-  &__visible {
-    @include media.respond-to('middle') {
-      display: none;
-    }
-  }
 }

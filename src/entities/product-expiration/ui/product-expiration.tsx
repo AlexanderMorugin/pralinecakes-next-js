@@ -9,13 +9,7 @@ const ProductExpiration: FC = () => {
   return (
     <section className={styles.productExpiration}>
       <div className={styles.productExpiration__heading}>
-        <Image
-          src={TimeIcon}
-          alt='Время'
-          width={22}
-          height={22}
-
-        />
+        <Image src={TimeIcon} alt='Время' width={22} height={22} />
         <h3 className={styles.productExpiration__title}>Срок годности</h3>
       </div>
 

@@ -8,15 +8,13 @@ import {
   PAGE_PASTRY_LINK,
   PAGE_PASTRY_TITLE,
 } from '@/shared/constants/pages';
+import Routes from '@/shared/constants/routes';
 
 import styles from './product-block.module.scss';
-import Routes from '@/shared/constants/routes';
 
 interface IProductBlock {
   dataPastry?: ProductProps[];
   dataCakes?: ProductProps[];
-  // routePastry?: string;
-  // routeCakes?: string;
   isLink?: boolean;
   isCake?: boolean;
   isPastry?: boolean;
@@ -26,12 +24,10 @@ interface IProductBlock {
 const ProductBlock: FC<IProductBlock> = ({
   dataPastry,
   dataCakes,
-  // routePastry,
-  // routeCakes,
   isLink,
   isCake = false,
   isPastry = false,
-  className
+  className,
 }) => {
   return (
     <div className={`${className} ${styles.productBlock}`}>
@@ -39,11 +35,8 @@ const ProductBlock: FC<IProductBlock> = ({
         <ProductHeading
           title={PAGE_CAKES_TITLE}
           subtitle={PAGE_CAKES_LINK}
-          // route={routeCakes || '#'}
           route={Routes.CAKES}
           isLink={isLink}
-          // isCake={isCake}
-          // isPastry={isPastry}
         />
       )}
 
@@ -51,10 +44,8 @@ const ProductBlock: FC<IProductBlock> = ({
         <ProductHeading
           title={PAGE_PASTRY_TITLE}
           subtitle={PAGE_PASTRY_LINK}
-          // route={routePastry || '#'}
           route={Routes.PASTRY}
           isLink={isLink}
-          // isCake={isCake}
           isPastry={isPastry}
         />
       )}

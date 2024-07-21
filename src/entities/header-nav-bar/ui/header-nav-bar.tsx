@@ -11,7 +11,9 @@ const HeaderNavBar: FC = () => {
       <ul className={styles.headerNavBar}>
         {navBarData.map((item, index) => (
           <li key={index}>
-            <Link href={item.route} className={styles.link}>{item.title}</Link>
+            <Link href={item.route} className={styles.link}>
+              {item.title}
+            </Link>
           </li>
         ))}
       </ul>

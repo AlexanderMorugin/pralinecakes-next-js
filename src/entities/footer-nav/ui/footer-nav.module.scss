@@ -1,3 +1,5 @@
+@use '@/shared/styles/mixins' as media;
+
 .footerNav {
   display: flex;
   flex-direction: column;
@@ -10,6 +12,11 @@
     letter-spacing: 1.1px;
     padding-left: 45px;
     opacity: 0.6;
+
+    @include media.respond-to('middle') {
+      padding-left: 0;
+      text-align: center;
+    }
   }
 
   &__link {

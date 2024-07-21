@@ -3,6 +3,8 @@ import Link from 'next/link';
 
 import Routes from '@/shared/constants/routes';
 import { LinkTextArrow } from '@/entities';
+import { MediaRendering } from '@/components';
+import { SCREEN_M } from '@/shared/constants/screen';
 
 import styles from './product-heading.module.scss';
 
@@ -11,7 +13,6 @@ interface IProductHeading {
   subtitle: string;
   route: string;
   isLink?: boolean;
-  // isCake: boolean;
   isPastry?: boolean;
 }
 
@@ -20,7 +21,6 @@ const ProductHeading: FC<IProductHeading> = ({
   subtitle,
   route,
   isLink = false,
-  // isCake,
   isPastry = false,
 }) => {
   return (
@@ -37,11 +37,10 @@ const ProductHeading: FC<IProductHeading> = ({
             </Link>
           )}
         </div>
-        <LinkTextArrow
-          route={route}
-          subtitle={subtitle}
-          className={styles.productHeading__linkTextArrow}
-        />
+
+        <MediaRendering minWidth={SCREEN_M} maxWidth={null}>
+          <LinkTextArrow route={route} subtitle={subtitle} />
+        </MediaRendering>
       </article>
     )
   );

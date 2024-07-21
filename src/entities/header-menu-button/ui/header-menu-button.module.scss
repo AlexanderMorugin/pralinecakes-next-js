@@ -1,15 +1,9 @@
-@use '@/shared/styles/mixins' as media;
-
 .headerMenuButton {
-  display: none;
+  display: block;
   position: relative;
   width: 24px;
   height: 16px;
   cursor: pointer;
-
-  @include media.respond-to('middle') {
-    display: block;
-  }
 
   &__span {
     position: absolute;

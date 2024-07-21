@@ -11,10 +11,4 @@
     padding-left: var(--padding-horizontal-mobile);
     padding-right: var(--padding-horizontal-mobile);
   }
-
-  &__visible {
-    @include media.respond-to('middle') {
-      display: none;
-    }
-  }
 }

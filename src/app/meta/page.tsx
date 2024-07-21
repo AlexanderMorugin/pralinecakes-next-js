@@ -1,15 +1,15 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 
-import MainImage from '@/assets/images/main/meta-main.jpg'
-import AboutImage from '@/assets/images/about/meta-about.jpg'
-import ProductsImage from '@/assets/images/products/meta-products.jpg'
-import DeliveryImage from '@/assets/images/delivery/meta-delivery.jpg'
-import CooperationImage from '@/assets/images/cooperation/meta-cooperation.jpg'
-import CategoriesImage from '@/assets/images/category/meta-categories.jpg'
-import ContactsImage from '@/assets/images/contacts/meta-contacts.jpg'
+import MainImage from '@/assets/images/main/meta-main.jpg';
+import AboutImage from '@/assets/images/about/meta-about.jpg';
+import ProductsImage from '@/assets/images/products/meta-products.jpg';
+import DeliveryImage from '@/assets/images/delivery/meta-delivery.jpg';
+import CooperationImage from '@/assets/images/cooperation/meta-cooperation.jpg';
+import CategoriesImage from '@/assets/images/category/meta-categories.jpg';
+import ContactsImage from '@/assets/images/contacts/meta-contacts.jpg';
 
-import styles from './page.module.scss'
+import styles from './page.module.scss';
 
 export const metadata: Metadata = {
   robots: {

@@ -1,9 +1,10 @@
 import type { FC } from 'react';
 
-// import Routes from '@/shared/constants/routes';
 import { ProductBlock, ProductScroll } from '@/entities';
 import useShuffleArray from '@/shared/hooks/use-shuffle-array';
 import { pastryData } from '@/mock/pastry-data';
+import { MediaRendering } from '@/components';
+import { SCREEN_M } from '@/shared/constants/screen';
 
 import styles from './pastry-block.module.scss';
 
@@ -12,22 +13,21 @@ const PastryBlock: FC = () => {
 
   return (
     <section className={styles.pastryBlock}>
-      <ProductBlock
-        dataPastry={fourItemsData}
-        // routePastry={Routes.PASTRY}
-        isLink={true}
-        isPastry={true}
-        // isCake={false}
-        className={styles.pastryBlock__visible}
-      />
+      <MediaRendering minWidth={SCREEN_M} maxWidth={null}>
+        <ProductBlock
+          dataPastry={fourItemsData}
+          isLink={true}
+          isPastry={true}
+        />
+      </MediaRendering>
 
-      <ProductScroll
-        dataPastry={eightItemsData}
-        // routePastry={Routes.PASTRY}
-        isLink={true}
-        isPastry={true}
-        // isCake={false}
-      />
+      <MediaRendering minWidth={null} maxWidth={SCREEN_M}>
+        <ProductScroll
+          dataPastry={eightItemsData}
+          isLink={true}
+          isPastry={true}
+        />
+      </MediaRendering>
     </section>
   );
 };

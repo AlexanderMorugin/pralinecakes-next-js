@@ -4,7 +4,6 @@ import { PAGE_SUBTITLE } from '@/shared/constants/pages';
 
 import styles from './page-heading.module.scss';
 
-
 interface IPageHeading {
   title: string;
   isPage?: boolean;

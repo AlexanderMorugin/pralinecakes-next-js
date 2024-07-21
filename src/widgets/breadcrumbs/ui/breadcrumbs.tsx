@@ -3,7 +3,6 @@ import Link from 'next/link';
 
 import styles from './breadcrumbs.module.scss';
 
-
 type TLinks = {
   heading: string | string[];
   route: string;

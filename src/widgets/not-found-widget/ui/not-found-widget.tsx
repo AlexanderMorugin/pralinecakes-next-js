@@ -12,7 +12,10 @@ const NotFoundWidget: FC = () => {
       <p>
         К сожалению, запрашиваемая Вами страница не найдена. Пожалуйста,
         перейдите в существующий раздел или на&nbsp;
-        <Link href='/' className={styles.notFoundWidget__link}>главную страницу</Link>.
+        <Link href='/' className={styles.notFoundWidget__link}>
+          главную страницу
+        </Link>
+        .
       </p>
     </section>
   );

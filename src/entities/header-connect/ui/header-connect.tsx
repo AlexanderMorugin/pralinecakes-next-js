@@ -1,5 +1,4 @@
 import type { FC } from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
 
 import { connectData } from '@/mock/connect-data';

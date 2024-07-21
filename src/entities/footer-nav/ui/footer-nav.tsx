@@ -24,12 +24,7 @@ const FooterNav: FC<IFooterNav> = ({ title, array, className }) => {
         {array?.map((item, index) => (
           <li key={index}>
             <Link href={item.route} className={styles.footerNav__link}>
-              <Image
-                src={item.icon}
-                alt={item.title}
-                width={20}
-                height={20}
-              />
+              <Image src={item.icon} alt={item.title} width={20} height={20} />
               <span>{item.title}</span>
             </Link>
           </li>

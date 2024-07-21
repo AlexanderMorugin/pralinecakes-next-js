@@ -4,11 +4,6 @@
   display: flex;
   flex-direction: column;
   gap: 5px;
-  // visibility: hidden;
-
-  // @include media.respond-to('middle') {
-  //   display: none;
-  // }
 
   &__container {
     display: grid;

@@ -6,7 +6,6 @@ import ArrowIcon from '@/assets/icons/icon-arrow-right.svg';
 
 import styles from './link-button.module.scss';
 
-
 interface ILinkButton {
   route: string;
   text: string;
