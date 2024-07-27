@@ -1,0 +1,42 @@
+@use '@/shared/styles/mixins' as media;
+
+.pageSubheading {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    var(--link-thirdary) 20%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px 40px;
+
+  @include media.respond-to('middle') {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &__title {
+    font: var(--font-s-medium);
+    font-style: italic;
+    text-align: center;
+
+    @include media.respond-to('middle') {
+      font: var(--font-xs-medium);
+      font-style: italic;
+    }
+  }
+
+  &__description {
+    font: var(--font-xs-regular);
+    color: var(--text-thirdary);
+    text-align: center;
+
+    @include media.respond-to('middle') {
+      font: var(--font-xxs-regular);
+    }
+  }
+}

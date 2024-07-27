@@ -1,4 +1,4 @@
-import type { FC } from 'react';
+import { type FC } from 'react';
 
 import { cakesData } from '@/mock/cakes-data';
 import { ProductBlock } from '@/entities';

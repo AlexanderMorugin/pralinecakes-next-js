@@ -10,6 +10,7 @@ import LinkButton from './link-button';
 import LinkTextArrow from './link-text-arrow';
 import Logo from './logo';
 import PageHeading from './page-heading';
+import PageSubheading from './page-subheading';
 import PriorityCard from './priority-card';
 import ProductBlock from './product-block';
 import ProductCard from './product-card';
@@ -21,6 +22,7 @@ import ProductNutritions from './product-nutritions';
 import ProductPrice from './product-price';
 import ProductPrices from './product-prices';
 import ProductScroll from './product-scroll';
+import TextBlock from './text-block';
 
 export {
   Logo,
@@ -37,6 +39,7 @@ export {
   ProductScroll,
   LinkButton,
   PageHeading,
+  PageSubheading,
   ProductDescribe,
   ProductNutritions,
   ProductPrice,
@@ -46,4 +49,5 @@ export {
   CategoryBlock,
   CategoryButton,
   PriorityCard,
+  TextBlock,
 };
