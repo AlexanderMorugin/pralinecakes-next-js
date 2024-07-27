@@ -18,6 +18,7 @@ const PastryBlock: FC = () => {
           dataPastry={fourItemsData}
           isLink={true}
           isPastry={true}
+          isPastryBlock={true}
         />
       </MediaRendering>
 

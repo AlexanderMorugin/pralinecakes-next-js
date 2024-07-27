@@ -10,7 +10,7 @@ import {
   PAGE_PRODUCTS_TITLE,
 } from '@/shared/constants/pages';
 import Routes from '@/shared/constants/routes';
-import { PageHeading } from '@/entities';
+import { PageHeading, PageSubheading } from '@/entities';
 
 export const metadata: Metadata = {
   title: META_PRODUCTS_TITLE,
@@ -45,6 +45,11 @@ export default function Products() {
       <Breadcrumbs links={breadcrumbs} />
       <MainWrapper>
         <PageHeading title={PAGE_PRODUCTS_TITLE} />
+        
+        <PageSubheading
+          title={META_PRODUCTS_TITLE}
+          description={META_PRODUCTS_DESCRIPTION}
+        />
         <PastryBlock />
         <CakeBlock />
       </MainWrapper>

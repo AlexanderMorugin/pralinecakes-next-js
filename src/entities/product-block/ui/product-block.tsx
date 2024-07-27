@@ -18,7 +18,9 @@ interface IProductBlock {
   dataCakes?: ProductProps[];
   isLink?: boolean;
   isCake?: boolean;
+  isCakeBlock?: boolean;
   isPastry?: boolean;
+  isPastryBlock?: boolean;
   className?: string;
 }
 
@@ -27,9 +29,15 @@ const ProductBlock: FC<IProductBlock> = ({
   dataCakes,
   isLink,
   isCake = false,
+  isCakeBlock = false,
   isPastry = false,
+  isPastryBlock = false,
   className,
 }) => {
+  const dataCakeSliceOne = dataCakes?.slice(0, 8);
+  const dataCakeSliceTwo = dataCakes?.slice(8, 16);
+  const dataCakeSliceThree = dataCakes?.slice(16, 25);
+
   const dataPastrySliceOne = dataPastry?.slice(0, 8);
   const dataPastrySliceTwo = dataPastry?.slice(8, 16);
   const dataPastrySliceThree = dataPastry?.slice(16, 24);
@@ -58,7 +66,7 @@ const ProductBlock: FC<IProductBlock> = ({
         />
       )}
 
-      {isCake && (
+      {isCake && isCakeBlock && (
         <ul className={styles.productBlock__container}>
           {dataCakes?.map((cake) => (
             <li key={cake.id}>
@@ -75,7 +83,92 @@ const ProductBlock: FC<IProductBlock> = ({
         </ul>
       )}
 
-      {isPastry && (
+      {isCake && !isCakeBlock && (
+        <>
+          <ul className={styles.productBlock__container}>
+            {dataCakeSliceOne?.map((cake) => (
+              <li key={cake.id}>
+                <ProductCard
+                  route={`/products/cakes/${cake.route}`}
+                  image_small={cake.image_small}
+                  title={cake.title}
+                  description={cake.description}
+                  price={cake.price}
+                  rating={cake.rating}
+                />
+              </li>
+            ))}
+          </ul>
+          <TextBlock>
+            Вкусное, согревающее кондитерское изделие. Всегда приятно выпить
+            чашечку чая или кофе и съесть кусочек сочного, сладкого тортика. Это
+            праздник, это гости, это неотъемлемая часть теплой встречи друзей,
+            родственников и влюбленных! Компания Пралине выпекает шикарные торты
+            и купить их можно по низким ценам.
+          </TextBlock>
+          <ul className={styles.productBlock__container}>
+            {dataCakeSliceTwo?.map((cake) => (
+              <li key={cake.id}>
+                <ProductCard
+                  route={`/products/cakes/${cake.route}`}
+                  image_small={cake.image_small}
+                  title={cake.title}
+                  description={cake.description}
+                  price={cake.price}
+                  rating={cake.rating}
+                />
+              </li>
+            ))}
+          </ul>
+          <TextBlock>
+            Все торты мы продаем замороженными, что существенно улучшает срок
+            хранения продукции для наших клиентов. Почти все изделия мы режем
+            кусочками и купить их можно в виде отдельных десертов. Это так же
+            удобно для владельцев кофеен и ресторанов. Загляните на
+            страничку&nbsp;
+            <Link
+              href='/products/pastry/'
+              className={styles.productBlock__link}
+            >
+              наших пирожных
+            </Link>
+            &nbsp;и выбирайте.
+          </TextBlock>
+          <ul className={styles.productBlock__container}>
+            {dataCakeSliceThree?.map((cake) => (
+              <li key={cake.id}>
+                <ProductCard
+                  route={`/products/cakes/${cake.route}`}
+                  image_small={cake.image_small}
+                  title={cake.title}
+                  description={cake.description}
+                  price={cake.price}
+                  rating={cake.rating}
+                />
+              </li>
+            ))}
+          </ul>
+        </>
+      )}
+
+      {isPastry && isPastryBlock && (
+        <ul className={styles.productBlock__container}>
+          {dataPastry?.map((cake) => (
+            <li key={cake.id}>
+              <ProductCard
+                route={`/products/pastry/${cake.route}`}
+                image_small={cake.image_small}
+                title={cake.title}
+                description={cake.description}
+                price={cake.price}
+                rating={cake.rating}
+              />
+            </li>
+          ))}
+        </ul>
+      )}
+
+      {isPastry && !isPastryBlock && (
         <>
           <ul className={styles.productBlock__container}>
             {dataPastrySliceOne?.map((cake) => (

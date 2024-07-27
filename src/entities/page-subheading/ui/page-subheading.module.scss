@@ -20,12 +20,12 @@
   }
 
   &__title {
-    font: var(--font-s-medium);
+    font: var(--font-xs-medium);
     font-style: italic;
     text-align: center;
 
     @include media.respond-to('middle') {
-      font: var(--font-xs-medium);
+      font: var(--font-xxs-medium);
       font-style: italic;
     }
   }

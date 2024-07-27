@@ -14,7 +14,7 @@ const CakeBlock: FC = () => {
   return (
     <section className={styles.cakeBlock}>
       <MediaRendering minWidth={SCREEN_M} maxWidth={null}>
-        <ProductBlock dataCakes={fourItemsData} isLink={true} isCake={true} />
+        <ProductBlock dataCakes={fourItemsData} isLink={true} isCake={true} isCakeBlock={true}/>
       </MediaRendering>
 
       <MediaRendering minWidth={null} maxWidth={SCREEN_M}>

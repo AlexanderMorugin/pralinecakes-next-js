@@ -11,7 +11,7 @@ import {
   PAGE_PRODUCTS_TITLE,
 } from '@/shared/constants/pages';
 import Routes from '@/shared/constants/routes';
-import { PageHeading } from '@/entities';
+import { PageHeading, PageSubheading } from '@/entities';
 
 export const metadata: Metadata = {
   title: META_CAKES_TITLE,
@@ -47,6 +47,10 @@ export default function Cakes() {
       <Breadcrumbs links={breadcrumbs} />
       <MainWrapper>
         <PageHeading title={PAGE_CAKES_TITLE} />
+        <PageSubheading
+          title={META_CAKES_TITLE}
+          description={META_CAKES_DESCRIPTION}
+        />
         <AllCakes />
       </MainWrapper>
     </PageWrapper>
