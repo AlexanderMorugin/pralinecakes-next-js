@@ -1,0 +1,32 @@
+@use '@/shared/styles/mixins' as media;
+
+.pageText {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    #fff3e8 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  width: 100%;
+  margin-top: 30px;
+
+  @include media.respond-to('middle') {
+    margin-top: 20px;
+  }
+
+  &__text {
+    max-width: var(--width-xl);
+    font: var(--font-s-regular);
+    color: var(--text-thirdary);
+    font-style: italic;
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px;
+
+    @include media.respond-to('middle') {
+      font: var(--font-xs-regular);
+      font-style: italic;
+      padding: 20px;
+    }
+  }
+}

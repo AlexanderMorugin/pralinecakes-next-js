@@ -21,6 +21,7 @@ interface IProductBlock {
   isCakeBlock?: boolean;
   isPastry?: boolean;
   isPastryBlock?: boolean;
+  isCategory?: boolean;
   className?: string;
 }
 
@@ -32,6 +33,7 @@ const ProductBlock: FC<IProductBlock> = ({
   isCakeBlock = false,
   isPastry = false,
   isPastryBlock = false,
+  isCategory = false,
   className,
 }) => {
   const dataCakeSliceOne = dataCakes?.slice(0, 8);
@@ -168,7 +170,24 @@ const ProductBlock: FC<IProductBlock> = ({
         </ul>
       )}
 
-      {isPastry && !isPastryBlock && (
+      {isPastry && isCategory && (
+        <ul className={styles.productBlock__container}>
+          {dataPastry?.map((cake) => (
+            <li key={cake.id}>
+              <ProductCard
+                route={`/products/pastry/${cake.route}`}
+                image_small={cake.image_small}
+                title={cake.title}
+                description={cake.description}
+                price={cake.price}
+                rating={cake.rating}
+              />
+            </li>
+          ))}
+        </ul>
+      )}
+
+      {isPastry && !isPastryBlock && !isCategory && (
         <>
           <ul className={styles.productBlock__container}>
             {dataPastrySliceOne?.map((cake) => (
@@ -184,11 +203,13 @@ const ProductBlock: FC<IProductBlock> = ({
               </li>
             ))}
           </ul>
+          {/* {isPastry && !isCategory && ( */}
           <TextBlock>
             Некоторые десерты отмечены значком Хит. Это значит, что данное
             пирожное пользуется большой популярностью среди наших покупателей.
             Заказывайте хитовые позиции и ваши клиенты всегда будут довольны!
           </TextBlock>
+          {/* )} */}
           <ul className={styles.productBlock__container}>
             {dataPastrySliceTwo?.map((cake) => (
               <li key={cake.id}>

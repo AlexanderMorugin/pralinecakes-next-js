@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 
 import { MainWrapper, PageWrapper } from '@/components';
 import { AllCategories, Breadcrumbs } from '@/widgets';
-import { PageHeading } from '@/entities';
+import { PageHeading, PageSubheading } from '@/entities';
 import {
   META_CATEGORIES_DESCRIPTION,
   META_CATEGORIES_TITLE,
@@ -47,6 +47,10 @@ export default function Categories() {
       <Breadcrumbs links={breadcrumbs} />
       <MainWrapper>
         <PageHeading title={PAGE_CATEGORIES_TITLE} />
+        <PageSubheading
+          title={META_CATEGORIES_TITLE}
+          description={META_CATEGORIES_DESCRIPTION}
+        />
         <AllCategories />
       </MainWrapper>
     </PageWrapper>

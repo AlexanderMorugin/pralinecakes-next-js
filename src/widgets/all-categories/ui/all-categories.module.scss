@@ -19,9 +19,9 @@
     gap: 20px;
     width: 100%;
 
-    @include media.respond-to('large') {
-      grid-template-columns: repeat(3, 1fr);
-    }
+    // @include media.respond-to('large') {
+    //   grid-template-columns: repeat(3, 1fr);
+    // }
 
     @include media.respond-to('middle') {
       grid-template-columns: repeat(2, 1fr);

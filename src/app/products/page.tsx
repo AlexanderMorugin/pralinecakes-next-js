@@ -10,7 +10,7 @@ import {
   PAGE_PRODUCTS_TITLE,
 } from '@/shared/constants/pages';
 import Routes from '@/shared/constants/routes';
-import { PageHeading, PageSubheading } from '@/entities';
+import { PageHeading, PageSubheading, PageText } from '@/entities';
 
 export const metadata: Metadata = {
   title: META_PRODUCTS_TITLE,
@@ -45,13 +45,24 @@ export default function Products() {
       <Breadcrumbs links={breadcrumbs} />
       <MainWrapper>
         <PageHeading title={PAGE_PRODUCTS_TITLE} />
-        
         <PageSubheading
           title={META_PRODUCTS_TITLE}
           description={META_PRODUCTS_DESCRIPTION}
         />
         <PastryBlock />
+        <PageText>
+          Здесь показаны только некоторые наши десерты. Чтобы посмотреть
+          полностью, нажимайте на текст &quot;все пирожные/торты&quot; или листайте справа
+          налево. Дополнительно, пирожные еще можно выбрать и по категориям,
+          нажав на синюю кнопку.
+        </PageText>
         <CakeBlock />
+        <PageText>
+          Вся продукция нашей компании, приготовлена исключительно ручным
+          способом опытными кондитерами, из качественных ингредиентов. Мы несем
+          полную гарантию качества наших десертов и соответственно имеем все
+          необходимые сертификаты.
+        </PageText>
       </MainWrapper>
     </PageWrapper>
   );

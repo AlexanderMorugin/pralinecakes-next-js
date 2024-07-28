@@ -9,7 +9,7 @@ import {
 import Routes from '@/shared/constants/routes';
 import { MainWrapper, PageWrapper } from '@/components';
 import { Breadcrumbs, Category } from '@/widgets';
-import { PageHeading } from '@/entities';
+import { PageHeading, PageSubheading } from '@/entities';
 
 export function generateStaticParams() {
   const category = categoryData.map((category) => category);
@@ -52,6 +52,7 @@ export default function CategoryPage({
 
   const category = categoryData.filter((item) => item.route === route);
   const categoryName = category.map((item) => item.name);
+  const categoryDescription = category.map((item) => item.description);
   const currentArray = pastryData.filter((item) =>
     item.type.includes(route || '#')
   );
@@ -68,6 +69,10 @@ export default function CategoryPage({
       <Breadcrumbs links={breadcrumbs} />
       <MainWrapper>
         <PageHeading title={`Пирожные ${categoryName}`} />
+        <PageSubheading
+          title={`Категория - Пирожные ${categoryName}. Купить в кондитерской Пралине.`}
+          description={`${categoryDescription}. Приготовленные для предприятий общественного питания.`}
+        />
         <Category data={currentArray} />
       </MainWrapper>
     </PageWrapper>

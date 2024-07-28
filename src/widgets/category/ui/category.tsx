@@ -15,7 +15,12 @@ const Category: FC<ICategory> = ({ data }) => {
 
   return (
     <section className={styles.category}>
-      <ProductBlock dataPastry={shuffledData} isCake={false} isPastry={true} />
+      <ProductBlock
+        dataPastry={shuffledData}
+        isCake={false}
+        isPastry={true}
+        isCategory={true}
+      />
     </section>
   );
 };

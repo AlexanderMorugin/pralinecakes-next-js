@@ -11,6 +11,7 @@ import LinkTextArrow from './link-text-arrow';
 import Logo from './logo';
 import PageHeading from './page-heading';
 import PageSubheading from './page-subheading';
+import PageText from './page-text';
 import PriorityCard from './priority-card';
 import ProductBlock from './product-block';
 import ProductCard from './product-card';
@@ -50,4 +51,5 @@ export {
   CategoryButton,
   PriorityCard,
   TextBlock,
+  PageText,
 };
