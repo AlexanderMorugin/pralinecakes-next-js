@@ -21,6 +21,7 @@
 
   &__title {
     font: var(--font-xxl-bold);
+    color: var(--accent-secondary);
     text-align: center;
 
     @include media.respond-to('middle') {
@@ -29,6 +30,29 @@
   }
 
   &__subtitle {
+    font: var(--font-xs-medium);
+    color: var(--link-secondary);
+    font-style: italic;
+    text-align: center;
+
+    @include media.respond-to('middle') {
+      font: var(--font-xxs-medium);
+      font-style: italic;
+    }
+  }
+
+  &__description {
+    width: 100%;
+    max-width: 500px;
+    font: var(--font-xs-regular);
+    text-align: center;
+
+    @include media.respond-to('middle') {
+      font: var(--font-xxs-regular);
+    }
+  }
+
+  &__pageSubtitle {
     font: var(--font-xxs-regular);
     color: var(--text-secondary);
     text-align: center;

@@ -6,10 +6,19 @@ import styles from './page-heading.module.scss';
 
 interface IPageHeading {
   title: string;
+  subtitle?: string;
+  description?: string;
   isPage?: boolean;
+  isSubtitle?: boolean;
 }
 
-const PageHeading: FC<IPageHeading> = ({ title, isPage = false }) => {
+const PageHeading: FC<IPageHeading> = ({
+  title,
+  isPage = false,
+  subtitle,
+  isSubtitle = false,
+  description,
+}) => {
   return (
     <article
       className={
@@ -19,7 +28,22 @@ const PageHeading: FC<IPageHeading> = ({ title, isPage = false }) => {
       }
     >
       <h1 className={styles.pageHeading__title}>{title}</h1>
-      <p className={styles.pageHeading__subtitle}>{PAGE_SUBTITLE}</p>
+      {isSubtitle ? (
+        <>
+          <p className={styles.pageHeading__subtitle}>{subtitle}</p>
+          <p className={styles.pageHeading__description}>{description}</p>
+        </>
+      ) : (
+        <p
+          className={
+            isSubtitle
+              ? styles.pageHeading__description
+              : styles.pageHeading__pageSubtitle
+          }
+        >
+          {PAGE_SUBTITLE}
+        </p>
+      )}
     </article>
   );
 };

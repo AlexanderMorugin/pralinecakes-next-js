@@ -70,7 +70,7 @@ export default function CategoryPage({
       <MainWrapper>
         <PageHeading title={`Пирожные ${categoryName}`} />
         <PageSubheading
-          title={`Категория - Пирожные ${categoryName}. Купить в кондитерской Пралине.`}
+          title={`Категория - Пирожные ${categoryName}. Которые можно купить в кондитерской Пралине.`}
           description={`${categoryDescription}. Приготовленные для предприятий общественного питания.`}
         />
         <Category data={currentArray} />

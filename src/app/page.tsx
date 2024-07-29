@@ -18,14 +18,14 @@ import {
 } from '@/widgets';
 
 export const metadata: Metadata = {
-  title: META_MAIN_TITLE,
+  title: `Кондитерская Пралине | ${META_MAIN_TITLE}`,
   description: META_MAIN_DESCRIPTION,
   keywords: ['кондитерская', 'пралине'],
   alternates: {
     canonical: 'https://pralinecakes.ru/',
   },
   openGraph: {
-    title: META_MAIN_TITLE,
+    title: `Кондитерская Пралине | ${META_MAIN_TITLE}`,
     description: META_MAIN_DESCRIPTION,
     images: [
       {
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
       },
     ],
     url: 'https://pralinecakes.ru/',
-    siteName: META_MAIN_TITLE,
+    siteName: PAGE_MAIN_TITLE,
     type: 'website',
     locale: 'ru_RU',
   },
@@ -47,7 +47,12 @@ export default function Home() {
   return (
     <MainWrapper>
       <HeadingImage image={MainImage as any} title={PAGE_MAIN_TITLE} />
-      <PageHeading title={PAGE_MAIN_TITLE} />
+      <PageHeading
+        isSubtitle={true}
+        title={PAGE_MAIN_TITLE}
+        subtitle={META_MAIN_TITLE}
+        description={META_MAIN_DESCRIPTION}
+      />
       <PastryBlock />
       <AboutUsBlock />
       <CakeBlock />
