@@ -10,6 +10,7 @@ interface IPageHeading {
   description?: string;
   isPage?: boolean;
   isSubtitle?: boolean;
+  isProduct?: boolean;
 }
 
 const PageHeading: FC<IPageHeading> = ({
@@ -18,6 +19,7 @@ const PageHeading: FC<IPageHeading> = ({
   subtitle,
   isSubtitle = false,
   description,
+  isProduct = false,
 }) => {
   return (
     <article
@@ -27,7 +29,15 @@ const PageHeading: FC<IPageHeading> = ({
           : styles.pageHeading
       }
     >
-      <h1 className={styles.pageHeading__title}>{title}</h1>
+      <h1
+        className={
+          isProduct
+            ? `${styles.pageHeading__title} ${styles.pageHeading__title_isProduct}`
+            : styles.pageHeading__title
+        }
+      >
+        {title}
+      </h1>
       {isSubtitle ? (
         <>
           <p className={styles.pageHeading__subtitle}>{subtitle}</p>

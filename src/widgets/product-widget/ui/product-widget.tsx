@@ -1,5 +1,6 @@
 import type { FC } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import { ProductProps } from '@/shared/types/types';
 import {
@@ -25,14 +26,25 @@ export interface IProductWidget extends ProductProps {
 const ProductWidget: FC<IProductWidget> = ({ isCake, isPastry, ...item }) => {
   return (
     <section className={styles.product}>
-      {isCake && <PageHeading title={`Торт "${item.title}"`} />}
-      {isPastry && <PageHeading title={`Пирожное "${item.title}"`} />}
+      {isCake && (
+        <PageHeading title={`Торт "${item.title}"`} isProduct={true} />
+      )}
+      {isPastry && (
+        <PageHeading title={`Пирожное "${item.title}"`} isProduct={true} />
+      )}
       <div className={styles.product__container}>
-        <Image
-          src={item.image_normal}
-          alt={item.title}
-          className={styles.product__image}
-        />
+        <div className={styles.product__imageBox}>
+          <Image
+            src={item.image_normal}
+            alt={item.title}
+            className={styles.product__image}
+          />
+          {item.link && (
+            <Link href={item.link} className={styles.product__link}>
+              {isCake ? 'Смотреть пирожное' : 'Смотреть торт'}
+            </Link>
+          )}
+        </div>
         <ArticleWrapper>
           <div className={styles.product__description}>
             <span className={styles.product__span}>Описание</span>

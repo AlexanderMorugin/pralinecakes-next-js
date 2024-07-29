@@ -24,6 +24,10 @@
     color: var(--accent-secondary);
     text-align: center;
 
+    &_isProduct {
+      color: var(--text-primary);
+    }
+
     @include media.respond-to('middle') {
       font: var(--font-xl-bold);
     }

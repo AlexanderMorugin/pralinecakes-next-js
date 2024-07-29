@@ -8,7 +8,7 @@ import {
 } from '@/shared/constants/pages';
 import Routes from '@/shared/constants/routes';
 import { MainWrapper, PageWrapper } from '@/components';
-import { Breadcrumbs, Category } from '@/widgets';
+import { Breadcrumbs, Category, ViewAllCategories } from '@/widgets';
 import { PageHeading, PageSubheading } from '@/entities';
 
 export function generateStaticParams() {
@@ -74,6 +74,7 @@ export default function CategoryPage({
           description={`${categoryDescription}. Приготовленные для предприятий общественного питания.`}
         />
         <Category data={currentArray} />
+        <ViewAllCategories />
       </MainWrapper>
     </PageWrapper>
   );

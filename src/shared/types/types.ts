@@ -37,4 +37,5 @@ export interface ProductProps {
   rating: number;
   type?: string[];
   category?: CategoryProps[];
+  link?: string;
 }

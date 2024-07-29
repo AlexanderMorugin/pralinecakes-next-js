@@ -99,6 +99,7 @@ export const cakesData = [
     weight: 600,
     price: 740,
     rating: 4,
+    link: '/products/pastry/bavarskoe/',
   },
   {
     id: 1,
@@ -124,6 +125,7 @@ export const cakesData = [
     weight: 800,
     price: 925,
     rating: 7,
+    link: '/products/pastry/kievskoe/',
   },
   {
     id: 2,
@@ -149,6 +151,7 @@ export const cakesData = [
     weight: 1300,
     price: 1040,
     rating: 6,
+    link: '/products/pastry/praga/',
   },
   {
     id: 3,
@@ -174,6 +177,7 @@ export const cakesData = [
     weight: 1400,
     price: 990,
     rating: 10,
+    link: '/products/pastry/medovo-pesochnoe/',
   },
   {
     id: 4,
@@ -199,6 +203,7 @@ export const cakesData = [
     weight: 900,
     price: 1030,
     rating: 7,
+    link: '/products/pastry/trufelnoe/',
   },
   {
     id: 5,
@@ -223,6 +228,7 @@ export const cakesData = [
     weight: 800,
     price: 830,
     rating: 4,
+    link: '/products/pastry/ptichie-moloko/',
   },
   {
     id: 6,
@@ -247,6 +253,7 @@ export const cakesData = [
     weight: 1250,
     price: 1230,
     rating: 6,
+    link: '/products/pastry/esterhazi/',
   },
   {
     id: 7,
@@ -272,6 +279,7 @@ export const cakesData = [
     weight: 1400,
     price: 1200,
     rating: 6,
+    link: '/products/pastry/cheesecake/',
   },
   {
     id: 8,
@@ -297,6 +305,7 @@ export const cakesData = [
     weight: 1100,
     price: 1080,
     rating: 6,
+    link: '/products/pastry/tiramisu/',
   },
   {
     id: 9,
@@ -322,6 +331,7 @@ export const cakesData = [
     weight: 1400,
     price: 1140,
     rating: 7,
+    link: '/products/pastry/morkovnoe/',
   },
   {
     id: 10,
@@ -347,6 +357,7 @@ export const cakesData = [
     weight: 1000,
     price: 1100,
     rating: 10,
+    link: '/products/pastry/napoleon/',
   },
   {
     id: 11,
@@ -371,6 +382,7 @@ export const cakesData = [
     weight: 1300,
     price: 1170,
     rating: 9,
+    link: '/products/pastry/chernichnoe/',
   },
   {
     id: 12,
@@ -396,6 +408,7 @@ export const cakesData = [
     weight: 1400,
     price: 1200,
     rating: 8,
+    link: '/products/pastry/makovoe/',
   },
   {
     id: 13,
@@ -421,6 +434,7 @@ export const cakesData = [
     weight: 1400,
     price: 1245,
     rating: 9,
+    link: '/products/pastry/apple-pie/',
   },
   {
     id: 14,
@@ -446,6 +460,7 @@ export const cakesData = [
     weight: 800,
     price: 880,
     rating: 7,
+    link: '/products/pastry/karamelno-orehovoe/',
   },
   {
     id: 15,
@@ -471,6 +486,7 @@ export const cakesData = [
     weight: 1200,
     price: 1100,
     rating: 10,
+    link: '/products/pastry/krasniy-barhat/',
   },
   {
     id: 16,
@@ -496,6 +512,7 @@ export const cakesData = [
     weight: 800,
     price: 890,
     rating: 6,
+    link: '/products/pastry/med-moloko/',
   },
   {
     id: 17,
@@ -521,6 +538,7 @@ export const cakesData = [
     weight: 700,
     price: 1060,
     rating: 8,
+    link: '/products/pastry/tri-shokolada/',
   },
   {
     id: 18,
@@ -546,6 +564,7 @@ export const cakesData = [
     weight: 1200,
     price: 1120,
     rating: 7,
+    link: '/products/pastry/smetannik/',
   },
   {
     id: 19,
@@ -571,6 +590,7 @@ export const cakesData = [
     weight: 1400,
     price: 1200,
     rating: 5,
+    link: '/products/pastry/cheesecake-lime/',
   },
   {
     id: 20,
@@ -596,6 +616,7 @@ export const cakesData = [
     weight: 1100,
     price: 1110,
     rating: 8,
+    link: '/products/pastry/vozdushno-orehovoe/',
   },
   {
     id: 21,
@@ -620,6 +641,7 @@ export const cakesData = [
     weight: 1400,
     price: 1170,
     rating: 4,
+    link: '/products/pastry/bananovoe/',
   },
   {
     id: 22,
@@ -645,6 +667,7 @@ export const cakesData = [
     weight: 1400,
     price: 1100,
     rating: 5,
+    link: '/products/pastry/lemon/',
   },
   {
     id: 23,
@@ -670,6 +693,7 @@ export const cakesData = [
     weight: 1200,
     price: 1080,
     rating: 7,
+    link: '/products/pastry/kokosovoe/',
   },
   {
     id: 24,
@@ -695,5 +719,6 @@ export const cakesData = [
     weight: 1200,
     price: 1120,
     rating: 10,
+    link: '/products/pastry/mindalnoe/',
   },
 ];

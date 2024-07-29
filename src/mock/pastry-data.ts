@@ -538,6 +538,7 @@ export const pastryData = [
     rating: 6,
     type: [TYPE_CHOCOLATE, TYPE_SUFLE],
     category: [chocolate, sufle],
+    link: '/products/cakes/ptichie-moloko/',
   },
   {
     id: 13,
@@ -589,6 +590,7 @@ export const pastryData = [
     rating: 10,
     type: [TYPE_NUT, TYPE_CREAM],
     category: [nut, cream],
+    link: '/products/cakes/mindal-chernosliv/',
   },
   {
     id: 15,
@@ -673,6 +675,7 @@ export const pastryData = [
     rating: 5,
     type: [TYPE_SUFLE, TYPE_BERRY],
     category: [sufle, berry],
+    link: '/products/cakes/bavarskiy-muss/',
   },
   {
     id: 18,
@@ -731,6 +734,7 @@ export const pastryData = [
     rating: 10,
     type: [TYPE_SUFLE, TYPE_CHOCOLATE],
     category: [sufle, chocolate],
+    link: '/products/cakes/tri-chokolada/',
   },
   {
     id: 20,
@@ -814,6 +818,7 @@ export const pastryData = [
     rating: 8,
     type: [TYPE_CHEESE],
     category: [cheese],
+    link: '/products/cakes/cheesecake/',
   },
   {
     id: 23,
@@ -867,6 +872,7 @@ export const pastryData = [
     rating: 6,
     type: [TYPE_CHEESE, TYPE_FRUIT],
     category: [cheese, fruit],
+    link: '/products/cakes/cheesecake-lime/',
   },
   {
     id: 25,
@@ -949,6 +955,7 @@ export const pastryData = [
     rating: 8,
     type: [TYPE_CHEESE, TYPE_NUT],
     category: [cheese, nut],
+    link: '/products/cakes/morkovniy/',
   },
   {
     id: 28,
@@ -975,6 +982,7 @@ export const pastryData = [
     rating: 8,
     type: [TYPE_BISQUIT, TYPE_NUT, TYPE_FRUIT],
     category: [bisquit, nut, fruit],
+    link: '/products/cakes/french-apple-pie/',
   },
   {
     id: 29,
@@ -1001,6 +1009,7 @@ export const pastryData = [
     rating: 6,
     type: [TYPE_BISQUIT, TYPE_CHEESE, TYPE_FRUIT, TYPE_CREAM],
     category: [bisquit, cheese, fruit, cream],
+    link: '/products/cakes/limonniy/',
   },
   {
     id: 30,
@@ -1060,6 +1069,7 @@ export const pastryData = [
     rating: 9,
     type: [TYPE_BISQUIT, TYPE_CHOCOLATE],
     category: [bisquit, chocolate],
+    link: '/products/cakes/praga/',
   },
   {
     id: 32,
@@ -1089,6 +1099,7 @@ export const pastryData = [
     rating: 9,
     type: [TYPE_SUFLE, TYPE_CHOCOLATE],
     category: [sufle, chocolate],
+    link: '/products/cakes/trufelniy/',
   },
   {
     id: 33,
@@ -1119,6 +1130,7 @@ export const pastryData = [
     rating: 9,
     type: [TYPE_BISQUIT, TYPE_CREAM],
     category: [bisquit, cream],
+    link: '/products/cakes/krasniy-barkhat/',
   },
   {
     id: 34,
@@ -1149,6 +1161,7 @@ export const pastryData = [
     rating: 10,
     type: [TYPE_BISQUIT, TYPE_CREAM, TYPE_POPPY, TYPE_CHOCOLATE],
     category: [bisquit, cream, poppy, chocolate],
+    link: '/products/cakes/makoviy/',
   },
   {
     id: 35,
@@ -1206,6 +1219,7 @@ export const pastryData = [
     rating: 7,
     type: [TYPE_NUT, TYPE_CREAM],
     category: [nut, cream],
+    link: '/products/cakes/kievskiy/',
   },
   {
     id: 37,
@@ -1235,6 +1249,7 @@ export const pastryData = [
     rating: 7,
     type: [TYPE_BISQUIT, TYPE_NUT, TYPE_CREAM],
     category: [bisquit, nut, cream],
+    link: '/products/cakes/karamelno-orekhoviy/',
   },
   {
     id: 38,
@@ -1262,6 +1277,7 @@ export const pastryData = [
     rating: 8,
     type: [TYPE_NUT, TYPE_CREAM],
     category: [nut, cream],
+    link: '/products/cakes/kokosoviy/',
   },
   {
     id: 39,
@@ -1292,6 +1308,7 @@ export const pastryData = [
     rating: 9,
     type: [TYPE_PUFF, TYPE_CREAM],
     category: [puff, cream],
+    link: '/products/cakes/napoleon/',
   },
   {
     id: 40,
@@ -1319,6 +1336,7 @@ export const pastryData = [
     rating: 5,
     type: [TYPE_HONEY, TYPE_CREAM, TYPE_BISQUIT],
     category: [honey, cream, bisquit],
+    link: '/products/cakes/med-moloko/',
   },
   {
     id: 41,
@@ -1346,6 +1364,7 @@ export const pastryData = [
     rating: 7,
     type: [TYPE_SUFLE, TYPE_BERRY, TYPE_CHEESE],
     category: [sufle, berry, cheese],
+    link: '/products/cakes/chernichniy/',
   },
   {
     id: 42,
@@ -1375,6 +1394,7 @@ export const pastryData = [
     rating: 10,
     type: [TYPE_HONEY, TYPE_SAND, TYPE_CREAM],
     category: [honey, sand, cream],
+    link: '/products/cakes/medoviy/',
   },
   {
     id: 43,
@@ -1400,6 +1420,7 @@ export const pastryData = [
     rating: 4,
     type: [TYPE_BISQUIT, TYPE_FRUIT, TYPE_CREAM],
     category: [bisquit, fruit, cream],
+    link: '/products/cakes/bananoviy/',
   },
   {
     id: 44,
@@ -1428,6 +1449,7 @@ export const pastryData = [
     rating: 9,
     type: [TYPE_NUT, TYPE_SAND],
     category: [nut, sand],
+    link: '/products/cakes/esterhazi/',
   },
   {
     id: 45,
@@ -1457,6 +1479,7 @@ export const pastryData = [
     rating: 7,
     type: [TYPE_BISQUIT, TYPE_CREAM, TYPE_CHEESE],
     category: [bisquit, cream, cheese],
+    link: '/products/cakes/tiramisu/',
   },
   {
     id: 46,
@@ -1483,6 +1506,7 @@ export const pastryData = [
     rating: 7,
     type: [TYPE_BISQUIT, TYPE_CREAM, TYPE_CHEESE, TYPE_NUT],
     category: [bisquit, cream, cheese, nut],
+    link: '/products/cakes/vozdushno-orekhoviy/',
   },
   {
     id: 47,
@@ -1509,6 +1533,7 @@ export const pastryData = [
     rating: 7,
     type: [TYPE_BISQUIT, TYPE_CREAM, TYPE_NUT],
     category: [bisquit, cream, nut],
+    link: '/products/cakes/smetannik/',
   },
   {
     id: 48,
