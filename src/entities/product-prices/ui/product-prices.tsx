@@ -9,6 +9,7 @@ interface IProductPrices {
   weight_b?: number;
   price: number;
   price_b?: number;
+  priceList?: boolean;
 }
 
 const ProductPrices: FC<IProductPrices> = ({
@@ -18,12 +19,15 @@ const ProductPrices: FC<IProductPrices> = ({
   weight_b,
   price,
   price_b,
+  priceList = false,
 }) => {
   return (
     <div className={styles.productPrices}>
-      <p className={styles.productPrices__title}>
-        Пирожное продается комплектом
-      </p>
+      {!priceList && (
+        <p className={styles.productPrices__title}>
+          Пирожное продается комплектом
+        </p>
+      )}
       <div className={styles.productPrices__container}>
         <div className={styles.productPrices__box}>
           <span>Вес / 1шт</span>

@@ -1,0 +1,15 @@
+.priceBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__title {
+    font: var(--font-m-bold);
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

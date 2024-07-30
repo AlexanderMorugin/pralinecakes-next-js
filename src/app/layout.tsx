@@ -17,7 +17,7 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
-        <YandexMetrika enabled={true} />
+        {/* <YandexMetrika enabled={true} /> */}
       </body>
     </html>
   );

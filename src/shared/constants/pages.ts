@@ -3,7 +3,8 @@ export const CAKE_PACK = 'Цветная картонная коробка с о
 export const PASTRY_PACK = 'Картонная коробка';
 
 // подзаголовок для всех страниц
-export const PAGE_SUBTITLE = 'вкусные кондитерские изделия, десерты, торты, пирожные';
+export const PAGE_SUBTITLE =
+  'вкусные кондитерские изделия, десерты, торты, пирожные';
 
 // хлебная крошка
 export const PAGE_MAIN = 'Главная';
@@ -74,4 +75,11 @@ export const PAGE_CATEGORIES_LINK = 'все категории';
 export const META_CATEGORIES_TITLE =
   'Категории пирожных которые готовятся в московской кондитерской Пралине.';
 export const META_CATEGORIES_DESCRIPTION =
+  'Выбирайте категории кондитерских изделий. Шоколадные, медовые, фруктовые, штрудель, бисквитные, сырные, кремовые, ореховые, маковые и другие.';
+
+export const PAGE_PRICE_TITLE = 'Прайс-лист';
+// export const PAGE_CATEGORIES_LINK = 'все категории';
+export const META_PRICE_TITLE =
+  'Категории пирожных которые готовятся в московской кондитерской Пралине.';
+export const META_PRICE_DESCRIPTION =
   'Выбирайте категории кондитерских изделий. Шоколадные, медовые, фруктовые, штрудель, бисквитные, сырные, кремовые, ореховые, маковые и другие.';

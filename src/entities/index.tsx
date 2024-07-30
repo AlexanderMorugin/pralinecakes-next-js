@@ -12,6 +12,8 @@ import Logo from './logo';
 import PageHeading from './page-heading';
 import PageSubheading from './page-subheading';
 import PageText from './page-text';
+import PriceBlock from './price-block';
+import PriceCard from './price-card';
 import PriorityCard from './priority-card';
 import ProductBlock from './product-block';
 import ProductCard from './product-card';
@@ -52,4 +54,6 @@ export {
   PriorityCard,
   TextBlock,
   PageText,
+  PriceBlock,
+  PriceCard,
 };

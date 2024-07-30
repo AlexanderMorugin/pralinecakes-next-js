@@ -18,6 +18,7 @@ import PastryBlock from './pastry-block';
 import PriorityBlock from './priority-block';
 import ProductWidget from './product-widget';
 import ButtonViewAll from './button-view-all';
+import PriceWidget from './price-widget';
 
 export {
   AboutWidget,
@@ -40,4 +41,5 @@ export {
   NotFoundWidget,
   PriorityBlock,
   ButtonViewAll,
+  PriceWidget,
 };

@@ -1,0 +1,27 @@
+.priceCard {
+  // display: grid;
+
+  border-bottom: 1px solid var(--grey-primary);
+  padding-bottom: 10px;
+  
+  &__link {
+    width: fit-content;
+    color: var(--link-secondary);
+    transition: 0.25s;
+
+    &:hover {
+      color: var(--link-primary);
+    }
+  }
+
+  &__description {
+    font: var(--font-xs-regular);
+    color: var(--text-thirdary);
+    font-style: italic;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-overflow: hidden;
+  }
+}

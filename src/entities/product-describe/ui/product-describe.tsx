@@ -3,7 +3,7 @@ import type { FC } from 'react';
 import styles from './product-describe.module.scss';
 
 interface IProductDescribe {
-  title: string;
+  title?: string;
   text: string;
 }
 
