@@ -41,7 +41,7 @@ const ProductWidget: FC<IProductWidget> = ({ isCake, isPastry, ...item }) => {
           />
           {item.link && (
             <Link href={item.link} className={styles.product__link}>
-              {isCake ? 'Смотреть пирожное' : 'Смотреть торт'}
+              {isCake ? 'А здесь спрятано пирожное' : 'А здесь спрятан торт'}
             </Link>
           )}
         </div>

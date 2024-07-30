@@ -17,7 +17,7 @@ import NotFoundWidget from './not-found-widget';
 import PastryBlock from './pastry-block';
 import PriorityBlock from './priority-block';
 import ProductWidget from './product-widget';
-import ViewAllCategories from './view-all-categories';
+import ButtonViewAll from './button-view-all';
 
 export {
   AboutWidget,
@@ -39,5 +39,5 @@ export {
   DeliveryBlock,
   NotFoundWidget,
   PriorityBlock,
-  ViewAllCategories,
+  ButtonViewAll,
 };

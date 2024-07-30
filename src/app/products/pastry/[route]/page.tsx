@@ -7,7 +7,12 @@ import {
   PAGE_PRODUCTS_TITLE,
 } from '@/shared/constants/pages';
 import Routes from '@/shared/constants/routes';
-import { Breadcrumbs, PriorityBlock, ProductWidget } from '@/widgets';
+import {
+  Breadcrumbs,
+  ButtonViewAll,
+  PriorityBlock,
+  ProductWidget,
+} from '@/widgets';
 
 export function generateStaticParams() {
   const pastry = pastryData.map((pastry) => pastry);
@@ -62,6 +67,7 @@ export default function PastryPage({ params }: { params: { route: string } }) {
         {pastry.map((item) => (
           <ProductWidget key={item.id} {...item} isPastry={true} />
         ))}
+        <ButtonViewAll text='Смотреть другие пирожные' route={Routes.PASTRY} />
         <PriorityBlock />
       </MainWrapper>
     </PageWrapper>

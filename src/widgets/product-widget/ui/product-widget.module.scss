@@ -6,10 +6,10 @@
   margin: 0 auto;
   padding-left: var(--padding-horizontal-desktop);
   padding-right: var(--padding-horizontal-desktop);
+  padding-bottom: 20px;
 
   @include media.respond-to('middle') {
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
   }
 
   &__container {
@@ -47,9 +47,12 @@
     justify-content: center;
     align-items: center;
     background: rgba(77, 34, 14, 0.4);
-    border-radius: 7px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
     font: var(--font-xs-regular);
     color: var(--light-primary);
+    text-align: center;
     padding: 5px 10px;
     transition: 0.3s;
 

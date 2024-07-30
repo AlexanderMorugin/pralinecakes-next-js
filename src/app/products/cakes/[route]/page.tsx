@@ -7,7 +7,12 @@ import {
   PAGE_PRODUCTS_TITLE,
 } from '@/shared/constants/pages';
 import Routes from '@/shared/constants/routes';
-import { Breadcrumbs, PriorityBlock, ProductWidget } from '@/widgets';
+import {
+  Breadcrumbs,
+  ButtonViewAll,
+  PriorityBlock,
+  ProductWidget,
+} from '@/widgets';
 
 export function generateStaticParams() {
   const cake = cakesData.map((cake) => cake);
@@ -61,6 +66,7 @@ export default function CakePage({ params }: { params: { route: string } }) {
         {cake.map((item) => (
           <ProductWidget key={item.id} {...item} isCake={true} />
         ))}
+        <ButtonViewAll text='Смотреть другие торты' route={Routes.CAKES} />
         <PriorityBlock />
       </MainWrapper>
     </PageWrapper>
