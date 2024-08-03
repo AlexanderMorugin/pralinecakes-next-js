@@ -1,8 +1,9 @@
 import type { FC } from 'react';
 import Link from 'next/link';
 
+import { ProductPrice, ProductPrices } from '@/entities';
+
 import styles from './price-card.module.scss';
-import { ProductDescribe, ProductPrice, ProductPrices } from '@/entities';
 
 interface IPriceCard {
   title: string;
@@ -29,24 +30,25 @@ const PriceCard: FC<IPriceCard> = ({
 }) => {
   return (
     <li className={styles.priceCard}>
-      <Link href={route} className={styles.priceCard__link}>
+      <Link href={route} className={styles.priceCard__title}>
         {title}
       </Link>
       <p className={styles.priceCard__description}>{description}</p>
-      {quantity > 1 ? (
-        <ProductPrices
-          quantity={quantity}
-          quantity_b={quantity_b}
-          weight={weight}
-          weight_b={weight_b}
-          price={price}
-          price_b={price_b}
-          priceList={true}
-        />
-      ) : (
-        <ProductPrice weight={weight} price={price} />
-      )}
-      <div></div>
+      <div className={styles.priceCard__price}>
+        {quantity > 1 ? (
+          <ProductPrices
+            quantity={quantity}
+            quantity_b={quantity_b}
+            weight={weight}
+            weight_b={weight_b}
+            price={price}
+            price_b={price_b}
+            priceList={true}
+          />
+        ) : (
+          <ProductPrice weight={weight} price={price} />
+        )}
+      </div>
     </li>
   );
 };

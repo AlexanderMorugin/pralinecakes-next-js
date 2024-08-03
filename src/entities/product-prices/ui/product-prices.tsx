@@ -55,11 +55,11 @@ const ProductPrices: FC<IProductPrices> = ({
 
         <div className={styles.productPrices__box}>
           <span>Сумма</span>
-          <span className={styles.productPrices__price}>
+          <span className={styles.productPrices__priceTotal}>
             {price * quantity} р
           </span>
           {price_b && quantity_b && (
-            <span className={styles.productPrices__price}>
+            <span className={styles.productPrices__priceTotal}>
               {price_b * quantity_b} р
             </span>
           )}

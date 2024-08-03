@@ -2,8 +2,15 @@ import ProductIcon from '@/assets/icons/icon-product.svg';
 import PastryIcon from '@/assets/icons/icon-pastry.svg';
 import CakesIcon from '@/assets/icons/icon-cakes.svg';
 import CategoryIcon from '@/assets/icons/icon-categories.svg';
+import PriceListIcon from '@/assets/icons/icon-price-list.svg';
 import Routes from '@/shared/constants/routes';
-import { PAGE_CAKES_TITLE, PAGE_CATEGORIES_TITLE, PAGE_PASTRY_TITLE, PAGE_PRODUCTS_TITLE } from '@/shared/constants/pages';
+import {
+  PAGE_CAKES_TITLE,
+  PAGE_CATEGORIES_TITLE,
+  PAGE_PASTRY_TITLE,
+  PAGE_PRICE_TITLE,
+  PAGE_PRODUCTS_TITLE,
+} from '@/shared/constants/pages';
 
 export const footerCatalogData = [
   {
@@ -25,5 +32,10 @@ export const footerCatalogData = [
     icon: CategoryIcon,
     title: PAGE_CATEGORIES_TITLE,
     route: Routes.CATEGORIES,
+  },
+  {
+    icon: PriceListIcon,
+    title: PAGE_PRICE_TITLE,
+    route: Routes.PRICELIST,
   },
 ];

@@ -30,4 +30,9 @@
     font: var(--font-xs-bold);
     color: var(--accent-primary);
   }
+
+  &__priceTotal {
+    font: var(--font-xs-bold);
+    color: var(--text-thirdary);
+  }
 }

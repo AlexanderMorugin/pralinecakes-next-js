@@ -1,9 +1,9 @@
 import type { FC } from 'react';
 
 import { ProductProps } from '@/shared/types/types';
+import { PriceCard } from '@/entities';
 
 import styles from './price-block.module.scss';
-import { PriceCard } from '@/entities';
 
 interface IPriceBlock {
   title: string;

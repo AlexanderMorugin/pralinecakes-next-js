@@ -18,10 +18,11 @@
     padding-right: var(--padding-horizontal-desktop);
 
     @include media.respond-to('middle') {
+      grid-template-columns: repeat(2, 1fr);
       grid-template-areas:
-        '.. information catalog ..'
-        '.. address address ..'
-        'logoBox logoBox logoBox logoBox';
+        'information catalog'
+        'address address'
+        'logoBox logoBox';
       padding-top: var(--padding-vertical-mobile);
       padding-bottom: var(--padding-vertical-mobile);
       padding-left: var(--padding-horizontal-mobile);

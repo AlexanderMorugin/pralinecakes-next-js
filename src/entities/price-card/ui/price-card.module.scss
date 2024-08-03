@@ -1,10 +1,25 @@
-.priceCard {
-  // display: grid;
+@use '@/shared/styles/mixins' as media;
 
+.priceCard {
+  display: grid;
+  grid-template-columns: 70% 1fr;
+  grid-template-areas:
+    'title price'
+    'description price';
+  column-gap: 50px;
   border-bottom: 1px solid var(--grey-primary);
   padding-bottom: 10px;
-  
-  &__link {
+
+  @include media.respond-to('middle') {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'title'
+      'description'
+      'price';
+  }
+
+  &__title {
+    grid-area: title;
     width: fit-content;
     color: var(--link-secondary);
     transition: 0.25s;
@@ -15,13 +30,18 @@
   }
 
   &__description {
+    grid-area: description;
     font: var(--font-xs-regular);
     color: var(--text-thirdary);
     font-style: italic;
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 1;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     text-overflow: hidden;
+  }
+
+  &__price {
+    grid-area: price;
   }
 }

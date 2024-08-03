@@ -14,6 +14,7 @@ enum Routes {
   ONE_PASTRY = '/products/pastry/:route',
   CATEGORIES = '/categories',
   ONE_CATEGORY = '/categories/:route',
+  PRICELIST = '/price',
 }
 
 export default Routes;
