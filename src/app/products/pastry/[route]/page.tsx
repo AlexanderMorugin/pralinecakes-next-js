@@ -29,14 +29,14 @@ export function generateMetadata({ params }: { params: { route: string } }) {
   const pastryUrl = pastry.map((item) => item.url);
 
   return {
-    title: `Пирожное ${pastryTitle} по цене от ${pastryPrice} руб приготовленное кондитерской Пралине.`,
+    title: `Пирожное ${pastryTitle}. Купить по оптовой цене от ${pastryPrice} руб  от производителя кондитерской Пралине.`,
     description: `${pastryDescription} Продукция замороженная, по недорогим ценам.`,
     keywords: ['пирожное', 'замороженное', 'кондитерская'],
     alternates: {
       canonical: `${pastryUrl}`,
     },
     openGraph: {
-      title: `Пирожное ${pastryTitle} по цене от ${pastryPrice} руб приготовленное кондитерской Пралине.`,
+      title: `Пирожное ${pastryTitle}. Купить по оптовой цене от ${pastryPrice} руб  от производителя кондитерской Пралине.`,
       description: `${pastryDescription} Продукция замороженная, по недорогим ценам.`,
       images: [{ url: `${pastryImage}` }],
       url: `${pastryUrl}`,
