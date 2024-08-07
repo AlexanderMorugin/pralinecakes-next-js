@@ -5,9 +5,9 @@ import { Breadcrumbs, Carta, ContactsWidget } from '@/widgets';
 import {
   META_CONTACTS_DESCRIPTION,
   META_CONTACTS_TITLE,
-  META_MAIN_TITLE,
   PAGE_CONTACTS_TITLE,
   PAGE_MAIN,
+  PAGE_MAIN_TITLE,
 } from '@/shared/constants/pages';
 import Routes from '@/shared/constants/routes';
 import { PageHeading } from '@/entities';
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
       },
     ],
     url: 'https://pralinecakes.ru/contacts/',
-    siteName: META_MAIN_TITLE,
+    siteName: PAGE_MAIN_TITLE,
     type: 'website',
     locale: 'ru_RU',
   },

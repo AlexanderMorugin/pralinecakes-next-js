@@ -3,10 +3,10 @@ import type { Metadata } from 'next';
 import { Breadcrumbs, PriceWidget } from '@/widgets';
 import { MainWrapper } from '@/components';
 import {
-  META_MAIN_TITLE,
   META_PRICE_DESCRIPTION,
   META_PRICE_TITLE,
   PAGE_MAIN,
+  PAGE_MAIN_TITLE,
   PAGE_PRICE_TITLE,
 } from '@/shared/constants/pages';
 import Routes from '@/shared/constants/routes';
@@ -24,11 +24,11 @@ export const metadata: Metadata = {
     description: META_PRICE_DESCRIPTION,
     images: [
       {
-        url: 'https://pralinecakes.ru/_next/static/media/meta-about.9fa134f6.jpg',
+        url: 'https://pralinecakes.ru/_next/static/media/meta-main.c25722c4.jpg',
       },
     ],
     url: 'https://pralinecakes.ru/price/',
-    siteName: META_MAIN_TITLE,
+    siteName: PAGE_MAIN_TITLE,
     type: 'website',
     locale: 'ru_RU',
   },
@@ -45,9 +45,9 @@ export default function Price() {
       <Breadcrumbs links={breadcrumbs} />
       <PageHeading title={PAGE_PRICE_TITLE} isProduct={true} />
       <PageSubheading
-          title={META_PRICE_TITLE}
-          description={META_PRICE_DESCRIPTION}
-        />
+        title={META_PRICE_TITLE}
+        description={META_PRICE_DESCRIPTION}
+      />
       <PriceWidget />
     </MainWrapper>
   );

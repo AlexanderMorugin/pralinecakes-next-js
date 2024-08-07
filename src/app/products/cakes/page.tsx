@@ -5,9 +5,9 @@ import { AllCakes, Breadcrumbs } from '@/widgets';
 import {
   META_CAKES_DESCRIPTION,
   META_CAKES_TITLE,
-  META_MAIN_TITLE,
   PAGE_CAKES_TITLE,
   PAGE_MAIN,
+  PAGE_MAIN_TITLE,
   PAGE_PRODUCTS_TITLE,
 } from '@/shared/constants/pages';
 import Routes from '@/shared/constants/routes';
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
       },
     ],
     url: 'https://pralinecakes.ru/products/cakes/',
-    siteName: META_MAIN_TITLE,
+    siteName: PAGE_MAIN_TITLE,
     type: 'website',
     locale: 'ru_RU',
   },

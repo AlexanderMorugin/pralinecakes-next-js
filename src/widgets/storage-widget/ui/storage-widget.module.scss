@@ -1,6 +1,6 @@
 @use '@/shared/styles/mixins' as media;
 
-.cooperationWidget {
+.storageWidget {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -26,6 +26,10 @@
     );
   }
 
+  &__span {
+    font: var(--font-s-bold);
+  }
+
   &__link {
     color: var(--link-primary);
     border-bottom: 1px dashed var(--link-primary);
@@ -34,5 +38,9 @@
     &:hover {
       color: var(--link-secondary);
     }
+  }
+
+  &__ital {
+    font-style: italic;
   }
 }

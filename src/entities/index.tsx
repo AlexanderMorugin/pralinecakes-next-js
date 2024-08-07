@@ -25,6 +25,7 @@ import ProductNutritions from './product-nutritions';
 import ProductPrice from './product-price';
 import ProductPrices from './product-prices';
 import ProductScroll from './product-scroll';
+import ProductStorage from './product-storage';
 import TextBlock from './text-block';
 
 export {
@@ -56,4 +57,5 @@ export {
   PageText,
   PriceBlock,
   PriceCard,
+  ProductStorage,
 };

@@ -1,9 +1,9 @@
 import { MainWrapper, PageWrapper } from '@/components';
 import { cakesData } from '@/mock/cakes-data';
 import {
-  META_MAIN_TITLE,
   PAGE_CAKES_TITLE,
   PAGE_MAIN,
+  PAGE_MAIN_TITLE,
   PAGE_PRODUCTS_TITLE,
 } from '@/shared/constants/pages';
 import Routes from '@/shared/constants/routes';
@@ -40,7 +40,7 @@ export function generateMetadata({ params }: { params: { route: string } }) {
       description: `${cakeDescription} Поставляется в замороженном виде, по оптовой цене.`,
       images: [{ url: `${cakeImage}` }],
       url: `${cakeUrl}`,
-      site_name: META_MAIN_TITLE,
+      site_name: PAGE_MAIN_TITLE,
       type: 'website',
       locale: 'ru_RU',
     },

@@ -1,8 +1,8 @@
 import { MainWrapper, PageWrapper } from '@/components';
 import { pastryData } from '@/mock/pastry-data';
 import {
-  META_MAIN_TITLE,
   PAGE_MAIN,
+  PAGE_MAIN_TITLE,
   PAGE_PASTRY_TITLE,
   PAGE_PRODUCTS_TITLE,
 } from '@/shared/constants/pages';
@@ -40,7 +40,7 @@ export function generateMetadata({ params }: { params: { route: string } }) {
       description: `${pastryDescription} Продукция замороженная, по недорогим ценам.`,
       images: [{ url: `${pastryImage}` }],
       url: `${pastryUrl}`,
-      site_name: META_MAIN_TITLE,
+      site_name: PAGE_MAIN_TITLE,
       type: 'website',
       locale: 'ru_RU',
     },

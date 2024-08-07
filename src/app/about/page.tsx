@@ -6,9 +6,9 @@ import { MainWrapper } from '@/components';
 import {
   META_ABOUT_DESCRIPTION,
   META_ABOUT_TITLE,
-  META_MAIN_TITLE,
   PAGE_ABOUT_TITLE,
   PAGE_MAIN,
+  PAGE_MAIN_TITLE,
 } from '@/shared/constants/pages';
 import Routes from '@/shared/constants/routes';
 import { PageHeading } from '@/entities';
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
       },
     ],
     url: 'https://pralinecakes.ru/about/',
-    siteName: META_MAIN_TITLE,
+    siteName: PAGE_MAIN_TITLE,
     type: 'website',
     locale: 'ru_RU',
   },

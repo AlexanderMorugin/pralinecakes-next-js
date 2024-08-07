@@ -12,6 +12,7 @@ import {
   ProductNutritions,
   ProductPrice,
   ProductPrices,
+  ProductStorage,
 } from '@/entities';
 import { ArticleWrapper } from '@/components';
 import { CAKE_PACK, PASTRY_PACK } from '@/shared/constants/pages';
@@ -82,7 +83,8 @@ const ProductWidget: FC<IProductWidget> = ({ isCake, isPastry, ...item }) => {
       </div>
 
       <div className={styles.product__grid}>
-        <ProductExpiration />
+        <ProductExpiration defrostStorage={item.defrostStorage} />
+        <ProductStorage />
         <ProductDefrost />
       </div>
 

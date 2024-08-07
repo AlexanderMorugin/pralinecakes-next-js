@@ -6,9 +6,9 @@ import { Breadcrumbs, DeliveryWidget, HeadingImage } from '@/widgets';
 import {
   META_DELIVERY_DESCRIPTION,
   META_DELIVERY_TITLE,
-  META_MAIN_TITLE,
   PAGE_DELIVERY_TITLE,
   PAGE_MAIN,
+  PAGE_MAIN_TITLE,
 } from '@/shared/constants/pages';
 import Routes from '@/shared/constants/routes';
 import { PageHeading } from '@/entities';
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
       },
     ],
     url: 'https://pralinecakes.ru/delivery/',
-    siteName: META_MAIN_TITLE,
+    siteName: PAGE_MAIN_TITLE,
     type: 'website',
     locale: 'ru_RU',
   },

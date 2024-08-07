@@ -1,0 +1,32 @@
+@use '@/shared/styles/mixins' as media;
+
+.productStorage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--green-primary);
+  border-radius: 15px;
+  padding: 10px 20px;
+  transition: 0.25s;
+
+  @include media.respond-to('middle') {
+    border-radius: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  &__link {
+    color: var(--link-secondary);
+    text-align: center;
+    text-decoration: underline;
+    transition: 0.35s;
+  }
+
+  &:hover {
+    background: var(--accent-primary);
+  }
+
+  &:hover &__link {
+    color: var(--light-primary);
+  }
+}

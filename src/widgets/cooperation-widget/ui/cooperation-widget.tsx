@@ -1,4 +1,5 @@
 import type { FC } from 'react';
+import Link from 'next/link';
 
 import { ArticleWrapper } from '@/components';
 
@@ -45,6 +46,19 @@ const CooperationWidget: FC = () => {
         <p>
           На сайте можно скачать фото товаров хорошего разрешения для
           дальнейшего использования по вашему желанию.
+        </p>
+      </ArticleWrapper>
+      <ArticleWrapper className={styles.cooperationWidget__articleWrapper}>
+        <p>
+          Если вы решили сотрудничать с нашей кондитерской и реализовывать наши
+          пирожные или торты в своем заведении, рекомендуем ознакомиться с&nbsp;
+          <Link
+            href='/cooperation/storage/'
+            className={styles.cooperationWidget__link}
+          >
+            правилами хранения замороженных десертов
+          </Link>
+          .
         </p>
       </ArticleWrapper>
     </section>

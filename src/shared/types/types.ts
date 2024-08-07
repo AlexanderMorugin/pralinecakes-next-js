@@ -35,6 +35,7 @@ export interface ProductProps {
   price: number;
   price_b?: number;
   rating: number;
+  defrostStorage?: number;
   type?: string[];
   category?: CategoryProps[];
   link?: string;

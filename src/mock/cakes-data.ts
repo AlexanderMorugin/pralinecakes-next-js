@@ -357,6 +357,7 @@ export const cakesData = [
     weight: 1000,
     price: 1100,
     rating: 10,
+    defrostStorage: 36,
     link: '/products/pastry/napoleon/',
   },
   {
