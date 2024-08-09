@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   description: META_STORAGE_DESCRIPTION,
   keywords: ['хранение', 'размораживать', 'маркировка'],
   alternates: {
-    canonical: 'https://pralinecakes.ru/cooperation/storage/',
+    canonical: 'https://pralinecakes.ru/storage/',
   },
   openGraph: {
     title: META_STORAGE_TITLE,
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
         url: 'https://pralinecakes.ru/_next/static/media/meta-cooperation.78ec3c5a.jpg',
       },
     ],
-    url: 'https://pralinecakes.ru/cooperation/storage/',
+    url: 'https://pralinecakes.ru/storage/',
     siteName: PAGE_MAIN_TITLE,
     type: 'website',
     locale: 'ru_RU',
@@ -38,7 +38,6 @@ export const metadata: Metadata = {
 
 const breadcrumbs = [
   { heading: PAGE_MAIN, route: Routes.HOME },
-  { heading: PAGE_COOPERATION_TITLE, route: Routes.COOPERATION },
   { heading: PAGE_STORAGE_TITLE, route: '' },
 ];
 

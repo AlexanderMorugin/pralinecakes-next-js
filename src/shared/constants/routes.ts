@@ -15,6 +15,7 @@ enum Routes {
   CATEGORIES = '/categories',
   ONE_CATEGORY = '/categories/:route',
   PRICELIST = '/price',
+  STORAGE = '/storage',
 }
 
 export default Routes;

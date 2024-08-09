@@ -2,6 +2,7 @@ import type { FC } from 'react';
 import Link from 'next/link';
 
 import { ArticleWrapper } from '@/components';
+import Routes from '@/shared/constants/routes';
 
 import styles from './cooperation-widget.module.scss';
 
@@ -53,7 +54,7 @@ const CooperationWidget: FC = () => {
           Если вы решили сотрудничать с нашей кондитерской и реализовывать наши
           пирожные или торты в своем заведении, рекомендуем ознакомиться с&nbsp;
           <Link
-            href='/cooperation/storage/'
+            href={Routes.STORAGE}
             className={styles.cooperationWidget__link}
           >
             правилами хранения замороженных десертов
