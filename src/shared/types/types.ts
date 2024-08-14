@@ -11,6 +11,14 @@ export interface CategoryProps {
   category?: string;
 }
 
+// история
+export interface StoryProps {
+  title?: string;
+  textOne?: string;
+  textTwo?: string;
+  textThree?: string;
+}
+
 // продукт
 export interface ProductProps {
   id: number;
@@ -22,6 +30,7 @@ export interface ProductProps {
   url?: string;
   title: string;
   description: string;
+  descriptionSecond?: string;
   condition?: string;
   ingredients: string;
   protein: number;
@@ -39,4 +48,5 @@ export interface ProductProps {
   type?: string[];
   category?: CategoryProps[];
   link?: string;
+  story?: StoryProps;
 }

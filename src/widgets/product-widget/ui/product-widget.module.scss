@@ -68,6 +68,10 @@
     border-bottom: 1px solid var(--border-primary);
   }
 
+  &__descriptionSecond {
+    padding-top: 20px;
+  }
+
   &__span {
     font: var(--font-xs-medium);
     color: var(--brown-thirdary);

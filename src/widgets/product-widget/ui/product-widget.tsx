@@ -13,6 +13,7 @@ import {
   ProductPrice,
   ProductPrices,
   ProductStorage,
+  StoryCard,
 } from '@/entities';
 import { ArticleWrapper } from '@/components';
 import { CAKE_PACK, PASTRY_PACK } from '@/shared/constants/pages';
@@ -25,6 +26,8 @@ export interface IProductWidget extends ProductProps {
 }
 
 const ProductWidget: FC<IProductWidget> = ({ isCake, isPastry, ...item }) => {
+  const itemStory = item.story;
+
   return (
     <section className={styles.product}>
       {isCake && (
@@ -50,6 +53,11 @@ const ProductWidget: FC<IProductWidget> = ({ isCake, isPastry, ...item }) => {
           <div className={styles.product__description}>
             <span className={styles.product__span}>Описание</span>
             <p>{item.description}</p>
+            {item.descriptionSecond && (
+              <p className={styles.product__descriptionSecond}>
+                {item.descriptionSecond}
+              </p>
+            )}
             <p className={styles.product__condition}>{item.condition}</p>
           </div>
 
@@ -89,6 +97,7 @@ const ProductWidget: FC<IProductWidget> = ({ isCake, isPastry, ...item }) => {
       </div>
 
       {isPastry && <CategoryBlock category={item.category} />}
+      {itemStory && <StoryCard {...itemStory} />}
     </section>
   );
 };
