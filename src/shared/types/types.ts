@@ -17,6 +17,15 @@ export interface StoryProps {
   textOne?: string;
   textTwo?: string;
   textThree?: string;
+  textFour?: string;
+  textFive?: string;
+  textSix?: string;
+  textSeven?: string;
+  textEight?: string;
+  textNine?: string;
+  textTen?: string;
+  textEleven?: string;
+  textTwelve?: string;
 }
 
 // продукт
