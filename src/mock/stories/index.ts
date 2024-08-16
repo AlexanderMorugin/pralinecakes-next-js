@@ -1,6 +1,7 @@
 import { esterhazyStoryForCake } from './stories-for-cakes/esterhazy-story-for-cake';
 import { napoleonStoryForCake } from './stories-for-cakes/napoleon-story-for-cake';
-import { esterhazyStoryForPastry } from './stories-for-pastry/esterhazy-story-or-pastry';
+import { esterhazyStoryForPastry } from './stories-for-pastry/esterhazy-story-for-pastry';
+import { muraveinikStoryForPastry } from './stories-for-pastry/muraveinik-story-for-pastry';
 import { napoleonStoryForPastry } from './stories-for-pastry/napoleon-story-for-pastry';
 
 export {
@@ -8,4 +9,5 @@ export {
   esterhazyStoryForCake,
   napoleonStoryForCake,
   napoleonStoryForPastry,
+  muraveinikStoryForPastry,
 };
