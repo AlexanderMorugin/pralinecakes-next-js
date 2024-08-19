@@ -181,6 +181,7 @@ import {
   esterhazyStoryForPastry,
   muraveinikStoryForPastry,
   napoleonStoryForPastry,
+  ptichkaStoryForPastry,
 } from './stories';
 
 export const pastryData = [
@@ -559,6 +560,7 @@ export const pastryData = [
     type: [TYPE_CHOCOLATE, TYPE_SUFLE],
     category: [chocolate, sufle],
     link: '/products/cakes/ptichie-moloko/',
+    story: ptichkaStoryForPastry,
   },
   {
     id: 13,
