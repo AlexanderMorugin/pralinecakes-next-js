@@ -88,3 +88,14 @@ export const META_STORAGE_TITLE =
   'Как правильно хранить замороженные десерты. Как размораживать пирожные и торты.';
 export const META_STORAGE_DESCRIPTION =
   'Обязательный ряд правил по хранению замороженных десертов. Как правильно размораживать и как хранить в размороженном виде. Товарное соседство и маркировка товара.';
+
+export const PAGE_STORIES_TITLE = 'Истории';
+export const META_STORIES_TITLE =
+  'Истории происхождения десертов, тортов, пирожных.';
+export const META_STORIES_DESCRIPTION =
+  'Истории о том, как появились десерты. Откуда взялись торты. Происхождение пирожных.';
+
+export const PAGE_PTICHKA_TITLE = 'Птичье молоко';
+export const META_PTICHKA_TITLE = 'История происхождения торта и конфет "Птичье молоко"';
+export const META_PTICHKA_DESCRIPTION =
+  'Как появился торт и конфеты Птичье Молоко. Интересная история происхождения.';
