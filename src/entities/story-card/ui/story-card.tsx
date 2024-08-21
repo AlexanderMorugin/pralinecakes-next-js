@@ -1,24 +1,32 @@
-import { StoryProps } from '@/shared/types/types';
+import type { FC } from 'react';
+import Link from 'next/link';
+
+import Image, { StaticImageData } from 'next/image';
+import { CustomLink } from '@/entities';
 
 import styles from './story-card.module.scss';
 
-const StoryCard = (itemStory: StoryProps) => {
+interface IStoryCard {
+  image: StaticImageData;
+  route: string;
+  title: string;
+  text: string;
+}
+
+const StoryCard: FC<IStoryCard> = ({ image, route, title, text }) => {
   return (
-    <article className={styles.storyCard}>
-      <h2 className={styles.storyCard__title}>{itemStory.title}</h2>
-      <p>{itemStory.textOne}</p>
-      {itemStory.textTwo && <p>{itemStory.textTwo}</p>}
-      {itemStory.textThree && <p>{itemStory.textThree}</p>}
-      {itemStory.textFour && <p>{itemStory.textFour}</p>}
-      {itemStory.textFive && <p>{itemStory.textFive}</p>}
-      {itemStory.textSix && <p>{itemStory.textSix}</p>}
-      {itemStory.textSeven && <p>{itemStory.textSeven}</p>}
-      {itemStory.textEight && <p>{itemStory.textEight}</p>}
-      {itemStory.textNine && <p>{itemStory.textNine}</p>}
-      {itemStory.textTen && <p>{itemStory.textTen}</p>}
-      {itemStory.textEleven && <p>{itemStory.textEleven}</p>}
-      {itemStory.textTwelve && <p>{itemStory.textTwelve}</p>}
-    </article>
+    <li className={styles.storyCard}>
+      <Link href={route} className={styles.storyCard__link}>
+        <Image src={image} alt={title} className={styles.storyCard__image} />
+      </Link>
+      <article className={styles.storyCard__article}>
+        <h2 className={styles.storyCard__title}>{title}</h2>
+        <p className={styles.storyCard__text}>
+          {text}&nbsp;&nbsp;
+          <CustomLink route={route} text='Читать историю...' />
+        </p>
+      </article>
+    </li>
   );
 };
 

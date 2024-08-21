@@ -25,14 +25,4 @@
       var(--brown-primary)
     );
   }
-
-  &__link {
-    color: var(--link-primary);
-    border-bottom: 1px dashed var(--link-primary);
-    transition: 0.25s;
-
-    &:hover {
-      color: var(--link-secondary);
-    }
-  }
 }

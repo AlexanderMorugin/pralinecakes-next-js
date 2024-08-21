@@ -42,14 +42,4 @@
     font-size: 70px;
     color: rgba(252, 82, 48, 0.6);
   }
-
-  &__link {
-    color: var(--link-primary);
-    border-bottom: 1px dashed var(--link-primary);
-    transition: 0.25s;
-
-    &:hover {
-      color: var(--link-secondary);
-    }
-  }
 }

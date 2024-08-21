@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
 
 import { MainWrapper, PageWrapper } from '@/components';
 import { Breadcrumbs, CakeBlock, PastryBlock } from '@/widgets';
@@ -11,9 +10,7 @@ import {
   PAGE_PRODUCTS_TITLE,
 } from '@/shared/constants/pages';
 import Routes from '@/shared/constants/routes';
-import { PageHeading, PageSubheading, PageText } from '@/entities';
-
-import styles from './page.module.scss';
+import { CustomLink, PageHeading, PageSubheading, PageText } from '@/entities';
 
 export const metadata: Metadata = {
   title: META_PRODUCTS_TITLE,
@@ -56,19 +53,11 @@ export default function Products() {
         <PageText>
           Здесь показаны только некоторые наши десерты. Чтобы посмотреть
           полностью, нажимайте на&nbsp;
-          <Link href='/products/pastry/' className={styles.link}>
-            все пирожные
-          </Link>
-          , также&nbsp;
-          <Link href='/products/cakes/' className={styles.link}>
-            все торты
-          </Link>
+          <CustomLink route={Routes.PASTRY} text='все пирожные' />, также&nbsp;
+          <CustomLink route={Routes.CAKES} text='все торты' />
           &nbsp; или листайте справа налево. Дополнительно, пирожные еще можно
           выбрать и&nbsp;
-          <Link href='/categories/' className={styles.link}>
-            по категориям
-          </Link>
-          .
+          <CustomLink route={Routes.CATEGORIES} text='по категориям' />.
         </PageText>
         <CakeBlock />
         <PageText>

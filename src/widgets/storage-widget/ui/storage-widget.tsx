@@ -1,7 +1,8 @@
 import type { FC } from 'react';
-import Link from 'next/link';
 
 import { ArticleWrapper } from '@/components';
+import { CustomLink } from '@/entities';
+import Routes from '@/shared/constants/routes';
 
 import styles from './storage-widget.module.scss';
 
@@ -155,14 +156,9 @@ const StorageWidget: FC = () => {
           многих охлажденных десертов составляет 72 часа, но некоторые пирожные
           хранятся не более 36 часов. Смотрите срок хранения в охлажденном, т.е.
           размороженном виде, непосредственно в карточках&nbsp;
-          <Link href='/products/pastry/' className={styles.storageWidget__link}>
-            пирожных
-          </Link>
+          <CustomLink route={Routes.PASTRY} text='пирожных' />
           &nbsp;и&nbsp;
-          <Link href='/products/cakes/' className={styles.storageWidget__link}>
-            тортов
-          </Link>
-          .
+          <CustomLink route={Routes.CAKES} text='тортов' />.
         </p>
       </ArticleWrapper>
       <ArticleWrapper className={styles.storageWidget__articleWrapper}>

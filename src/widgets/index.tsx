@@ -22,6 +22,7 @@ import PriceWidget from './price-widget';
 import StorageWidget from './storage-widget';
 import StoryPtichka from './stories/story-ptichka';
 import StoriesWidget from './stories-widget';
+import StoryMuraveinik from './stories/story-muraveinik';
 
 export {
   AboutWidget,
@@ -46,6 +47,7 @@ export {
   ButtonViewAll,
   PriceWidget,
   StorageWidget,
-  StoryPtichka,
   StoriesWidget,
+  StoryPtichka,
+  StoryMuraveinik,
 };

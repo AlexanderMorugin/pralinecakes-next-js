@@ -177,12 +177,13 @@ import {
   sufle,
   yogurt,
 } from './category-data';
-import {
-  esterhazyStoryForPastry,
-  muraveinikStoryForPastry,
-  napoleonStoryForPastry,
-  ptichkaStoryForPastry,
-} from './stories';
+// import {
+//   esterhazyStoryForPastry,
+//   muraveinikStoryForPastry,
+//   napoleonStoryForPastry,
+//   ptichkaStoryForPastry,
+// } from './stories';
+import { storyPtichka } from './stories-data';
 
 export const pastryData = [
   {
@@ -560,7 +561,7 @@ export const pastryData = [
     type: [TYPE_CHOCOLATE, TYPE_SUFLE],
     category: [chocolate, sufle],
     link: '/products/cakes/ptichie-moloko/',
-    story: ptichkaStoryForPastry,
+    story: storyPtichka,
   },
   {
     id: 13,
@@ -819,7 +820,7 @@ export const pastryData = [
     rating: 6,
     type: [TYPE_SAND, TYPE_CREAM],
     category: [sand, cream],
-    story: muraveinikStoryForPastry,
+    // story: muraveinikStoryForPastry,
   },
   {
     id: 22,
@@ -1352,7 +1353,7 @@ export const pastryData = [
     type: [TYPE_PUFF, TYPE_CREAM],
     category: [puff, cream],
     link: '/products/cakes/napoleon/',
-    story: napoleonStoryForPastry,
+    // story: napoleonStoryForPastry,
   },
   {
     id: 40,
@@ -1500,7 +1501,7 @@ export const pastryData = [
     type: [TYPE_NUT, TYPE_SAND],
     category: [nut, sand],
     link: '/products/cakes/esterhazi/',
-    story: esterhazyStoryForPastry,
+    // story: esterhazyStoryForPastry,
   },
   {
     id: 45,

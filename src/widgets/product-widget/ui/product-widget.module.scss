@@ -97,4 +97,13 @@
       padding-top: 0;
     }
   }
+
+  &__story {
+    padding-top: 20px;
+
+    @include media.respond-to('middle') {
+      padding-left: var(--padding-horizontal-mobile);
+      padding-right: var(--padding-horizontal-mobile);
+    }
+  }
 }

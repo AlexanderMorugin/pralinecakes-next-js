@@ -22,13 +22,4 @@
   &__title {
     font: var(--font-xxl-bold);
   }
-
-  &__link {
-    color: var(--link-primary);
-    transition: 0.25s;
-
-    &:hover {
-      color: var(--link-secondary);
-    }
-  }
 }

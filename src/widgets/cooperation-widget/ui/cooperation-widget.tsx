@@ -1,6 +1,6 @@
 import type { FC } from 'react';
-import Link from 'next/link';
 
+import { CustomLink } from '@/entities';
 import { ArticleWrapper } from '@/components';
 import Routes from '@/shared/constants/routes';
 
@@ -53,12 +53,10 @@ const CooperationWidget: FC = () => {
         <p>
           Если вы решили сотрудничать с нашей кондитерской и реализовывать наши
           пирожные или торты в своем заведении, рекомендуем ознакомиться с&nbsp;
-          <Link
-            href={Routes.STORAGE}
-            className={styles.cooperationWidget__link}
-          >
-            правилами хранения замороженных десертов
-          </Link>
+          <CustomLink
+            route={Routes.STORAGE}
+            text='правилами хранения замороженных десертов'
+          />
           .
         </p>
       </ArticleWrapper>

@@ -1,7 +1,7 @@
 import type { FC } from 'react';
-import Link from 'next/link';
 
 import Routes from '@/shared/constants/routes';
+import { CustomLink } from '@/entities';
 
 import styles from './about-us-block.module.scss';
 
@@ -14,9 +14,7 @@ const AboutUsBlock: FC = () => {
         опытом. В десертах используем натуральные ингредиенты. Всё готовится
         исключительно ручным способом, приобретая шарм изысканного
         ресторана...&nbsp;
-        <Link href={Routes.ABOUT} className={styles.aboutUsBlock__link}>
-          далее о нас
-        </Link>
+        <CustomLink route={Routes.ABOUT} text='далее о нас' />
         <span className={styles.aboutUsBlock__marksLast}>“</span>
       </p>
     </section>

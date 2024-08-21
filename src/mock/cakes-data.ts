@@ -74,6 +74,7 @@ import MindalChernoslivS from '@/assets/images/cakes/cake-mindal-s-new.jpeg';
 import MindalChernoslivM from '@/assets/images/cakes/cake-mindal-m-new.jpeg';
 import MindalChernoslivL from '@/assets/images/cakes/cake-mindal-l-new.jpeg';
 import { esterhazyStoryForCake, napoleonStoryForCake } from './stories';
+import { storyPtichka } from './stories-data';
 
 export const cakesData = [
   {
@@ -230,6 +231,7 @@ export const cakesData = [
     price: 830,
     rating: 4,
     link: '/products/pastry/ptichie-moloko/',
+    story: storyPtichka,
   },
   {
     id: 6,
@@ -258,7 +260,7 @@ export const cakesData = [
     price: 1230,
     rating: 6,
     link: '/products/pastry/esterhazi/',
-    story: esterhazyStoryForCake,
+    // story: esterhazyStoryForCake,
   },
   {
     id: 7,
@@ -366,7 +368,7 @@ export const cakesData = [
     rating: 10,
     defrostStorage: 36,
     link: '/products/pastry/napoleon/',
-    story: napoleonStoryForCake,
+    // story: napoleonStoryForCake,
   },
   {
     id: 11,

@@ -1,6 +1,6 @@
 import type { FC } from 'react';
-import Link from 'next/link';
 
+import { CustomLink } from '@/entities';
 import Routes from '@/shared/constants/routes';
 
 import styles from './cooperation-block.module.scss';
@@ -13,13 +13,8 @@ const CooperationBlock: FC = () => {
         Приглашаем к сотрудничеству кафе, театры, детские развлекательные зоны,
         комплексы, кейтеринговые службы, кофейни, рестораны, бары, пекарни.
         Становитесь клиентом Пралине, приобретайте качественные десерты по
-        выгодной стоимости...&nbsp;
-        <Link
-          href={Routes.COOPERATION}
-          className={styles.cooperationBlock__link}
-        >
-          подробнее
-        </Link>
+        выгодной стоимости, от производителя и поставщика...&nbsp;
+        <CustomLink route={Routes.COOPERATION} text='подробнее' />
         <span className={styles.cooperationBlock__marksLast}>“</span>
       </p>
     </section>

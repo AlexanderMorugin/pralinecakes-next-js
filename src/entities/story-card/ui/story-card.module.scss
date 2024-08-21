@@ -1,20 +1,43 @@
 @use '@/shared/styles/mixins' as media;
 
 .storyCard {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  font: var(--font-s-regular);
-  color: var(--text-primary);
-  padding-top: 20px;
-  padding-bottom: 20px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-primary);
+  border-radius: 15px;
+  overflow: hidden;
 
   @include media.respond-to('middle') {
-    font: var(--font-xs-regular);
-    color: var(--text-thirdary);
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 0;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  &__link {
+    width: 100%;
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+    @include media.respond-to('middle') {
+      height: 200px;
+    }
+  }
+
+  &__article {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+
+    @include media.respond-to('middle') {
+      padding: 10px;
+    }
   }
 
   &__title {
@@ -23,6 +46,14 @@
 
     @include media.respond-to('middle') {
       font: var(--font-m-bold);
+    }
+  }
+
+  &__text {
+    font: var(--font-s-regular);
+
+    @include media.respond-to('large') {
+      font: var(--font-xs-regular);
     }
   }
 }

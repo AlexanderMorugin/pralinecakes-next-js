@@ -2,7 +2,9 @@ import CookerIcon from '@/assets/icons/icon-cooker.svg';
 import CooperationIcon from '@/assets/icons/icon-cooperation.svg';
 import DeliveryIcon from '@/assets/icons/icon-delivery.svg';
 import ContactIcon from '@/assets/icons/icon-contact.svg';
+import StoriesIcon from '@/assets/icons/icon-history.svg';
 import Routes from '@/shared/constants/routes';
+
 import {
   PAGE_ABOUT_TITLE,
   PAGE_CONTACTS_TITLE,
@@ -33,7 +35,7 @@ export const footerInfoData = [
     route: Routes.COOPERATION,
   },
   {
-    icon: CooperationIcon,
+    icon: StoriesIcon,
     title: PAGE_STORIES_TITLE,
     route: Routes.STORIES,
   },

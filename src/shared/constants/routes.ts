@@ -16,7 +16,10 @@ enum Routes {
   ONE_CATEGORY = '/categories/:route',
   PRICELIST = '/price',
   STORAGE = '/storage',
+
   STORIES = '/stories',
+  STORY_PTICHKA = '/stories/ptichie-moloko/',
+  STORY_MURAVEINIK = '/stories/muraveinik/',
 }
 
 export default Routes;

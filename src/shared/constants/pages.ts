@@ -96,6 +96,12 @@ export const META_STORIES_DESCRIPTION =
   'Истории о том, как появились десерты. Откуда взялись торты. Происхождение пирожных.';
 
 export const PAGE_PTICHKA_TITLE = 'Птичье молоко';
-export const META_PTICHKA_TITLE = 'История происхождения торта и конфет "Птичье молоко"';
+export const META_PTICHKA_TITLE =
+  'История происхождения торта и конфет "Птичье молоко"';
 export const META_PTICHKA_DESCRIPTION =
   'Как появился торт и конфеты Птичье Молоко. Интересная история происхождения.';
+
+export const PAGE_MURAVEINIK_TITLE = 'Муравейник';
+export const META_MURAVEINIK_TITLE = 'Как появился торт "Муравейник"';
+export const META_MURAVEINIK_DESCRIPTION =
+  'История происхождения торта "Муравейник". Торт состоял из кусочков обычного печенья, смешанного с кремом из сгущенного молока.';

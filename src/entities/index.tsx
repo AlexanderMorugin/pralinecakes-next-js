@@ -1,6 +1,7 @@
 import AddressBlock from './address-block';
 import CategoryBlock from './category-block';
 import CategoryButton from './category-button';
+import CustomLink from './custom-link';
 import FooterNav from './footer-nav';
 import HeaderConnect from './header-connect';
 import HeaderMobileMenu from './header-mobile-menu';
@@ -60,4 +61,5 @@ export {
   PriceCard,
   ProductStorage,
   StoryCard,
+  CustomLink,
 };

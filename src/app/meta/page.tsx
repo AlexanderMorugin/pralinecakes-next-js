@@ -8,6 +8,7 @@ import DeliveryImage from '@/assets/images/delivery/meta-delivery.jpg';
 import CooperationImage from '@/assets/images/cooperation/meta-cooperation.jpg';
 import CategoriesImage from '@/assets/images/category/meta-categories.jpg';
 import ContactsImage from '@/assets/images/contacts/meta-contacts.jpg';
+import StoryPtichkaImage from '@/assets/images/stories/ptichie-moloko/meta-ptichie.jpg';
 
 import styles from './page.module.scss';
 
@@ -28,6 +29,7 @@ export default function Meta() {
       <Image src={CooperationImage} alt='image' />
       <Image src={CategoriesImage} alt='image' />
       <Image src={ContactsImage} alt='image' />
+      <Image src={StoryPtichkaImage} alt='image' />
     </div>
   );
 }

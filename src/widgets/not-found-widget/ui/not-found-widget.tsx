@@ -1,5 +1,7 @@
 import type { FC } from 'react';
-import Link from 'next/link';
+
+import { CustomLink } from '@/entities';
+import Routes from '@/shared/constants/routes';
 
 import styles from './not-found-widget.module.scss';
 
@@ -12,10 +14,7 @@ const NotFoundWidget: FC = () => {
       <p>
         К сожалению, запрашиваемая Вами страница не найдена. Пожалуйста,
         перейдите в существующий раздел или на&nbsp;
-        <Link href='/' className={styles.notFoundWidget__link}>
-          главную страницу
-        </Link>
-        .
+        <CustomLink route={Routes.HOME} text='главную страницу' />.
       </p>
     </section>
   );

@@ -96,8 +96,9 @@ const ProductWidget: FC<IProductWidget> = ({ isCake, isPastry, ...item }) => {
         <ProductDefrost />
       </div>
 
+      {itemStory && <div className={styles.product__story}><StoryCard {...itemStory} /></div>}
       {isPastry && <CategoryBlock category={item.category} />}
-      {itemStory && <StoryCard {...itemStory} />}
+      
     </section>
   );
 };
