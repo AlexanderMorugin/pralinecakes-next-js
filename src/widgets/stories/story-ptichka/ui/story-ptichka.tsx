@@ -12,7 +12,7 @@ import styles from '../../stories.module.scss';
 
 const StoryPtichka: FC = () => {
   return (
-    <section className={styles.storyPtichka}>
+    <section className={styles.story}>
       <ArticleWrapper>
         <p>
           Торт &quot;Птичье Молоко&quot; - один из самых популярных десертов с
@@ -22,17 +22,17 @@ const StoryPtichka: FC = () => {
           все началось.
         </p>
       </ArticleWrapper>
-      <figure className={styles.storyPtichka__figure}>
+      <figure className={styles.story__figure}>
         <Image
           src={PtichieMainImage}
           alt='Птичье Молоко конфеты времен СССР'
-          className={styles.storyPtichka__image}
+          className={styles.story__image}
         />
-        <figcaption className={styles.storyPtichka__figcaption}>
+        <figcaption className={styles.story__figcaption}>
           &quot;Птичье Молоко&quot; - конфеты времен СССР
         </figcaption>
       </figure>
-      <div className={styles.storyPtichka__gridTwo}>
+      <div className={styles.story__gridTwo}>
         <ArticleWrapper>
           <p>
             Впервые &quot;Птичье Молоко&quot; появилось в Польше, в 1936 году.
@@ -49,31 +49,31 @@ const StoryPtichka: FC = () => {
           </p>
         </ArticleWrapper>
 
-        <figure className={styles.storyPtichka__figure}>
+        <figure className={styles.story__figure}>
           <Image
             src={PtasieImage}
             alt='Конфеты Ptasie Mleczko'
-            className={styles.storyPtichka__image}
+            className={styles.story__image}
           />
-          <figcaption className={styles.storyPtichka__figcaption}>
+          <figcaption className={styles.story__figcaption}>
             Польская кондитерская компания E. Wedel - конфеты &quot;Ptasie
             Mleczko&quot;
           </figcaption>
         </figure>
       </div>
-      <div className={styles.storyPtichka__gridThree}>
-        <figure className={`${styles.storyPtichka__figure} ${styles.storyPtichka__picture}`}>
+      <div className={styles.story__gridThree}>
+        <figure className={`${styles.story__figure} ${styles.story__picture}`}>
           <Image
             src={AnnaImage}
             alt='Анна Чулкова'
-            className={styles.storyPtichka__image}
+            className={styles.story__image}
           />
-          <figcaption className={styles.storyPtichka__figcaption}>
+          <figcaption className={styles.story__figcaption}>
             Создатель самого удачного советского рецепта конфет &quot;Птичье
             Молоко&quot; Анна Чулкова
           </figcaption>
         </figure>
-        <ArticleWrapper className={styles.storyPtichka__text}>
+        <ArticleWrapper className={styles.story__text}>
           <p>
             Он привез несколько коробок конфет и дал указание подведомственным
             предприятиям освоить их производство. За работу принялись многие
@@ -88,7 +88,7 @@ const StoryPtichka: FC = () => {
           </p>
         </ArticleWrapper>
       </div>
-      <div className={styles.storyPtichka__grid}>
+      <div className={styles.story__grid}>
         <ArticleWrapper>
           <p>
             В советские годы на всех фабриках, конфеты &quot;Птичье Молоко&quot;
@@ -106,19 +106,19 @@ const StoryPtichka: FC = () => {
               href='https://primkon.moscow/'
               target='_blank'
               rel='noopener noreferrer'
-              className={styles.storyPtichka__link}
+              className={styles.story__link}
             >
               Приморский кондитер
             </a>
           </p>
         </ArticleWrapper>
-        <figure className={styles.storyPtichka__figure}>
+        <figure className={styles.story__figure}>
           <Image
             src={PtichieImage}
             alt='Конфеты Птичье Молоко времен СССР'
-            className={styles.storyPtichka__image}
+            className={styles.story__image}
           />
-          <figcaption className={styles.storyPtichka__figcaption}>
+          <figcaption className={styles.story__figcaption}>
             Конфеты &quot;Птичье Молоко&quot; времен СССР
           </figcaption>
         </figure>
@@ -135,25 +135,25 @@ const StoryPtichka: FC = () => {
             href='https://wedel.com/'
             target='_blank'
             rel='noopener noreferrer'
-            className={styles.storyPtichka__link}
+            className={styles.story__link}
           >
             wedel.com
           </a>
         </p>
       </ArticleWrapper>
-      <div className={styles.storyPtichka__grid}>
-        <figure className={styles.storyPtichka__figure}>
+      <div className={styles.story__grid}>
+        <figure className={styles.story__figure}>
           <Image
             src={GuralnikImage}
             alt='Владимир Гуральник'
-            className={styles.storyPtichka__image}
+            className={styles.story__image}
           />
-          <figcaption className={styles.storyPtichka__figcaption}>
+          <figcaption className={styles.story__figcaption}>
             Владимир Гуральник с тортом &quot;Птичье молоко&quot;
           </figcaption>
         </figure>
         <ArticleWrapper>
-          <h3 className={styles.storyPtichka__title}>Но вернемся к торту.</h3>
+          <h3 className={styles.story__title}>Но вернемся к торту.</h3>
           <p>
             В 1978 году, после полугода оттачивания рецептуры, появился
             феноменально-нежный, молочно-шоколадный торт. Разработка его

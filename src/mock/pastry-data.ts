@@ -177,13 +177,7 @@ import {
   sufle,
   yogurt,
 } from './category-data';
-// import {
-//   esterhazyStoryForPastry,
-//   muraveinikStoryForPastry,
-//   napoleonStoryForPastry,
-//   ptichkaStoryForPastry,
-// } from './stories';
-import { storyPtichka } from './stories-data';
+import { storyMuraveinik, storyPtichka } from './stories-data';
 
 export const pastryData = [
   {
@@ -820,7 +814,7 @@ export const pastryData = [
     rating: 6,
     type: [TYPE_SAND, TYPE_CREAM],
     category: [sand, cream],
-    // story: muraveinikStoryForPastry,
+    story: storyMuraveinik,
   },
   {
     id: 22,

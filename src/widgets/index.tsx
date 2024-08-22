@@ -23,6 +23,7 @@ import StorageWidget from './storage-widget';
 import StoryPtichka from './stories/story-ptichka';
 import StoriesWidget from './stories-widget';
 import StoryMuraveinik from './stories/story-muraveinik';
+import ProductsForStories from './products-for-stories';
 
 export {
   AboutWidget,
@@ -50,4 +51,5 @@ export {
   StoriesWidget,
   StoryPtichka,
   StoryMuraveinik,
+  ProductsForStories,
 };

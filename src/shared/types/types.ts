@@ -11,22 +11,13 @@ export interface CategoryProps {
   category?: string;
 }
 
-// // история
-// export interface StoryProps {
-//   title?: string;
-//   textOne?: string;
-//   textTwo?: string;
-//   textThree?: string;
-//   textFour?: string;
-//   textFive?: string;
-//   textSix?: string;
-//   textSeven?: string;
-//   textEight?: string;
-//   textNine?: string;
-//   textTen?: string;
-//   textEleven?: string;
-//   textTwelve?: string;
-// }
+// истории
+export interface StoryProps {
+  image: StaticImageData;
+  title: string;
+  text: string;
+  route: string;
+}
 
 // продукт
 export interface ProductProps {

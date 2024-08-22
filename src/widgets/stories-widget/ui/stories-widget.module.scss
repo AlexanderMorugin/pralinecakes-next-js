@@ -10,10 +10,7 @@
   margin: 0 auto;
   padding-left: var(--padding-horizontal-desktop);
   padding-right: var(--padding-horizontal-desktop);
-  // padding-bottom: 20px;
-
-  // border: 1px solid red;
-
+  padding-bottom: 20px;
 
   @include media.respond-to('middle') {
     padding-left: var(--padding-horizontal-mobile);

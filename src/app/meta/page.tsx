@@ -9,6 +9,7 @@ import CooperationImage from '@/assets/images/cooperation/meta-cooperation.jpg';
 import CategoriesImage from '@/assets/images/category/meta-categories.jpg';
 import ContactsImage from '@/assets/images/contacts/meta-contacts.jpg';
 import StoryPtichkaImage from '@/assets/images/stories/ptichie-moloko/meta-ptichie.jpg';
+import StoryMuraveinikImage from '@/assets/images/stories/muraveinik/meta-muraveinik.jpg';
 
 import styles from './page.module.scss';
 
@@ -30,6 +31,7 @@ export default function Meta() {
       <Image src={CategoriesImage} alt='image' />
       <Image src={ContactsImage} alt='image' />
       <Image src={StoryPtichkaImage} alt='image' />
+      <Image src={StoryMuraveinikImage} alt='image' />
     </div>
   );
 }

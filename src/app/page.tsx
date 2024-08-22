@@ -18,7 +18,7 @@ import {
 } from '@/widgets';
 
 export const metadata: Metadata = {
-  title: `Кондитерская Пралине | ${META_MAIN_TITLE}`,
+  title: `Кондитерская Пралине - ${META_MAIN_TITLE}`,
   description: META_MAIN_DESCRIPTION,
   keywords: ['кондитерская', 'пралине'],
   alternates: {
