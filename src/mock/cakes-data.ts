@@ -73,7 +73,7 @@ import KokosoviyL from '@/assets/images/cakes/cake-cocos-l-new.jpeg';
 import MindalChernoslivS from '@/assets/images/cakes/cake-mindal-s-new.jpeg';
 import MindalChernoslivM from '@/assets/images/cakes/cake-mindal-m-new.jpeg';
 import MindalChernoslivL from '@/assets/images/cakes/cake-mindal-l-new.jpeg';
-import { storyPtichka } from './stories-data';
+import { storyNapoleon, storyPtichka } from './stories-data';
 
 export const cakesData = [
   {
@@ -367,7 +367,7 @@ export const cakesData = [
     rating: 10,
     defrostStorage: 36,
     link: '/products/pastry/napoleon/',
-    // story: napoleonStoryForCake,
+    story: storyNapoleon,
   },
   {
     id: 11,

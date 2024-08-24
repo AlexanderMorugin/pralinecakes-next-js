@@ -96,9 +96,9 @@ export const META_STORIES_TITLE =
 export const META_STORIES_DESCRIPTION =
   'Истории о том, как появились десерты. Откуда взялись торты. Происхождение пирожных.';
 
-export const PAGE_PTICHKA_TITLE = 'Птичье молоко';
+export const PAGE_PTICHKA_TITLE = 'Птичье Молоко';
 export const META_PTICHKA_TITLE =
-  'История происхождения торта и конфет "Птичье молоко"';
+  'История происхождения торта и конфет "Птичье Молоко"';
 export const META_PTICHKA_DESCRIPTION =
   'Как появился торт и конфеты Птичье Молоко. Интересная история происхождения.';
 
@@ -106,3 +106,9 @@ export const PAGE_MURAVEINIK_TITLE = 'Муравейник';
 export const META_MURAVEINIK_TITLE = 'Как появился торт "Муравейник"';
 export const META_MURAVEINIK_DESCRIPTION =
   'История происхождения торта "Муравейник". Торт состоял из кусочков обычного печенья, смешанного с кремом из сгущенного молока.';
+
+export const PAGE_NAPOLEON_TITLE = 'Наполеон';
+export const META_NAPOLEON_TITLE =
+  'Как Наполеон из императора стал русским тортом.';
+export const META_NAPOLEON_DESCRIPTION =
+  'Этот торт, первоначально названный mille-feuille, был привезен в Россию в начале 19-го века и был широко приготовлен во время праздничных мероприятий после победы над армией Наполеона Бонапарта в 1812 году.';

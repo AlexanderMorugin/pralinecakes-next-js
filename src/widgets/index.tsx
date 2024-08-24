@@ -24,6 +24,7 @@ import StoryPtichka from './stories/story-ptichka';
 import StoriesWidget from './stories-widget';
 import StoryMuraveinik from './stories/story-muraveinik';
 import ProductsForStories from './products-for-stories';
+import StoryNapoleon from './stories/story-napoleon';
 
 export {
   AboutWidget,
@@ -52,4 +53,5 @@ export {
   StoryPtichka,
   StoryMuraveinik,
   ProductsForStories,
+  StoryNapoleon,
 };

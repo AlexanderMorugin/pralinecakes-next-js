@@ -177,7 +177,7 @@ import {
   sufle,
   yogurt,
 } from './category-data';
-import { storyMuraveinik, storyPtichka } from './stories-data';
+import { storyMuraveinik, storyNapoleon, storyPtichka } from './stories-data';
 
 export const pastryData = [
   {
@@ -1347,7 +1347,7 @@ export const pastryData = [
     type: [TYPE_PUFF, TYPE_CREAM],
     category: [puff, cream],
     link: '/products/cakes/napoleon/',
-    // story: napoleonStoryForPastry,
+    story: storyNapoleon,
   },
   {
     id: 40,
