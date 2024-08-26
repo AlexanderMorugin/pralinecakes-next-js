@@ -61,6 +61,19 @@
     }
   }
 
+  &__gridFour {
+    display: grid;
+    grid-template-columns: 1fr 30%;
+    gap: 20px;
+    width: 100%;
+    max-width: var(--width-xl);
+    margin: 0 auto;
+
+    @include media.respond-to('middle') {
+      grid-template-columns: 1fr;
+    }
+  }
+
   &__picture {
     grid-area: picture;
   }

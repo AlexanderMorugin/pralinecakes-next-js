@@ -18,7 +18,7 @@ const StoryEsterhazy: FC = () => {
           сколько слоев – пять или шесть должно быть в торте. Но одно можно
           сказать наверняка – торт не содержит пшеничной муки и готовится из
           яичных белков, сахара и ореховой муки, прослаивается ванильным кремом
-          и покрывается белой помадкой. Это фантастическое, легкое, с ароматом
+          и покрывается белой помадкой. Это фантастическое, лёгкое, с ароматом
           ванили и грецких орехов блюдо.
         </p>
       </ArticleWrapper>
@@ -32,27 +32,7 @@ const StoryEsterhazy: FC = () => {
           Будапешт, площадь Октогон - художник Balázs Petheő
         </figcaption>
       </figure>
-      <ArticleWrapper>
-        <p>
-          Интересно, что в то время это был один из самых популярных тортов в
-          Австро-Венгрии. История гласит, что оригинальный Эстерхази был
-          приготовлен из слоеного миндального бисквита с ванильным и коньячным
-          кремом. А сегодня в Венгрии миндальную муку часто заменяют грецкими
-          орехами, что делает торт гораздо более особенным.
-        </p>
-      </ArticleWrapper>
-      <div className={styles.story__grid}>
-        <figure className={styles.story__figure}>
-          <Image
-            src={PaulIIIAntonImage}
-            alt='Paul III Anton, prince Esterházy de Galántha - художник Josef Fischer'
-            className={styles.story__image}
-          />
-          <figcaption className={styles.story__figcaption}>
-            Paul III Anton, prince Esterházy de Galántha - художник Josef
-            Fischer
-          </figcaption>
-        </figure>
+      <div className={styles.story__gridFour}>
         <ArticleWrapper>
           <p>
             Этот торт был создан в конце 19 века неизвестным кондитером
@@ -64,7 +44,25 @@ const StoryEsterhazy: FC = () => {
             Павлу Антону хотел выразить свое уважение и почтение кондитер,
             приготовивший чудный десерт.
           </p>
+          <p>
+            Интересно, что в то время это был один из самых популярных тортов в
+            Австро-Венгрии. История гласит, что оригинальный Эстерхази был
+            приготовлен из слоеного миндального бисквита с ванильным и коньячным
+            кремом. А сегодня в Венгрии миндальную муку часто заменяют грецкими
+            орехами, что делает торт гораздо более особенным.
+          </p>
         </ArticleWrapper>
+        <figure className={styles.story__figure}>
+          <Image
+            src={PaulIIIAntonImage}
+            alt='Paul III Anton, prince Esterházy de Galántha - художник Josef Fischer'
+            className={styles.story__image}
+          />
+          <figcaption className={styles.story__figcaption}>
+            Paul III Anton, prince Esterházy de Galántha - художник Josef
+            Fischer
+          </figcaption>
+        </figure>
       </div>
       <ArticleWrapper>
         <p>
@@ -92,7 +90,7 @@ const StoryEsterhazy: FC = () => {
       <ArticleWrapper>
         <p>
           Сегодня дворцы и замки находятся под управлением фонда Эстерхази. Там
-          проводят большие туристические и светские мероприятия, ознакомиться с
+          проводятся большие туристические и светские мероприятия, ознакомиться с
           которыми можно на их&nbsp;
           <a
             href='https://esterhazy.at/'

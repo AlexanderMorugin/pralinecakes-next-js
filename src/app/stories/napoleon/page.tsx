@@ -21,8 +21,8 @@ import { pastryData } from '@/mock/pastry-data';
 import { cakesData } from '@/mock/cakes-data';
 
 export const metadata: Metadata = {
-  title: PAGE_NAPOLEON_TITLE,
-  description: META_NAPOLEON_TITLE,
+  title: META_NAPOLEON_TITLE,
+  description: META_NAPOLEON_DESCRIPTION,
   keywords: ['история', 'торт', 'наполеон'],
   alternates: {
     canonical: 'https://pralinecakes.ru/stories/napoleon/',

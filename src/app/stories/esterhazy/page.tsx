@@ -21,8 +21,8 @@ import { pastryData } from '@/mock/pastry-data';
 import { cakesData } from '@/mock/cakes-data';
 
 export const metadata: Metadata = {
-  title: PAGE_ESTERHAZY_TITLE,
-  description: META_ESTERHAZY_TITLE,
+  title: META_ESTERHAZY_TITLE,
+  description: META_ESTERHAZY_DESCRIPTION,
   keywords: ['история', 'торт', 'эстерхази'],
   alternates: {
     canonical: 'https://pralinecakes.ru/stories/esterhazy/',
