@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     description: META_STORIES_DESCRIPTION,
     images: [
       {
-        url: 'https://pralinecakes.ru/_next/static/media/meta-products.d08f49e3.jpg',
+        url: 'https://pralinecakes.ru/_next/static/media/meta-stories.196448c4.jpg',
       },
     ],
     url: 'https://pralinecakes.ru/stories/',

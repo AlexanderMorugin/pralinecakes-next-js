@@ -12,6 +12,7 @@ import StoriesImage from '@/assets/images/stories/meta-stories.jpg';
 import StoryPtichkaImage from '@/assets/images/stories/ptichie-moloko/meta-ptichie.jpg';
 import StoryMuraveinikImage from '@/assets/images/stories/muraveinik/meta-muraveinik.jpg';
 import StoryNapoleonImage from '@/assets/images/stories/napoleon/meta-napoleon.jpg';
+import StoryEsterhazyImage from '@/assets/images/stories/esterhazy/meta-budapest.jpg';
 
 import styles from './page.module.scss';
 
@@ -36,6 +37,7 @@ export default function Meta() {
       <Image src={StoryPtichkaImage} alt='image' />
       <Image src={StoryMuraveinikImage} alt='image' />
       <Image src={StoryNapoleonImage} alt='image' />
+      <Image src={StoryEsterhazyImage} alt='image' />
     </div>
   );
 }

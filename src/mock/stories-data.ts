@@ -1,8 +1,10 @@
 import PtichkaImage from '@/assets/images/stories/ptichie-moloko/story-card-ptichie.jpg';
 import MuraveinikImage from '@/assets/images/stories/muraveinik/story-card-muraveinik.jpg';
 import NapoleonImage from '@/assets/images/stories/napoleon/story-card-napoleon.jpg';
+import EsterhazyImage from '@/assets/images/stories/esterhazy/story-card-budapest.jpg';
 
 import {
+  META_ESTERHAZY_TITLE,
   META_MURAVEINIK_TITLE,
   META_NAPOLEON_TITLE,
   META_PTICHKA_TITLE,
@@ -30,4 +32,16 @@ export const storyNapoleon = {
   route: Routes.STORY_NAPOLEON,
 };
 
-export const storiesData = [storyNapoleon, storyMuraveinik, storyPtichka];
+export const storyEsterhazy = {
+  image: EsterhazyImage,
+  title: META_ESTERHAZY_TITLE,
+  text: 'Будапешт это крупнейший город и столица Венгрии. Так вот в этом городе, в конце 19 века, местными (к сожалению неизвестными) кондитерами впервые был приготовлен очень вкусный торт. В последствии ставший мировым бестселлером. Он полон орехового вкуса, готовится исключительно из миндальной муки, совершенно без муки пшеничной. Он способен поразить своей мягкостью и ванильной нежностью. Расскажем нашу небольшую историю.',
+  route: Routes.STORY_ESTERHAZY,
+};
+
+export const storiesData = [
+  storyNapoleon,
+  storyMuraveinik,
+  storyEsterhazy,
+  storyPtichka,
+];

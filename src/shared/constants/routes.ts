@@ -21,6 +21,7 @@ enum Routes {
   STORY_PTICHKA = '/stories/ptichie-moloko/',
   STORY_MURAVEINIK = '/stories/muraveinik/',
   STORY_NAPOLEON = '/stories/napoleon/',
+  STORY_ESTERHAZY = '/stories/esterhazy/',
 }
 
 export default Routes;

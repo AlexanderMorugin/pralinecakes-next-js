@@ -5,14 +5,14 @@ import {
   Breadcrumbs,
   ButtonViewAll,
   ProductsForStories,
-  StoryNapoleon,
+  StoryEsterhazy,
 } from '@/widgets';
 import {
-  META_NAPOLEON_DESCRIPTION,
-  META_NAPOLEON_TITLE,
+  META_ESTERHAZY_DESCRIPTION,
+  META_ESTERHAZY_TITLE,
+  PAGE_ESTERHAZY_TITLE,
   PAGE_MAIN,
   PAGE_MAIN_TITLE,
-  PAGE_NAPOLEON_TITLE,
   PAGE_STORIES_TITLE,
 } from '@/shared/constants/pages';
 import Routes from '@/shared/constants/routes';
@@ -21,21 +21,21 @@ import { pastryData } from '@/mock/pastry-data';
 import { cakesData } from '@/mock/cakes-data';
 
 export const metadata: Metadata = {
-  title: PAGE_NAPOLEON_TITLE,
-  description: META_NAPOLEON_TITLE,
-  keywords: ['история', 'торт', 'наполеон'],
+  title: PAGE_ESTERHAZY_TITLE,
+  description: META_ESTERHAZY_TITLE,
+  keywords: ['история', 'торт', 'эстерхази'],
   alternates: {
-    canonical: 'https://pralinecakes.ru/stories/napoleon/',
+    canonical: 'https://pralinecakes.ru/stories/esterhazy/',
   },
   openGraph: {
-    title: META_NAPOLEON_TITLE,
-    description: META_NAPOLEON_DESCRIPTION,
+    title: META_ESTERHAZY_TITLE,
+    description: META_ESTERHAZY_DESCRIPTION,
     images: [
       {
-        url: 'https://pralinecakes.ru/_next/static/media/meta-napoleon.4ab565d3.jpg',
+        url: 'https://pralinecakes.ru/_next/static/media/meta-budapest.46d97d54.jpg',
       },
     ],
-    url: 'https://pralinecakes.ru/stories/napoleon/',
+    url: 'https://pralinecakes.ru/stories/esterhazy/',
     siteName: PAGE_MAIN_TITLE,
     type: 'website',
     locale: 'ru_RU',
@@ -45,28 +45,26 @@ export const metadata: Metadata = {
 const breadcrumbs = [
   { heading: PAGE_MAIN, route: Routes.HOME },
   { heading: PAGE_STORIES_TITLE, route: Routes.STORIES },
-  { heading: PAGE_NAPOLEON_TITLE, route: '' },
+  { heading: PAGE_ESTERHAZY_TITLE, route: '' },
 ];
 
-export default function Napoleon() {
-  const napoleonPastry = pastryData.filter(
-    (item) => item.route === 'napoleon'
+export default function Esterhazy() {
+  const esterhaziPastry = pastryData.filter(
+    (item) => item.route === 'esterhazi'
   );
 
-  const napoleonCake = cakesData.filter(
-    (item) => item.route === 'napoleon'
-  );
+  const esterhaziCake = cakesData.filter((item) => item.route === 'esterhazi');
 
   return (
     <PageWrapper>
       <Breadcrumbs links={breadcrumbs} />
       <MainWrapper>
-        <PageHeading title={META_NAPOLEON_TITLE} isProduct={true} />
-        <StoryNapoleon />
+        <PageHeading title={META_ESTERHAZY_TITLE} isProduct={true} />
+        <StoryEsterhazy />
         <ProductsForStories
-          dataPastry={napoleonPastry}
-          dataCake={napoleonCake}
-          title='Очень вкусный "Наполеон" от кондитерской "Пралине"'
+          dataPastry={esterhaziPastry}
+          dataCake={esterhaziCake}
+          title='Венгерский ореховый десерт производства кондитерской "Пралине"'
         />
         <ButtonViewAll text='Истории других десертов' route={Routes.STORIES} />
       </MainWrapper>

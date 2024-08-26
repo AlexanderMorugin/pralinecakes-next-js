@@ -73,7 +73,7 @@ import KokosoviyL from '@/assets/images/cakes/cake-cocos-l-new.jpeg';
 import MindalChernoslivS from '@/assets/images/cakes/cake-mindal-s-new.jpeg';
 import MindalChernoslivM from '@/assets/images/cakes/cake-mindal-m-new.jpeg';
 import MindalChernoslivL from '@/assets/images/cakes/cake-mindal-l-new.jpeg';
-import { storyNapoleon, storyPtichka } from './stories-data';
+import { storyEsterhazy, storyNapoleon, storyPtichka } from './stories-data';
 
 export const cakesData = [
   {
@@ -259,7 +259,7 @@ export const cakesData = [
     price: 1230,
     rating: 6,
     link: '/products/pastry/esterhazi/',
-    // story: esterhazyStoryForCake,
+    story: storyEsterhazy,
   },
   {
     id: 7,

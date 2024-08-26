@@ -25,6 +25,7 @@ import StoriesWidget from './stories-widget';
 import StoryMuraveinik from './stories/story-muraveinik';
 import ProductsForStories from './products-for-stories';
 import StoryNapoleon from './stories/story-napoleon';
+import StoryEsterhazy from './stories/story-esterhazy';
 
 export {
   AboutWidget,
@@ -54,4 +55,5 @@ export {
   StoryMuraveinik,
   ProductsForStories,
   StoryNapoleon,
+  StoryEsterhazy,
 };

@@ -177,7 +177,12 @@ import {
   sufle,
   yogurt,
 } from './category-data';
-import { storyMuraveinik, storyNapoleon, storyPtichka } from './stories-data';
+import {
+  storyEsterhazy,
+  storyMuraveinik,
+  storyNapoleon,
+  storyPtichka,
+} from './stories-data';
 
 export const pastryData = [
   {
@@ -1495,7 +1500,7 @@ export const pastryData = [
     type: [TYPE_NUT, TYPE_SAND],
     category: [nut, sand],
     link: '/products/cakes/esterhazi/',
-    // story: esterhazyStoryForPastry,
+    story: storyEsterhazy,
   },
   {
     id: 45,
