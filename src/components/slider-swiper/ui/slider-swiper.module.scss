@@ -1,0 +1,79 @@
+@use '@/shared/styles/mixins' as media;
+
+.swiper {
+  display: flex;
+  justify-content: center;
+  height: 450px;
+
+  @include media.respond-to('middle') {
+    height: 430px;
+  }
+}
+
+.swiperSlides {
+  position: relative;
+}
+
+.controlers {
+  position: absolute;
+
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 250px;
+  height: 50px;
+  padding-top: 10px;
+  z-index: var(--z-index-two);
+
+  @include media.respond-to('middle') {
+    margin-top: auto;
+    margin-bottom: auto;
+    top: 50%;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 768px;
+    padding: 5px;
+  }
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: var(--light-secondary);
+  border-radius: 50%;
+  border: 1px solid var(--link-primary);
+  cursor: pointer;
+  transition: 0.25s;
+
+  &:hover {
+    background: var(--link-thirdary);
+  }
+}
+
+.arrowPrev {
+  width: 24px;
+  height: 24px;
+}
+
+.arrowNext {
+  width: 24px;
+  height: 24px;
+  transform: rotate(180deg);
+}
+
+.pagination {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}

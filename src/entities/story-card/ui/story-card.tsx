@@ -10,7 +10,7 @@ interface IStoryCard {
   image: StaticImageData;
   route: string;
   title: string;
-  text: string;
+  text?: string;
 }
 
 const StoryCard: FC<IStoryCard> = ({ image, route, title, text }) => {

@@ -109,11 +109,11 @@ export const META_MURAVEINIK_DESCRIPTION =
 
 export const PAGE_NAPOLEON_TITLE = 'Наполеон';
 export const META_NAPOLEON_TITLE =
-  'Как Наполеон из императора стал русским тортом.';
+  'Как Наполеон из императора стал русским тортом';
 export const META_NAPOLEON_DESCRIPTION =
   'Этот торт, первоначально названный mille-feuille, был привезен в Россию в начале 19-го века и был широко приготовлен во время праздничных мероприятий после победы над армией Наполеона Бонапарта в 1812 году.';
 
 export const PAGE_ESTERHAZY_TITLE = 'Эстерхази';
-export const META_ESTERHAZY_TITLE = 'Знаменитый торт из Будапешта.';
+export const META_ESTERHAZY_TITLE = 'Знаменитый торт из Будапешта';
 export const META_ESTERHAZY_DESCRIPTION =
   'Торт Эстерхази был создан в конце 19 века неизвестным кондитером Будапешта и вскоре стал одним из самых известных десертов на землях Австрии и Венгрии. Свое название торт получил в честь принца Павла Антона III Эстерхази де Галанта.';

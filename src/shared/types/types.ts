@@ -15,7 +15,7 @@ export interface CategoryProps {
 export interface StoryProps {
   image: StaticImageData;
   title: string;
-  text: string;
+  text?: string;
   route: string;
 }
 

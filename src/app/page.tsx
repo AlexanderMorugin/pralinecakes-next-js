@@ -15,6 +15,7 @@ import {
   DeliveryBlock,
   HeadingImage,
   PastryBlock,
+  StoryBlock,
 } from '@/widgets';
 
 export const metadata: Metadata = {
@@ -57,6 +58,7 @@ export default function Home() {
       <AboutUsBlock />
       <CakeBlock />
       <CooperationBlock />
+      <StoryBlock />
       <DeliveryBlock />
     </MainWrapper>
   );

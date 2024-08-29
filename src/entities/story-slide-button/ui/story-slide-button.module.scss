@@ -1,0 +1,21 @@
+.storySlideButton {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--accent-primary);
+  border-radius: 5px;
+  padding: 5px 10px;
+  font: var(--font-s-medium);
+  color: var(--light-primary);
+  letter-spacing: 1.2px;
+  transition: 0.25s;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--light-primary);
+    color: var(--accent-secondary);
+  }
+}

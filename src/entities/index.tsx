@@ -28,6 +28,8 @@ import ProductPrices from './product-prices';
 import ProductScroll from './product-scroll';
 import ProductStorage from './product-storage';
 import StoryCard from './story-card';
+import StorySlide from './story-slide';
+import StorySlideButton from './story-slide-button';
 import TextBlock from './text-block';
 
 export {
@@ -62,4 +64,6 @@ export {
   ProductStorage,
   StoryCard,
   CustomLink,
+  StorySlide,
+  StorySlideButton,
 };
