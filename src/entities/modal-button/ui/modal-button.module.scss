@@ -1,0 +1,21 @@
+.modalButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  background: rgba(252, 82, 48, 0.8);
+  border-radius: 5px;
+  font: var(--font-xs-regular);
+  color: var(--light-primary);
+  letter-spacing: 1.1px;
+  cursor: pointer;
+  transition: 0.25s;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.8);
+    color: var(--accent-secondary);
+  }
+}

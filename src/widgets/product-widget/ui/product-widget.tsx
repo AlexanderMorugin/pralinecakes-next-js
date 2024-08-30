@@ -9,6 +9,7 @@ import {
   ProductDefrost,
   ProductDescribe,
   ProductExpiration,
+  ProductModal,
   ProductNutritions,
   ProductPrice,
   ProductPrices,
@@ -48,6 +49,13 @@ const ProductWidget: FC<IProductWidget> = ({ isCake, isPastry, ...item }) => {
               {isCake ? 'А здесь спрятано пирожное' : 'А здесь спрятан торт'}
             </Link>
           )}
+
+          <ProductModal
+            image={item.image_large}
+            title={item.title}
+            isCake={isCake}
+            isPastry={isPastry}
+          />
         </div>
         <ArticleWrapper>
           <div className={styles.product__description}>

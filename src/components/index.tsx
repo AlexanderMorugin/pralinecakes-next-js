@@ -3,6 +3,7 @@ import Footer from './footer';
 import Header from './header';
 import MainWrapper from './main-wrapper';
 import MediaRendering from './media-rendering/media-rendering';
+import ModalOverlay from './modal-overlay';
 import PageWrapper from './page-wrapper';
 import Scroll from './scroll';
 import SliderSwiper from './slider-swiper';
@@ -18,4 +19,5 @@ export {
   MediaRendering,
   YandexMetrika,
   SliderSwiper,
+  ModalOverlay,
 };

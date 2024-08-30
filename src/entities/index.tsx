@@ -10,6 +10,7 @@ import HitSign from './hit-sign';
 import LinkButton from './link-button';
 import LinkTextArrow from './link-text-arrow';
 import Logo from './logo';
+import ModalButton from './modal-button';
 import PageHeading from './page-heading';
 import PageSubheading from './page-subheading';
 import PageText from './page-text';
@@ -22,6 +23,7 @@ import ProductDefrost from './product-defrost';
 import ProductDescribe from './product-describe';
 import ProductExpiration from './product-expiration';
 import ProductHeading from './product-heading';
+import ProductModal from './product-modal';
 import ProductNutritions from './product-nutritions';
 import ProductPrice from './product-price';
 import ProductPrices from './product-prices';
@@ -66,4 +68,6 @@ export {
   CustomLink,
   StorySlide,
   StorySlideButton,
+  ProductModal,
+  ModalButton,
 };
