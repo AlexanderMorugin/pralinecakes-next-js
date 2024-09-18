@@ -9,7 +9,7 @@ const ProductStorage: FC = () => {
   return (
     <section className={styles.productStorage}>
       <Link href={Routes.STORAGE} className={styles.productStorage__link}>
-        Подробные правила хранения замороженных десертов
+        Подробные правила хранения замороженных десертов и правильной разморозки
       </Link>
     </section>
   );

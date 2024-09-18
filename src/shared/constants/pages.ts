@@ -24,9 +24,9 @@ export const META_ABOUT_DESCRIPTION =
 
 export const PAGE_CONTACTS_TITLE = 'Контакты';
 export const META_CONTACTS_TITLE =
-  'Контакты кондитерской Пралине. Москва Рублевское шоссе. Телефон +7 977 138-82-64.';
+  'Контакты кондитерской Пралине. Москва. Телефон +7 977 138-82-64.';
 export const META_CONTACTS_DESCRIPTION =
-  'Москва, Рублевское шоссе, 52а. ТЦ «Западный», третий этаж. Телефон +7 977 138-82-64. Ежедневно с 10:00 до 19:00.';
+  'Москва, 1-я Магистральная улица, д.18, стр.1. Телефон +7 977 138-82-64. Ежедневно с 10:00 до 19:00.';
 
 export const PAGE_COOPERATION_TITLE = 'Сотрудничество';
 export const META_COOPERATION_TITLE =
@@ -84,7 +84,7 @@ export const META_PRICE_TITLE =
 export const META_PRICE_DESCRIPTION =
   'Полный перечень продукции компании Пралине.';
 
-export const PAGE_STORAGE_TITLE = 'Хранение';
+export const PAGE_STORAGE_TITLE = 'Хранение и разморозка';
 export const META_STORAGE_TITLE =
   'Как правильно хранить замороженные десерты. Как размораживать пирожные и торты.';
 export const META_STORAGE_DESCRIPTION =

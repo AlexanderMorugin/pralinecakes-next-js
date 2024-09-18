@@ -21,8 +21,7 @@ const ContactsWidget: FC = () => {
         <div className={styles.contactsWidget__grid}>
           <span className={styles.contactsWidget__name}>Адрес:</span>
           <p className={styles.contactsWidget__text}>
-            <span>{ADDRESS}.&nbsp;</span>
-            <span>Мы находимся в ТЦ «Западный» на третьем этаже</span>
+            <span>{ADDRESS}</span>
           </p>
         </div>
         <div className={styles.contactsWidget__grid}>

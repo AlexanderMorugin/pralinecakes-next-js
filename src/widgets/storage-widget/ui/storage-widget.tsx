@@ -117,7 +117,7 @@ const StorageWidget: FC = () => {
       </ArticleWrapper>
       <ArticleWrapper className={styles.storageWidget__articleWrapper}>
         <span className={styles.storageWidget__span}>
-          С заморозкой вроде все, переходим к разморозке:
+          С заморозкой вроде все, переходим к разморозке. Как разморозить торт?
         </span>
         <p>
           Размораживать десерты следует в холодильниках при температуре
