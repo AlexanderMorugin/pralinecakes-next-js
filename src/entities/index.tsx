@@ -68,6 +68,4 @@ export {
   CustomLink,
   StorySlide,
   StorySlideButton,
-  ProductModal,
-  ModalButton,
 };

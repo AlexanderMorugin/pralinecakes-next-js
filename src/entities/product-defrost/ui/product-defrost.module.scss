@@ -8,9 +8,12 @@
   border-radius: 15px;
   font: var(--font-xs-regular);
   color: var(--light-secondary);
+  border: 1px solid var(--border-primary);
+  border-radius: 15px;
   padding: 10px 20px;
 
   @include media.respond-to('middle') {
+    border: none;
     border-radius: 0;
     padding-left: 10px;
     padding-right: 10px;

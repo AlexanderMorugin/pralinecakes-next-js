@@ -1,4 +1,4 @@
-import type { FC } from 'react';
+import { Suspense, type FC } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -9,7 +9,6 @@ import {
   ProductDefrost,
   ProductDescribe,
   ProductExpiration,
-  ProductModal,
   ProductNutritions,
   ProductPrice,
   ProductPrices,
@@ -18,6 +17,7 @@ import {
 } from '@/entities';
 import { ArticleWrapper } from '@/components';
 import { CAKE_PACK, PASTRY_PACK } from '@/shared/constants/pages';
+import ProductModal from '@/entities/product-modal';
 
 import styles from './product-widget.module.scss';
 
@@ -40,7 +40,7 @@ const ProductWidget: FC<IProductWidget> = ({ isCake, isPastry, ...item }) => {
       <div className={styles.product__container}>
         <div className={styles.product__imageBox}>
           <Image
-            src={item.image_normal}
+            src={item.image_large}
             alt={item.title}
             className={styles.product__image}
           />
@@ -50,12 +50,14 @@ const ProductWidget: FC<IProductWidget> = ({ isCake, isPastry, ...item }) => {
             </Link>
           )}
 
-          <ProductModal
-            image={item.image_large}
-            title={item.title}
-            isCake={isCake}
-            isPastry={isPastry}
-          />
+          <Suspense>
+            <ProductModal
+              image={item.image_large}
+              title={item.title}
+              isCake={isCake}
+              isPastry={isPastry}
+            />
+          </Suspense>
         </div>
         <ArticleWrapper>
           <div className={styles.product__description}>
@@ -66,41 +68,51 @@ const ProductWidget: FC<IProductWidget> = ({ isCake, isPastry, ...item }) => {
                 {item.descriptionSecond}
               </p>
             )}
+            {item.descriptionThird && (
+              <p className={styles.product__descriptionSecond}>
+                {item.descriptionThird}
+              </p>
+            )}
             <p className={styles.product__condition}>{item.condition}</p>
           </div>
+        </ArticleWrapper>
 
-          <ProductDescribe
-            title='Упаковка'
-            text={isCake ? CAKE_PACK : PASTRY_PACK}
-          />
+        <ArticleWrapper>
+          <div className={styles.product__details}>
+            <ProductDescribe title='Состав' text={item.ingredients} />
 
-          <ProductDescribe title='Состав' text={item.ingredients} />
-
-          <ProductNutritions
-            protein={item.protein}
-            fat={item.fat}
-            carbohydrates={item.carbohydrates}
-            calories={item.calories}
-          />
-
-          {item.quantity > 1 ? (
-            <ProductPrices
-              quantity={item.quantity}
-              quantity_b={item.quantity_b}
-              weight={item.weight}
-              weight_b={item.weight_b}
-              price={item.price}
-              price_b={item.price_b}
+            <ProductNutritions
+              protein={item.protein}
+              fat={item.fat}
+              carbohydrates={item.carbohydrates}
+              calories={item.calories}
             />
-          ) : (
-            <ProductPrice weight={item.weight} price={item.price} />
-          )}
+
+            <ProductDescribe
+              title='Упаковка'
+              text={isCake ? CAKE_PACK : PASTRY_PACK}
+              isPackage={true}
+            />
+
+            {item.quantity > 1 ? (
+              <ProductPrices
+                quantity={item.quantity}
+                quantity_b={item.quantity_b}
+                weight={item.weight}
+                weight_b={item.weight_b}
+                price={item.price}
+                price_b={item.price_b}
+              />
+            ) : (
+              <ProductPrice weight={item.weight} price={item.price} />
+            )}
+          </div>
         </ArticleWrapper>
       </div>
 
       <div className={styles.product__grid}>
-        <ProductExpiration defrostStorage={item.defrostStorage} />
         <ProductStorage />
+        <ProductExpiration defrostStorage={item.defrostStorage} />
         <ProductDefrost />
       </div>
 

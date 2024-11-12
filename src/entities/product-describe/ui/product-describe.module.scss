@@ -1,14 +1,29 @@
+@use '@/shared/styles/mixins' as media;
+
 .productDescribe {
   display: flex;
   flex-direction: column;
   font: var(--font-xs-regular);
   color: var(--text-thirdary);
-  padding-bottom: 10px;
   border-bottom: 1px solid var(--border-primary);
+  padding-bottom: 10px;
+  padding-right: 50px;
+
+  @include media.respond-to('middle') {
+    padding-right: 0;
+  }
 
   &__span {
     font: var(--font-xs-medium);
     color: var(--brown-thirdary);
     letter-spacing: 0.8px;
+  }
+
+  &_isPackage {
+    border-bottom: none;
+
+    @include media.respond-to('middle') {
+      border-bottom: 1px solid var(--border-primary);
+    }
   }
 }

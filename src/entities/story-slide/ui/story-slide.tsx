@@ -14,7 +14,7 @@ interface IStorySlide {
 const StorySlide: FC<IStorySlide> = ({ image, route, title }) => {
   return (
     <li className={styles.storySlide}>
-      <Image priority src={image} alt={title} className={styles.storySlide__image} />
+      <Image src={image} alt={title} className={styles.storySlide__image} />
       <h3 className={styles.storySlide__title}>{title}</h3>
       <StorySlideButton route={route} title='читать' />
     </li>

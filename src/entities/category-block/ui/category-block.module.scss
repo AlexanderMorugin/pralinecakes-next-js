@@ -12,14 +12,12 @@
   border-radius: 15px;
   border: 1px solid var(--grey-primary);
   margin-top: 25px;
-  margin-bottom: 20px;
   padding: 5px 20px 0 20px;
 
   @include media.respond-to('middle') {
     border-radius: 0;
     border: none;
     margin-top: 20px;
-    margin-bottom: 0;
     padding: 5px 10px 0 10px;
   }
 

@@ -6,9 +6,13 @@
   gap: 5px;
   font: var(--font-xs-regular);
   color: var(--text-thirdary);
+  border: 1px solid var(--border-primary);
+  border-radius: 15px;
   padding: 10px;
 
   @include media.respond-to('middle') {
+    border: none;
+    border-radius: 0;
     padding-top: var(--padding-vertical-desktop);
     padding-bottom: var(--padding-vertical-desktop);
   }

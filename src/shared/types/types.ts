@@ -25,12 +25,13 @@ export interface ProductProps {
   route: string;
   image_small: StaticImageData;
   image_normal: StaticImageData;
-  image_large: StaticImageData;
+  image_large: string | StaticImageData;
   image_meta?: string;
   url?: string;
   title: string;
   description: string;
   descriptionSecond?: string;
+  descriptionThird?: string;
   condition?: string;
   ingredients: string;
   protein: number;
@@ -50,3 +51,4 @@ export interface ProductProps {
   link?: string;
   story?: StoryProps;
 }
+

@@ -4,12 +4,12 @@ import { useEffect, useState, type FC } from 'react';
 import Image, { StaticImageData } from 'next/image';
 
 import { ModalOverlay } from '@/components';
-import { ModalButton } from '@/entities';
+import ModalButton from '@/entities/modal-button';
 
 import styles from './product-modal.module.scss';
 
 interface IProductModal {
-  image: StaticImageData;
+  image: string | StaticImageData;
   title: string;
   isCake?: boolean;
   isPastry?: boolean;

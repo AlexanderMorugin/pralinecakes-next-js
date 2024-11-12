@@ -5,11 +5,22 @@ import styles from './product-describe.module.scss';
 interface IProductDescribe {
   title?: string;
   text: string;
+  isPackage?: boolean;
 }
 
-const ProductDescribe: FC<IProductDescribe> = ({ title, text }) => {
+const ProductDescribe: FC<IProductDescribe> = ({
+  title,
+  text,
+  isPackage = false,
+}) => {
   return (
-    <div className={styles.productDescribe}>
+    <div
+      className={
+        !isPackage
+          ? styles.productDescribe
+          : `${styles.productDescribe} ${styles.productDescribe_isPackage}`
+      }
+    >
       <span className={styles.productDescribe__span}>{title}</span>
       <p>{text}</p>
     </div>

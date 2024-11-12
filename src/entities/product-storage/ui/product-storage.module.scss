@@ -5,11 +5,13 @@
   justify-content: center;
   align-items: center;
   background: var(--green-primary);
+  border: 1px solid var(--border-primary);
   border-radius: 15px;
   padding: 10px 20px;
   transition: 0.25s;
 
   @include media.respond-to('middle') {
+    border: none;
     border-radius: 0;
     padding-top: 30px;
     padding-bottom: 30px;
