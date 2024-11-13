@@ -13,18 +13,24 @@
     padding-right: var(--padding-horizontal-mobile);
   }
 
+  @include media.respond-to('small') {
+    padding-bottom: 10px;
+  }
+
   &__list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     width: 100%;
 
-    // @include media.respond-to('large') {
-    //   grid-template-columns: repeat(3, 1fr);
-    // }
-
     @include media.respond-to('middle') {
       grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include media.respond-to('small') {
+      grid-template-columns: 1fr;
+      padding-top: 10px;
+      padding-bottom: 10px;
     }
   }
 

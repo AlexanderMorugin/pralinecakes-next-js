@@ -1,4 +1,4 @@
-import { Suspense, type FC } from 'react';
+import { type FC } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -50,14 +50,14 @@ const ProductWidget: FC<IProductWidget> = ({ isCake, isPastry, ...item }) => {
             </Link>
           )}
 
-          <Suspense>
+
             <ProductModal
               image={item.image_large}
               title={item.title}
               isCake={isCake}
               isPastry={isPastry}
             />
-          </Suspense>
+
         </div>
         <ArticleWrapper>
           <div className={styles.product__description}>

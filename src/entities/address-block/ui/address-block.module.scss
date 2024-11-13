@@ -2,11 +2,13 @@
 
 .addressBlock {
   display: flex;
+  justify-content: right;
   gap: 20px;
   font: var(--font-xs-regular);
   color: var(--light-primary);
 
   @include media.respond-to('large') {
+    flex-wrap: wrap;
     gap: 10px;
     font: var(--font-xxs-regular);
   }
@@ -21,11 +23,13 @@
   align-items: flex-end;
   gap: 10px;
   color: var(--light-secondary);
+  text-align: right;
   opacity: 0.8;
 
   @include media.respond-to('middle') {
     align-items: center;
     font: var(--font-xs-regular);
+    text-align: center;
     opacity: 0.6;
   }
 }

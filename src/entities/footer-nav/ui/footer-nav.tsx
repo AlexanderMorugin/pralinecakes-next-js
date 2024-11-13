@@ -20,7 +20,7 @@ const FooterNav: FC<IFooterNav> = ({ title, array, className }) => {
   return (
     <nav className={`${className} ${styles.footerNav} `}>
       <h3 className={styles.footerNav__title}>{title}</h3>
-      <ul>
+      <ul className={styles.footerNav__list}>
         {array?.map((item, index) => (
           <li key={index}>
             <Link href={item.route} className={styles.footerNav__link}>

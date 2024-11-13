@@ -67,8 +67,7 @@ const HeaderMobileMenu: FC = () => {
                     <Image
                       src={item.icon}
                       alt={item.title}
-                      width={34}
-                      height={34}
+                      className={styles.headerMobileMenu__linkImage}
                     />
                     <span className={styles.headerMobileMenu__linkTitle}>
                       {item.title}

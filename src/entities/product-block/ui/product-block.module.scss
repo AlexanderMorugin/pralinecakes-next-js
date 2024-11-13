@@ -16,6 +16,13 @@
       grid-template-columns: repeat(2, 1fr);
       gap: 10px;
     }
+
+    @include media.respond-to('small') {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
   }
 
   &__link {

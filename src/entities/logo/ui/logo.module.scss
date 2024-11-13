@@ -19,6 +19,10 @@
   @include media.respond-to('large') {
     font: var(--font-m-bold);
   }
+
+  @include media.respond-to('small') {
+    display: none;
+  }
 }
 
 .footer {

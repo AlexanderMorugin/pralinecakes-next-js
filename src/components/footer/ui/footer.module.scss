@@ -28,6 +28,15 @@
       padding-left: var(--padding-horizontal-mobile);
       padding-right: var(--padding-horizontal-mobile);
     }
+
+    @include media.respond-to('small') {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        'information'
+        'catalog'
+        'address'
+        'logoBox';
+    }
   }
 
   &__logoBox {

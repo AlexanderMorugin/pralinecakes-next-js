@@ -1,3 +1,5 @@
+@use '@/shared/styles/mixins' as media;
+
 .headerMobileMenu {
   position: fixed;
   width: 100vw;
@@ -30,6 +32,10 @@
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding: 25px;
     transition: 1s;
+
+    @include media.respond-to('small') {
+      padding: 15px;
+    }
   }
 
   &__link {
@@ -39,11 +45,29 @@
     border-bottom: 1px solid var(--border-primary);
     padding: 10px;
     text-decoration: none;
+
+    @include media.respond-to('small') {
+      gap: 15px;
+    }
+  }
+
+  &__linkImage {
+    width: 34px;
+    height: 34px;
+
+    @include media.respond-to('small') {
+      width: 24px;
+      height: 24px;
+    }
   }
 
   &__linkTitle {
     font: var(--font-m-medium);
     color: var(--light-secondary);
+
+    @include media.respond-to('small') {
+      font: var(--font-xs-medium);
+    }
   }
 
   &__address {
