@@ -60,51 +60,6 @@
     }
   }
 
-  &__description {
-    display: flex;
-    flex-direction: column;
-    padding-top: 10px;
-    padding-bottom: 10px;
-
-    @include media.respond-to('middle') {
-      padding-top: 0;
-      padding-bottom: 0;
-    }
-  }
-
-  &__descriptionSecond {
-    padding-top: 20px;
-  }
-
-  &__span {
-    font: var(--font-xs-medium);
-    color: var(--brown-thirdary);
-    font-style: italic;
-    letter-spacing: 0.8px;
-  }
-
-  &__condition {
-    font: var(--font-xs-regular);
-    color: var(--brown-thirdary);
-    font-style: italic;
-    border-top: 1px solid var(--border-primary);
-    padding-top: 15px;
-    margin-top: 15px;
-  }
-
-  &__details {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 20px;
-    padding-top: 10px;
-
-    @include media.respond-to('middle') {
-      grid-template-columns: 1fr;
-      gap: 20px;
-      padding-top: 0;
-    }
-  }
-
   &__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

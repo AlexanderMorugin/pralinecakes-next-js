@@ -24,6 +24,10 @@
     height: 899px;
     object-fit: cover;
 
+    @include media.respond-to('large') {
+      height: 600px;
+    }
+
     @include media.respond-to('middle') {
       height: 300px;
     }

@@ -1,0 +1,14 @@
+@use '@/shared/styles/mixins' as media;
+
+.productDetails {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 20px;
+  padding-top: 10px;
+
+  @include media.respond-to('middle') {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 0;
+  }
+}

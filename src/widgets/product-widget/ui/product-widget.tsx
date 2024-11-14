@@ -7,17 +7,13 @@ import {
   CategoryBlock,
   PageHeading,
   ProductDefrost,
-  ProductDescribe,
+  ProductDescription,
+  ProductDetails,
   ProductExpiration,
-  ProductNutritions,
-  ProductPrice,
-  ProductPrices,
   ProductStorage,
   StoryCard,
 } from '@/entities';
-import { ArticleWrapper } from '@/components';
-import { CAKE_PACK, PASTRY_PACK } from '@/shared/constants/pages';
-import ProductModal from '@/entities/product-modal';
+import { ProductModal } from '@/entities/product-modal/product-modal';
 
 import styles from './product-widget.module.scss';
 
@@ -50,64 +46,16 @@ const ProductWidget: FC<IProductWidget> = ({ isCake, isPastry, ...item }) => {
             </Link>
           )}
 
-
-            <ProductModal
-              image={item.image_large}
-              title={item.title}
-              isCake={isCake}
-              isPastry={isPastry}
-            />
-
+          <ProductModal
+            image={item.image_large}
+            title={item.title}
+            isCake={isCake}
+            isPastry={isPastry}
+          />
         </div>
-        <ArticleWrapper>
-          <div className={styles.product__description}>
-            <span className={styles.product__span}>Описание</span>
-            <p>{item.description}</p>
-            {item.descriptionSecond && (
-              <p className={styles.product__descriptionSecond}>
-                {item.descriptionSecond}
-              </p>
-            )}
-            {item.descriptionThird && (
-              <p className={styles.product__descriptionSecond}>
-                {item.descriptionThird}
-              </p>
-            )}
-            <p className={styles.product__condition}>{item.condition}</p>
-          </div>
-        </ArticleWrapper>
 
-        <ArticleWrapper>
-          <div className={styles.product__details}>
-            <ProductDescribe title='Состав' text={item.ingredients} />
-
-            <ProductNutritions
-              protein={item.protein}
-              fat={item.fat}
-              carbohydrates={item.carbohydrates}
-              calories={item.calories}
-            />
-
-            <ProductDescribe
-              title='Упаковка'
-              text={isCake ? CAKE_PACK : PASTRY_PACK}
-              isPackage={true}
-            />
-
-            {item.quantity > 1 ? (
-              <ProductPrices
-                quantity={item.quantity}
-                quantity_b={item.quantity_b}
-                weight={item.weight}
-                weight_b={item.weight_b}
-                price={item.price}
-                price_b={item.price_b}
-              />
-            ) : (
-              <ProductPrice weight={item.weight} price={item.price} />
-            )}
-          </div>
-        </ArticleWrapper>
+        <ProductDescription item={item} />
+        <ProductDetails item={item} isCake={isCake} />
       </div>
 
       <div className={styles.product__grid}>

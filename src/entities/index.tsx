@@ -1,71 +1,35 @@
-import AddressBlock from './address-block';
-import CategoryBlock from './category-block';
-import CategoryButton from './category-button';
-import CustomLink from './custom-link';
-import FooterNav from './footer-nav';
-import HeaderConnect from './header-connect';
-import HeaderMobileMenu from './header-mobile-menu';
-import HeaderNavBar from './header-nav-bar';
-import HitSign from './hit-sign';
-import LinkButton from './link-button';
-import LinkTextArrow from './link-text-arrow';
-import Logo from './logo';
-import ModalButton from './modal-button';
-import PageHeading from './page-heading';
-import PageSubheading from './page-subheading';
-import PageText from './page-text';
-import PriceBlock from './price-block';
-import PriceCard from './price-card';
-import PriorityCard from './priority-card';
-import ProductBlock from './product-block';
-import ProductCard from './product-card';
-import ProductDefrost from './product-defrost';
-import ProductDescribe from './product-describe';
-import ProductExpiration from './product-expiration';
-import ProductHeading from './product-heading';
-import ProductModal from './product-modal';
-import ProductNutritions from './product-nutritions';
-import ProductPrice from './product-price';
-import ProductPrices from './product-prices';
-import ProductScroll from './product-scroll';
-import ProductStorage from './product-storage';
-import StoryCard from './story-card';
-import StorySlide from './story-slide';
-import StorySlideButton from './story-slide-button';
-import TextBlock from './text-block';
-
-export {
-  Logo,
-  AddressBlock,
-  HeaderNavBar,
-  HeaderMobileMenu,
-  HeaderConnect,
-  FooterNav,
-  ProductBlock,
-  ProductHeading,
-  LinkTextArrow,
-  ProductCard,
-  HitSign,
-  ProductScroll,
-  LinkButton,
-  PageHeading,
-  PageSubheading,
-  ProductDescribe,
-  ProductNutritions,
-  ProductPrice,
-  ProductPrices,
-  ProductExpiration,
-  ProductDefrost,
-  CategoryBlock,
-  CategoryButton,
-  PriorityCard,
-  TextBlock,
-  PageText,
-  PriceBlock,
-  PriceCard,
-  ProductStorage,
-  StoryCard,
-  CustomLink,
-  StorySlide,
-  StorySlideButton,
-};
+export { AddressBlock } from './address-block/address-block';
+export { CategoryBlock } from './category-block/category-block';
+export { CategoryButton } from './category-button/category-button';
+export { CustomLink } from './custom-link/custom-link';
+export { FooterNav } from './footer-nav/footer-nav';
+export { HeaderConnect } from './header-connect/header-connect';
+export { HeaderMenuButton } from './header-menu-button/header-menu-button';
+export { HeaderNavBar } from './header-nav-bar/header-nav-bar';
+export { HitSign } from './hit-sign/hit-sign';
+export { LinkButton } from './link-button/link-button';
+export { LinkTextArrow } from './link-text-arrow/link-text-arrow';
+export { Logo } from './logo/logo';
+export { PageHeading } from './page-heading/page-heading';
+export { PageSubheading } from './page-subheading/page-subheading';
+export { PageText } from './page-text/page-text';
+export { PriceBlock } from './price-block/price-block';
+export { PriceCard } from './price-card/price-card';
+export { PriorityCard } from './priority-card/priority-card';
+export { ProductBlock } from './product-block/product-block';
+export { ProductCard } from './product-card/product-card';
+export { ProductDefrost } from './product-defrost/product-defrost';
+export { ProductDescribe } from './product-describe/product-describe';
+export { ProductDescription } from './product-description/product-description';
+export { ProductExpiration } from './product-expiration/product-expiration';
+export { ProductHeading } from './product-heading/product-heading';
+export { ProductNutritions } from './product-nutritions/product-nutritions';
+export { ProductPrice } from './product-price/product-price';
+export { ProductPrices } from './product-prices/product-prices';
+export { ProductScroll } from './product-scroll/product-scroll';
+export { ProductStorage } from './product-storage/product-storage';
+export { StoryCard } from './story-card/story-card';
+export { StorySlide } from './story-slide/story-slide';
+export { StorySlideButton } from './story-slide-button/story-slide-button';
+export { TextBlock } from './text-block/text-block';
+export { ProductDetails } from './product-details/product-details';

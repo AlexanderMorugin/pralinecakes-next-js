@@ -1,6 +1,8 @@
 // упаковка
-export const CAKE_PACK = 'Цветная картонная коробка с окошком';
-export const PASTRY_PACK = 'Картонная коробка';
+export enum Pack {
+  CAKE = 'Цветная картонная коробка с окошком',
+  PASTRY = 'Картонная коробка',
+}
 
 // подзаголовок для всех страниц
 export const PAGE_SUBTITLE =

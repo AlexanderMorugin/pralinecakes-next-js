@@ -1,0 +1,33 @@
+@use '@/shared/styles/mixins' as media;
+
+.productDescription {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  @include media.respond-to('middle') {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  &__span {
+    font: var(--font-xs-medium);
+    color: var(--brown-thirdary);
+    font-style: italic;
+    letter-spacing: 0.8px;
+  }
+
+  &__second {
+    padding-top: 20px;
+  }
+
+  &__condition {
+    font: var(--font-xs-regular);
+    color: var(--brown-thirdary);
+    font-style: italic;
+    border-top: 1px solid var(--border-primary);
+    padding-top: 15px;
+    margin-top: 15px;
+  }
+}

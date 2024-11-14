@@ -4,7 +4,7 @@ import { ProductBlock, ProductScroll } from '@/entities';
 import useShuffleArray from '@/shared/hooks/use-shuffle-array';
 import { pastryData } from '@/mock/pastry-data';
 import { MediaRendering } from '@/components';
-import { SCREEN_M } from '@/shared/constants/screen';
+import { Size } from '@/shared/constants/screen';
 
 import styles from './pastry-block.module.scss';
 
@@ -13,7 +13,7 @@ const PastryBlock: FC = () => {
 
   return (
     <section className={styles.pastryBlock}>
-      <MediaRendering minWidth={SCREEN_M} maxWidth={null}>
+      <MediaRendering minWidth={Size.FROM_M} maxWidth={null}>
         <ProductBlock
           dataPastry={fourItemsData}
           isLink={true}
@@ -22,7 +22,7 @@ const PastryBlock: FC = () => {
         />
       </MediaRendering>
 
-      <MediaRendering minWidth={null} maxWidth={SCREEN_M}>
+      <MediaRendering minWidth={null} maxWidth={Size.UNTIL_M}>
         <ProductScroll
           dataPastry={eightItemsData}
           isLink={true}
